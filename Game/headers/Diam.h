@@ -5,7 +5,6 @@
 #ifndef GAME_DIAM_H
 #define GAME_DIAM_H
 
-
 #include "Element.h"
 #include "CollisionEffect.h"
 

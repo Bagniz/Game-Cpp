@@ -12,21 +12,19 @@
 
 using namespace std;
 
-class Game {
+class Game
+{
 private:
-    string gameName,playerName,currentBoard;
+    string gameName, playerName, currentBoard;
     int gameScore;
     vector<Board> boards;
     vector<map<string,int>> topTenScores;
 public:
     Game();
-    Game(string name,vector<string> boards);
+    Game(string name, vector<string> boards);
     void gamePlay();
     void gameOver();
     void gameSave();
-
-
-
 };
 
 

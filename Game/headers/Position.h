@@ -10,12 +10,13 @@ class Position
 {
 private:
     int x, y;
+
 public:
     explicit Position(int x = 0, int y = 0);
     int getX() const;
-    void setX(int x);
+    void setX(int px);
     int getY() const;
-    void setY(int y);
+    void setY(int py);
 };
 
 

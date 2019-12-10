@@ -5,7 +5,6 @@
 #ifndef GAME_GEURCHAR_H
 #define GAME_GEURCHAR_H
 
-
 #include "Element.h"
 #include "CollisionEffect.h"
 

@@ -4,6 +4,7 @@
 
 #ifndef GAME_TELEPORTATIONS_H
 #define GAME_TELEPORTATIONS_H
+
 enum class Teleportations
 {
     RandomTeleportation,
@@ -11,4 +12,5 @@ enum class Teleportations
     AxesTeleportation,
     SmartTeleportation
 };
+
 #endif //GAME_TELEPORTATIONS_H

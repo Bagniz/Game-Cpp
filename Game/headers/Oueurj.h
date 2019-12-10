@@ -5,7 +5,6 @@
 #ifndef GAME_OUEURJ_H
 #define GAME_OUEURJ_H
 
-
 #include "Teleportations.h"
 #include "MovingElement.h"
 #include "Element.h"
@@ -19,6 +18,9 @@ public:
     Oueurj(Position position);
     void teleport();
     void move();
+
+    // Friend class
+    friend class Geurchar;
 };
 
 

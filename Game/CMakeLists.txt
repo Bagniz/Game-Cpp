@@ -3,4 +3,4 @@ project(Game)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Game main.cpp Game.cpp Game.h Board.cpp Board.h Element.cpp Element.h Position.cpp Position.h Diam.cpp Diam.h Teupor.cpp Teupor.h Reumu.cpp Reumu.h Geurchar.cpp Geurchar.h CollisionEffect.h Oueurj.cpp Oueurj.h XStreumon.cpp XStreumon.h SStreumon.cpp SStreumon.h PStreumon.cpp PStreumon.h IStreumon.cpp IStreumon.h Teleportations.h MovingElement.h)
+add_executable(Game main.cpp sources/Game.cpp headers/Game.h sources/Board.cpp headers/Board.h sources/Element.cpp headers/Element.h sources/Position.cpp headers/Position.h sources/Diam.cpp headers/Diam.h sources/Teupor.cpp headers/Teupor.h sources/Reumu.cpp headers/Reumu.h sources/Geurchar.cpp headers/Geurchar.h headers/CollisionEffect.h sources/Oueurj.cpp headers/Oueurj.h sources/XStreumon.cpp headers/XStreumon.h sources/SStreumon.cpp headers/SStreumon.h sources/PStreumon.cpp headers/PStreumon.h sources/IStreumon.cpp headers/IStreumon.h headers/Teleportations.h headers/MovingElement.h)

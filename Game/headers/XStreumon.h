@@ -5,7 +5,6 @@
 #ifndef GAME_XSTREUMON_H
 #define GAME_XSTREUMON_H
 
-
 #include "Element.h"
 #include "CollisionEffect.h"
 #include "MovingElement.h"

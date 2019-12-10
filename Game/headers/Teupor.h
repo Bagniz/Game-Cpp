@@ -5,7 +5,6 @@
 #ifndef GAME_TEUPOR_H
 #define GAME_TEUPOR_H
 
-
 #include "Element.h"
 #include "CollisionEffect.h"
 

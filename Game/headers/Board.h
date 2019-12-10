@@ -11,11 +11,13 @@
 
 using namespace std;
 
-class Board {
+class Board
+{
 private:
     string boardName;
     int boardScore;
     vector<vector<Element>> elements;
+
 public:
     Board();
     Board(string name);

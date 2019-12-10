@@ -43,10 +43,10 @@ RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game
+CMAKE_SOURCE_DIR = /home/bagniz/dev/code/C++/Game-Cpp/Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Game.dir/depend.make
@@ -59,185 +59,185 @@ include CMakeFiles/Game.dir/flags.make
 
 CMakeFiles/Game.dir/main.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Game.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/main.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Game.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/main.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp
 
 CMakeFiles/Game.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/main.cpp > CMakeFiles/Game.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp > CMakeFiles/Game.dir/main.cpp.i
 
 CMakeFiles/Game.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/main.cpp -o CMakeFiles/Game.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp -o CMakeFiles/Game.dir/main.cpp.s
 
 CMakeFiles/Game.dir/Game.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game.dir/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Game.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game.dir/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Game.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Game.cpp
 
 CMakeFiles/Game.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Game.cpp > CMakeFiles/Game.dir/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Game.cpp > CMakeFiles/Game.dir/Game.cpp.i
 
 CMakeFiles/Game.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Game.cpp -o CMakeFiles/Game.dir/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Game.cpp -o CMakeFiles/Game.dir/Game.cpp.s
 
 CMakeFiles/Game.dir/Board.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Game.dir/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Board.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Game.dir/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Board.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Board.cpp
 
 CMakeFiles/Game.dir/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Board.cpp > CMakeFiles/Game.dir/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Board.cpp > CMakeFiles/Game.dir/Board.cpp.i
 
 CMakeFiles/Game.dir/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Board.cpp -o CMakeFiles/Game.dir/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Board.cpp -o CMakeFiles/Game.dir/Board.cpp.s
 
 CMakeFiles/Game.dir/Element.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Element.cpp.o: ../Element.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Game.dir/Element.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Element.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Game.dir/Element.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Element.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Element.cpp
 
 CMakeFiles/Game.dir/Element.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Element.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.cpp > CMakeFiles/Game.dir/Element.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Element.cpp > CMakeFiles/Game.dir/Element.cpp.i
 
 CMakeFiles/Game.dir/Element.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Element.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.cpp -o CMakeFiles/Game.dir/Element.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Element.cpp -o CMakeFiles/Game.dir/Element.cpp.s
 
 CMakeFiles/Game.dir/Position.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Position.cpp.o: ../Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Game.dir/Position.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Position.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Game.dir/Position.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Position.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Position.cpp
 
 CMakeFiles/Game.dir/Position.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Position.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Position.cpp > CMakeFiles/Game.dir/Position.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Position.cpp > CMakeFiles/Game.dir/Position.cpp.i
 
 CMakeFiles/Game.dir/Position.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Position.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Position.cpp -o CMakeFiles/Game.dir/Position.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Position.cpp -o CMakeFiles/Game.dir/Position.cpp.s
 
 CMakeFiles/Game.dir/Diam.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Diam.cpp.o: ../Diam.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Game.dir/Diam.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Diam.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Diam.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Game.dir/Diam.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Diam.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.cpp
 
 CMakeFiles/Game.dir/Diam.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Diam.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Diam.cpp > CMakeFiles/Game.dir/Diam.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.cpp > CMakeFiles/Game.dir/Diam.cpp.i
 
 CMakeFiles/Game.dir/Diam.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Diam.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Diam.cpp -o CMakeFiles/Game.dir/Diam.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.cpp -o CMakeFiles/Game.dir/Diam.cpp.s
 
 CMakeFiles/Game.dir/Teupor.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Teupor.cpp.o: ../Teupor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Game.dir/Teupor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Teupor.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teupor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Game.dir/Teupor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Teupor.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.cpp
 
 CMakeFiles/Game.dir/Teupor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Teupor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teupor.cpp > CMakeFiles/Game.dir/Teupor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.cpp > CMakeFiles/Game.dir/Teupor.cpp.i
 
 CMakeFiles/Game.dir/Teupor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Teupor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teupor.cpp -o CMakeFiles/Game.dir/Teupor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.cpp -o CMakeFiles/Game.dir/Teupor.cpp.s
 
 CMakeFiles/Game.dir/Reumu.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Reumu.cpp.o: ../Reumu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Game.dir/Reumu.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Reumu.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Reumu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Game.dir/Reumu.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Reumu.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.cpp
 
 CMakeFiles/Game.dir/Reumu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Reumu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Reumu.cpp > CMakeFiles/Game.dir/Reumu.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.cpp > CMakeFiles/Game.dir/Reumu.cpp.i
 
 CMakeFiles/Game.dir/Reumu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Reumu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Reumu.cpp -o CMakeFiles/Game.dir/Reumu.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.cpp -o CMakeFiles/Game.dir/Reumu.cpp.s
 
 CMakeFiles/Game.dir/Geurchar.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Geurchar.cpp.o: ../Geurchar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Game.dir/Geurchar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Geurchar.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Geurchar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Game.dir/Geurchar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Geurchar.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.cpp
 
 CMakeFiles/Game.dir/Geurchar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Geurchar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Geurchar.cpp > CMakeFiles/Game.dir/Geurchar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.cpp > CMakeFiles/Game.dir/Geurchar.cpp.i
 
 CMakeFiles/Game.dir/Geurchar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Geurchar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Geurchar.cpp -o CMakeFiles/Game.dir/Geurchar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.cpp -o CMakeFiles/Game.dir/Geurchar.cpp.s
 
 CMakeFiles/Game.dir/Oueurj.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Oueurj.cpp.o: ../Oueurj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Game.dir/Oueurj.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Oueurj.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Oueurj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Game.dir/Oueurj.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Oueurj.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.cpp
 
 CMakeFiles/Game.dir/Oueurj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Oueurj.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Oueurj.cpp > CMakeFiles/Game.dir/Oueurj.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.cpp > CMakeFiles/Game.dir/Oueurj.cpp.i
 
 CMakeFiles/Game.dir/Oueurj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Oueurj.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Oueurj.cpp -o CMakeFiles/Game.dir/Oueurj.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.cpp -o CMakeFiles/Game.dir/Oueurj.cpp.s
 
 CMakeFiles/Game.dir/XStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/XStreumon.cpp.o: ../XStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Game.dir/XStreumon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/XStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Game.dir/XStreumon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/XStreumon.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.cpp
 
 CMakeFiles/Game.dir/XStreumon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/XStreumon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.cpp > CMakeFiles/Game.dir/XStreumon.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.cpp > CMakeFiles/Game.dir/XStreumon.cpp.i
 
 CMakeFiles/Game.dir/XStreumon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/XStreumon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.cpp -o CMakeFiles/Game.dir/XStreumon.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.cpp -o CMakeFiles/Game.dir/XStreumon.cpp.s
 
 CMakeFiles/Game.dir/SStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/SStreumon.cpp.o: ../SStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Game.dir/SStreumon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/SStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Game.dir/SStreumon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/SStreumon.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.cpp
 
 CMakeFiles/Game.dir/SStreumon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/SStreumon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.cpp > CMakeFiles/Game.dir/SStreumon.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.cpp > CMakeFiles/Game.dir/SStreumon.cpp.i
 
 CMakeFiles/Game.dir/SStreumon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/SStreumon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.cpp -o CMakeFiles/Game.dir/SStreumon.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.cpp -o CMakeFiles/Game.dir/SStreumon.cpp.s
 
 CMakeFiles/Game.dir/PStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/PStreumon.cpp.o: ../PStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Game.dir/PStreumon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/PStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/PStreumon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Game.dir/PStreumon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/PStreumon.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.cpp
 
 CMakeFiles/Game.dir/PStreumon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/PStreumon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/PStreumon.cpp > CMakeFiles/Game.dir/PStreumon.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.cpp > CMakeFiles/Game.dir/PStreumon.cpp.i
 
 CMakeFiles/Game.dir/PStreumon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/PStreumon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/PStreumon.cpp -o CMakeFiles/Game.dir/PStreumon.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.cpp -o CMakeFiles/Game.dir/PStreumon.cpp.s
 
 CMakeFiles/Game.dir/IStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/IStreumon.cpp.o: ../IStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Game.dir/IStreumon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/IStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/IStreumon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Game.dir/IStreumon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/IStreumon.cpp.o -c /home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.cpp
 
 CMakeFiles/Game.dir/IStreumon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/IStreumon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/IStreumon.cpp > CMakeFiles/Game.dir/IStreumon.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.cpp > CMakeFiles/Game.dir/IStreumon.cpp.i
 
 CMakeFiles/Game.dir/IStreumon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/IStreumon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/IStreumon.cpp -o CMakeFiles/Game.dir/IStreumon.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.cpp -o CMakeFiles/Game.dir/IStreumon.cpp.s
 
 # Object files for target Game
 Game_OBJECTS = \
@@ -275,7 +275,7 @@ Game: CMakeFiles/Game.dir/PStreumon.cpp.o
 Game: CMakeFiles/Game.dir/IStreumon.cpp.o
 Game: CMakeFiles/Game.dir/build.make
 Game: CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -288,6 +288,6 @@ CMakeFiles/Game.dir/clean:
 .PHONY : CMakeFiles/Game.dir/clean
 
 CMakeFiles/Game.dir/depend:
-	cd /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bagniz/dev/code/C++/Game-Cpp/Game /home/bagniz/dev/code/C++/Game-Cpp/Game /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Game.dir/depend
 

@@ -8,10 +8,13 @@
 #include "Position.h"
 
 using namespace std;
-class Element {
+
+class Element
+{
 private:
     char symbole;
     Position position;
+
 public:
     Element();
     Element(Position position);

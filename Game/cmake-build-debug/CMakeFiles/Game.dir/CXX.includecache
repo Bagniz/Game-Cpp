@@ -6,103 +6,155 @@
 
 #IncludeRegexTransform: 
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
-Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Board.cpp
+Board.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Board.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Diam.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Board.h
+string
+-
+vector
+-
+Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
+Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.cpp
 Diam.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Diam.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Diam.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.cpp
+Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 Position.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Position.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Position.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Geurchar.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Game.cpp
+Game.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Game.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Game.h
+string
+-
+vector
+-
+map
+-
+Board.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Board.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.cpp
 Geurchar.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Geurchar.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Geurchar.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/IStreumon.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.cpp
 IStreumon.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/IStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/IStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 MovingElement.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/MovingElement.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/MovingElement.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/PStreumon.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.cpp
+Oueurj.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.h
+Teleportations.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Teleportations.h
+MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/MovingElement.h
+Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.cpp
 PStreumon.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/PStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/PStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 MovingElement.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/MovingElement.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Position.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Position.cpp
+Position.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Position.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Reumu.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Position.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.cpp
 Reumu.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Reumu.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Reumu.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.cpp
 SStreumon.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 MovingElement.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/MovingElement.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teupor.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Teleportations.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.cpp
 Teupor.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teupor.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teupor.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.cpp
 XStreumon.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h
 CollisionEffect.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CollisionEffect.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h
 MovingElement.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/MovingElement.h
+
+/home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp
+iostream
+-
 
