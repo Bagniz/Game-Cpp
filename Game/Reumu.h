@@ -6,8 +6,15 @@
 #define GAME_REUMU_H
 
 
-class Reumu {
+#include "Element.h"
+#include "CollisionEffect.h"
 
+class Reumu : public Element, CollisionEffect
+{
+public:
+    Reumu();
+    Reumu(Position position);
+    bool onCollision(Element element);
 };
 
 

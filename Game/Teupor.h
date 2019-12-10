@@ -6,8 +6,15 @@
 #define GAME_TEUPOR_H
 
 
-class Teupor {
+#include "Element.h"
+#include "CollisionEffect.h"
 
+class Teupor : public Element, CollisionEffect
+{
+public:
+    Teupor();
+    Teupor(Position position);
+    bool onCollision(Element element);
 };
 
 

@@ -15,6 +15,9 @@ private:
 public:
     Element();
     Element(Position position);
+    char getSymbole() const;
+    const Position &getPosition() const;
+    void setPosition(const Position &position);
 };
 
 

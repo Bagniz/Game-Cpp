@@ -6,8 +6,19 @@
 #define GAME_OUEURJ_H
 
 
-class Oueurj {
+#include "Teleportations.h"
+#include "MovingElement.h"
+#include "Element.h"
 
+class Oueurj : public Element, MovingElement
+{
+private:
+    Teleportations teleportations;
+public:
+    Oueurj();
+    Oueurj(Position position);
+    void teleport();
+    void move();
 };
 
 

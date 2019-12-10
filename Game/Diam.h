@@ -6,8 +6,15 @@
 #define GAME_DIAM_H
 
 
-class Diam {
+#include "Element.h"
+#include "CollisionEffect.h"
 
+class Diam : public Element, CollisionEffect
+{
+public:
+    Diam();
+    Diam(Position position);
+    bool onCollision(Element element);
 };
 
 

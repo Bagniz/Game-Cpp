@@ -6,8 +6,17 @@
 #define GAME_XSTREUMON_H
 
 
-class XStreumon {
+#include "Element.h"
+#include "CollisionEffect.h"
+#include "MovingElement.h"
 
+class XStreumon : public Element, CollisionEffect, MovingElement
+{
+public:
+    XStreumon();
+    XStreumon(Position position);
+    bool onCollision(Element element);
+    void move();
 };
 
 

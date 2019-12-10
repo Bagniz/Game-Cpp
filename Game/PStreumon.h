@@ -6,8 +6,17 @@
 #define GAME_PSTREUMON_H
 
 
-class PStreumon {
+#include "Element.h"
+#include "CollisionEffect.h"
+#include "MovingElement.h"
 
+class PStreumon : public Element, CollisionEffect, MovingElement
+{
+public:
+    PStreumon();
+    PStreumon(Position position);
+    bool onCollision(Element element);
+    void move();
 };
 
 

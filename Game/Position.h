@@ -6,8 +6,16 @@
 #define GAME_POSITION_H
 
 
-class Position {
-
+class Position
+{
+private:
+    int x, y;
+public:
+    explicit Position(int x = 0, int y = 0);
+    int getX() const;
+    void setX(int x);
+    int getY() const;
+    void setY(int y);
 };
 
 

@@ -6,8 +6,15 @@
 #define GAME_GEURCHAR_H
 
 
-class Geurchar {
+#include "Element.h"
+#include "CollisionEffect.h"
 
+class Geurchar : public Element, CollisionEffect
+{
+public:
+    Geurchar();
+    Geurchar(Position position);
+    bool onCollision(Element element);
 };
 
 

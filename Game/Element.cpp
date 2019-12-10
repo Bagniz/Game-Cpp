@@ -3,3 +3,15 @@
 //
 
 #include "Element.h"
+
+const Position &Element::getPosition() const {
+    return position;
+}
+
+void Element::setPosition(const Position &position) {
+    Element::position = position;
+}
+
+char Element::getSymbole() const {
+    return symbole;
+}
