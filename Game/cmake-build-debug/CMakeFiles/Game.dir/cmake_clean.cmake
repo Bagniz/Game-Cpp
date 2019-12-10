@@ -10,7 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Game.dir/Position.cpp.o"
   "CMakeFiles/Game.dir/Reumu.cpp.o"
   "CMakeFiles/Game.dir/SStreumon.cpp.o"
-  "CMakeFiles/Game.dir/Streumon.cpp.o"
   "CMakeFiles/Game.dir/Teupor.cpp.o"
   "CMakeFiles/Game.dir/XStreumon.cpp.o"
   "CMakeFiles/Game.dir/main.cpp.o"

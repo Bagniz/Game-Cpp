@@ -15,7 +15,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Position.cpp" "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/Position.cpp.o"
   "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Reumu.cpp" "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/Reumu.cpp.o"
   "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.cpp" "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/SStreumon.cpp.o"
-  "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Streumon.cpp" "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/Streumon.cpp.o"
   "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teupor.cpp" "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/Teupor.cpp.o"
   "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.cpp" "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/XStreumon.cpp.o"
   "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/main.cpp" "/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o"

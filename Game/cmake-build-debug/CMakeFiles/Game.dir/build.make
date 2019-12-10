@@ -174,22 +174,9 @@ CMakeFiles/Game.dir/Geurchar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Geurchar.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Geurchar.cpp -o CMakeFiles/Game.dir/Geurchar.cpp.s
 
-CMakeFiles/Game.dir/Streumon.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/Streumon.cpp.o: ../Streumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Game.dir/Streumon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Streumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Streumon.cpp
-
-CMakeFiles/Game.dir/Streumon.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Streumon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Streumon.cpp > CMakeFiles/Game.dir/Streumon.cpp.i
-
-CMakeFiles/Game.dir/Streumon.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Streumon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Streumon.cpp -o CMakeFiles/Game.dir/Streumon.cpp.s
-
 CMakeFiles/Game.dir/Oueurj.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Oueurj.cpp.o: ../Oueurj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Game.dir/Oueurj.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Game.dir/Oueurj.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Oueurj.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Oueurj.cpp
 
 CMakeFiles/Game.dir/Oueurj.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/Game.dir/Oueurj.cpp.s: cmake_force
 
 CMakeFiles/Game.dir/XStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/XStreumon.cpp.o: ../XStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Game.dir/XStreumon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Game.dir/XStreumon.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/XStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/XStreumon.cpp
 
 CMakeFiles/Game.dir/XStreumon.cpp.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/Game.dir/XStreumon.cpp.s: cmake_force
 
 CMakeFiles/Game.dir/SStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/SStreumon.cpp.o: ../SStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Game.dir/SStreumon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Game.dir/SStreumon.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/SStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.cpp
 
 CMakeFiles/Game.dir/SStreumon.cpp.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/Game.dir/SStreumon.cpp.s: cmake_force
 
 CMakeFiles/Game.dir/PStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/PStreumon.cpp.o: ../PStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Game.dir/PStreumon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Game.dir/PStreumon.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/PStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/PStreumon.cpp
 
 CMakeFiles/Game.dir/PStreumon.cpp.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/Game.dir/PStreumon.cpp.s: cmake_force
 
 CMakeFiles/Game.dir/IStreumon.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/IStreumon.cpp.o: ../IStreumon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Game.dir/IStreumon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Game.dir/IStreumon.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/IStreumon.cpp.o -c /home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/IStreumon.cpp
 
 CMakeFiles/Game.dir/IStreumon.cpp.i: cmake_force
@@ -263,7 +250,6 @@ Game_OBJECTS = \
 "CMakeFiles/Game.dir/Teupor.cpp.o" \
 "CMakeFiles/Game.dir/Reumu.cpp.o" \
 "CMakeFiles/Game.dir/Geurchar.cpp.o" \
-"CMakeFiles/Game.dir/Streumon.cpp.o" \
 "CMakeFiles/Game.dir/Oueurj.cpp.o" \
 "CMakeFiles/Game.dir/XStreumon.cpp.o" \
 "CMakeFiles/Game.dir/SStreumon.cpp.o" \
@@ -282,7 +268,6 @@ Game: CMakeFiles/Game.dir/Diam.cpp.o
 Game: CMakeFiles/Game.dir/Teupor.cpp.o
 Game: CMakeFiles/Game.dir/Reumu.cpp.o
 Game: CMakeFiles/Game.dir/Geurchar.cpp.o
-Game: CMakeFiles/Game.dir/Streumon.cpp.o
 Game: CMakeFiles/Game.dir/Oueurj.cpp.o
 Game: CMakeFiles/Game.dir/XStreumon.cpp.o
 Game: CMakeFiles/Game.dir/SStreumon.cpp.o
@@ -290,7 +275,7 @@ Game: CMakeFiles/Game.dir/PStreumon.cpp.o
 Game: CMakeFiles/Game.dir/IStreumon.cpp.o
 Game: CMakeFiles/Game.dir/build.make
 Game: CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
