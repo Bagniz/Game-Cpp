@@ -420,33 +420,6 @@ SStreumon.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/SStreumon.cpp.s
 .PHONY : SStreumon.cpp.s
 
-Streumon.o: Streumon.cpp.o
-
-.PHONY : Streumon.o
-
-# target to build an object file
-Streumon.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Streumon.cpp.o
-.PHONY : Streumon.cpp.o
-
-Streumon.i: Streumon.cpp.i
-
-.PHONY : Streumon.i
-
-# target to preprocess a source file
-Streumon.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Streumon.cpp.i
-.PHONY : Streumon.cpp.i
-
-Streumon.s: Streumon.cpp.s
-
-.PHONY : Streumon.s
-
-# target to generate assembly for a file
-Streumon.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Streumon.cpp.s
-.PHONY : Streumon.cpp.s
-
 Teupor.o: Teupor.cpp.o
 
 .PHONY : Teupor.o
@@ -570,9 +543,6 @@ help:
 	@echo "... SStreumon.o"
 	@echo "... SStreumon.i"
 	@echo "... SStreumon.s"
-	@echo "... Streumon.o"
-	@echo "... Streumon.i"
-	@echo "... Streumon.s"
 	@echo "... Teupor.o"
 	@echo "... Teupor.i"
 	@echo "... Teupor.s"

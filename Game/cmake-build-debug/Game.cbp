@@ -156,12 +156,6 @@
 		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/SStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Streumon.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Streumon.h">
-			<Option target="Game"/>
-		</Unit>
 		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/Teleportations.h">
 			<Option target="Game"/>
 		</Unit>
