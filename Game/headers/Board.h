@@ -1,12 +1,14 @@
 //
-// Created by netbook on 10/12/2019.
+// Created by netbook on 11/12/2019.
 //
 
 #ifndef GAME_BOARD_H
 #define GAME_BOARD_H
 
+
 #include <string>
 #include <vector>
+
 
 using namespace std;
 
@@ -27,6 +29,8 @@ public:
     void boardSave();
     bool addElement(Element &element);
 };
+
+
 
 
 #endif //GAME_BOARD_H
