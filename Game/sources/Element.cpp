@@ -2,7 +2,12 @@
 // Created by netbook on 10/12/2019.
 //
 
+#include <iostream>
 #include "../headers/Element.h"
+
+Element::Element() : symbole(), position(), board() {}
+
+Element::Element(char s, Position &p, Board &b) : symbole(s), position(p), board(b) {}
 
 const Position &Element::getPosition() const
 {
@@ -11,7 +16,7 @@ const Position &Element::getPosition() const
 
 void Element::setPosition(const Position &p)
 {
-    Element::position = position;
+    Element::position = p;
 }
 
 char Element::getSymbole() const
@@ -21,5 +26,10 @@ char Element::getSymbole() const
 
 void Element::setSymbole(char s)
 {
-    this->symbole = symbole;
+    this->symbole = s;
+}
+
+Element::~Element()
+{
+    cout << "Element " << this->symbole << " is deleted";
 }

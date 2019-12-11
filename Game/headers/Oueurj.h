@@ -23,6 +23,7 @@ public:
     Oueurj(char s, Position &p, Board &b);
     void teleport();
     void move();
+    ~Oueurj();
 };
 
 

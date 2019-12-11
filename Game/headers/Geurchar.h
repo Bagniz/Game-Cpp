@@ -17,6 +17,7 @@ public:
     Geurchar();
     explicit Geurchar(char s, Position &p, Teleportations t, Board &b);
     bool onCollision(Element &element);
+    ~Geurchar();
 };
 
 #endif //GAME_GEURCHAR_H

@@ -14,6 +14,7 @@ public:
     Teupor();
     Teupor(char s, Position &p, Board &b);
     bool onCollision(Element &element);
+    ~Teupor();
 };
 
 

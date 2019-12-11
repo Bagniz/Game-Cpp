@@ -27,6 +27,7 @@ public:
     void gameSave();
     void displayGame();
     bool addBoard(Board &board);
+    ~Game();
 };
 
 #endif //GAME_GAME_H

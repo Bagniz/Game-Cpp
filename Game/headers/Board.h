@@ -28,6 +28,11 @@ public:
     void displayBoard();
     void boardSave();
     bool addElement(Element &element);
+    bool removeElement(Element &element);
+    string getBoardName();
+    int getBoardScore();
+    vector<vector<Element>> getElements;
+    ~Board();
 };
 
 

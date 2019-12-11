@@ -16,6 +16,7 @@ public:
     PStreumon(char s, Position &p, Board &b);
     bool onCollision(Element &element);
     void move();
+    ~PStreumon();
 };
 
 

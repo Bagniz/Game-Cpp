@@ -18,6 +18,7 @@ public:
     Diam();
     Diam(char s, Position &p, Teupor &t, Board &b);
     bool onCollision(Element &element);
+    ~Diam();
 };
 
 
