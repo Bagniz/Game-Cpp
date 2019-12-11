@@ -8,6 +8,7 @@
 
 #include <string>
 #include <vector>
+#include "Position.h"
 
 
 using namespace std;
@@ -29,6 +30,7 @@ public:
     void boardSave();
     bool addElement(Element &element);
     bool removeElement(Element &element);
+    Element getElement(const Position &position);
     string getBoardName();
     int getBoardScore();
     vector<vector<Element>> getElements;

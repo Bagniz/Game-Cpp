@@ -44,3 +44,7 @@ int Board::getBoardScore() {
 Board::~Board() {
 
 }
+
+Element Board::getElement(const Position &position) {
+    return this->elements[position.getY()][position.getX()];
+}
