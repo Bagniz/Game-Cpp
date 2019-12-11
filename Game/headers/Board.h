@@ -7,9 +7,10 @@
 
 #include <string>
 #include <vector>
-#include "Element.h"
 
 using namespace std;
+
+class Element;
 
 class Board
 {
@@ -21,8 +22,10 @@ private:
 public:
     Board();
     Board(string name);
+    bool boardPlay();
     void displayBoard();
     void boardSave();
+    bool addElement(Element &element);
 };
 
 

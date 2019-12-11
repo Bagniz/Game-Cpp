@@ -7,14 +7,16 @@
 
 #include "Element.h"
 #include "CollisionEffect.h"
+#include "Teleportations.h"
 
 class Geurchar : public Element, CollisionEffect
 {
+private:
+    Teleportations teleportation;
 public:
     Geurchar();
-    Geurchar(Position position);
-    bool onCollision(Element element);
+    explicit Geurchar(char symbole, Position &position, Teleportations teleportation, Board &board);
+    bool onCollision(Element &element);
 };
-
 
 #endif //GAME_GEURCHAR_H

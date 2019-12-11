@@ -21,11 +21,12 @@ private:
     vector<map<string,int>> topTenScores;
 public:
     Game();
-    Game(string name, vector<string> boards);
-    void gamePlay();
+    Game(string name);
+    void gamePlay(string playerName);
     void gameOver();
     void gameSave();
+    void displayGame();
+    bool addBoard(Board &board);
 };
-
 
 #endif //GAME_GAME_H

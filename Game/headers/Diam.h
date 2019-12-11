@@ -7,13 +7,17 @@
 
 #include "Element.h"
 #include "CollisionEffect.h"
+#include "Teupor.h"
 
 class Diam : public Element, CollisionEffect
 {
+private:
+    Teupor teupor;
+
 public:
     Diam();
-    Diam(Position position);
-    bool onCollision(Element element);
+    Diam(char s, Position &p, Teupor &t, Board &b);
+    bool onCollision(Element &element);
 };
 
 

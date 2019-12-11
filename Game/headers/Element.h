@@ -6,22 +6,24 @@
 #define GAME_ELEMENT_H
 
 #include "Position.h"
+#include "Board.h"
 
 using namespace std;
 
 class Element
 {
-private:
+protected:
     char symbole;
     Position position;
+    Board board;
 
 public:
     Element();
-    Element(Position position);
+    Element(char symbole, Position &position, Board &board);
     char getSymbole() const;
+    void setSymbole(char s);
     const Position &getPosition() const;
-    void setPosition(const Position &position);
+    void setPosition(const Position &p);
 };
-
 
 #endif //GAME_ELEMENT_H

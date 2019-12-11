@@ -11,7 +11,9 @@
 * Oueurj
 * Geurchar
 * Reumu
+* Element
 ## Symboles
+* Geurchars: *
 * Streumon: s
 * Reumu: x
 * Diam: $

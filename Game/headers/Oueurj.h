@@ -8,19 +8,20 @@
 #include "Teleportations.h"
 #include "MovingElement.h"
 #include "Element.h"
+#include "Board.h"
 
 class Oueurj : public Element, MovingElement
 {
-private:
-    Teleportations teleportations;
-public:
-    Oueurj();
-    Oueurj(Position position);
-    void teleport();
-    void move();
-
     // Friend class
     friend class Geurchar;
+
+private:
+    vector<Teleportations> teleportations;
+public:
+    Oueurj();
+    Oueurj(char symbole, Position &position, Board &board);
+    void teleport(Board &board);
+    void move();
 };
 
 

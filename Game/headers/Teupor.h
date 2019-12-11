@@ -12,8 +12,8 @@ class Teupor : public Element, CollisionEffect
 {
 public:
     Teupor();
-    Teupor(Position position);
-    bool onCollision(Element element);
+    Teupor(char symbole, Position &position, Board &board);
+    bool onCollision(Element &element);
 };
 
 

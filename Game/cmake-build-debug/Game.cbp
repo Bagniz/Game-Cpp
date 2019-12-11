@@ -84,94 +84,94 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Board.cpp">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Board.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Board.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/CollisionEffect.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/CollisionEffect.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Diam.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.cpp">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Element.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Diam.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Game.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.cpp">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Geurchar.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Element.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/IStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Game.cpp">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/MovingElement.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Game.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Oueurj.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.cpp">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/PStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Geurchar.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Position.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.cpp">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Reumu.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/IStreumon.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/SStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/MovingElement.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Teleportations.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.cpp">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/Teupor.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Oueurj.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/PStreumon.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Position.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Position.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Reumu.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/SStreumon.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Teleportations.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/Teupor.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/XStreumon.h">
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/headers/XStreumon.h">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Board.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Diam.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Element.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Game.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Geurchar.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/IStreumon.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Oueurj.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/PStreumon.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Position.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Reumu.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/SStreumon.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Teupor.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/XStreumon.cpp">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/CMakeLists.txt">

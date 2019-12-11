@@ -9,7 +9,7 @@
 
 class CollisionEffect
 {
-    virtual bool onCollision(Element element) = 0;
+    virtual bool onCollision(Element &element) = 0;
 };
 
 #endif //GAME_COLLISIONEFFECT_H
