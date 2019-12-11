@@ -15,7 +15,7 @@ private:
     Teleportations teleportation;
 public:
     Geurchar();
-    explicit Geurchar(char symbole, Position &position, Teleportations teleportation, Board &board);
+    explicit Geurchar(char s, Position &p, Teleportations t, Board &b);
     bool onCollision(Element &element);
 };
 

@@ -17,10 +17,11 @@ class Oueurj : public Element, MovingElement
 
 private:
     vector<Teleportations> teleportations;
+
 public:
     Oueurj();
-    Oueurj(char symbole, Position &position, Board &board);
-    void teleport(Board &board);
+    Oueurj(char s, Position &p, Board &b);
+    void teleport();
     void move();
 };
 

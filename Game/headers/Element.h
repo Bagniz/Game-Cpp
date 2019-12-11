@@ -19,7 +19,7 @@ protected:
 
 public:
     Element();
-    Element(char symbole, Position &position, Board &board);
+    Element(char s, Position &p, Board &b);
     char getSymbole() const;
     void setSymbole(char s);
     const Position &getPosition() const;
