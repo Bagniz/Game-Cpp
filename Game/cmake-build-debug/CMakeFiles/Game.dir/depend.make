@@ -23,6 +23,7 @@ CMakeFiles/Game.dir/sources/Element.cpp.o: ../sources/Element.cpp
 
 CMakeFiles/Game.dir/sources/Game.cpp.o: ../headers/Board.h
 CMakeFiles/Game.dir/sources/Game.cpp.o: ../headers/Game.h
+CMakeFiles/Game.dir/sources/Game.cpp.o: ../headers/Position.h
 CMakeFiles/Game.dir/sources/Game.cpp.o: ../sources/Game.cpp
 
 CMakeFiles/Game.dir/sources/Geurchar.cpp.o: ../headers/Board.h
