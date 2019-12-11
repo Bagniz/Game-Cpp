@@ -26,3 +26,7 @@ void Position::setY(int py)
 {
     Position::y = py;
 }
+
+Position::~Position() {
+
+}

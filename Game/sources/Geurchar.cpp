@@ -45,3 +45,7 @@ bool Geurchar::onCollision(Element &element)
     }
     return false;
 }
+
+Geurchar::~Geurchar() {
+
+}

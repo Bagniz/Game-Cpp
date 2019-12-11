@@ -12,3 +12,7 @@ bool Reumu::onCollision(Element & element)
 {
     return false;
 }
+
+Reumu::~Reumu() {
+
+}

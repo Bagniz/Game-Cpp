@@ -3,3 +3,23 @@
 //
 
 #include "../headers/IStreumon.h"
+
+IStreumon::IStreumon() {
+
+}
+
+IStreumon::IStreumon(char s, Position &p, Board &b) : Element(s, p, b) {
+
+}
+
+bool IStreumon::onCollision(Element &element) {
+    return false;
+}
+
+void IStreumon::move() {
+
+}
+
+IStreumon::~IStreumon() {
+
+}

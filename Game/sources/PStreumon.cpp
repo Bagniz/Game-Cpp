@@ -3,3 +3,23 @@
 //
 
 #include "../headers/PStreumon.h"
+
+PStreumon::PStreumon() {
+
+}
+
+PStreumon::PStreumon(char s, Position &p, Board &b) : Element(s, p, b) {
+
+}
+
+bool PStreumon::onCollision(Element &element) {
+    return false;
+}
+
+void PStreumon::move() {
+
+}
+
+PStreumon::~PStreumon() {
+
+}

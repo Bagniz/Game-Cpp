@@ -3,3 +3,19 @@
 //
 
 #include "../headers/Diam.h"
+
+Diam::Diam() {
+
+}
+
+Diam::Diam(char s, Position &p, Teupor &t, Board &b) {
+
+}
+
+bool Diam::onCollision(Element &element) {
+    return false;
+}
+
+Diam::~Diam() {
+
+}
