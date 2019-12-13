@@ -33,3 +33,7 @@ Element::~Element()
 {
     cout << "Element " << this->symbole << " is deleted";
 }
+
+bool Element::onCollision(Element &element) {
+    return true;
+}

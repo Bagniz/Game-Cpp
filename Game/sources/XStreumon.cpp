@@ -8,7 +8,7 @@ XStreumon::XStreumon() {
 
 }
 
-XStreumon::XStreumon(char s, Position &p, Board &b) : Element(s, p, b) {
+XStreumon::XStreumon(char s, Position &p, Board &b) : Element('s', p, b) {
 
 }
 

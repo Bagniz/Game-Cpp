@@ -8,7 +8,7 @@ PStreumon::PStreumon() {
 
 }
 
-PStreumon::PStreumon(char s, Position &p, Board &b) : Element(s, p, b) {
+PStreumon::PStreumon(Position &p, Board &b) : Element('s', p, b) {
 
 }
 

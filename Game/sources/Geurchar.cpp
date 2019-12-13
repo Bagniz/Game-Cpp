@@ -12,7 +12,7 @@ Geurchar::Geurchar() : Element()
 }
 
 // Constructor with @params
-Geurchar::Geurchar(char s, Position &p, Teleportations t, Board &b) : Element(s,p,b)
+Geurchar::Geurchar(Position &p, Teleportations t, Board &b) : Element('*',p,b)
 {
     this->teleportation = t;
 }

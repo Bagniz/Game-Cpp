@@ -13,7 +13,7 @@ class PStreumon : public Element, CollisionEffect, MovingElement
 {
 public:
     PStreumon();
-    PStreumon(char s, Position &p, Board &b);
+    PStreumon(Position &p, Board &b);
     bool onCollision(Element &element);
     void move();
     ~PStreumon();

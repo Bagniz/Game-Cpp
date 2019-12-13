@@ -24,6 +24,7 @@ public:
     void setSymbole(char s);
     const Position &getPosition() const;
     void setPosition(const Position &p);
+    bool onCollision(Element &element);
     virtual ~Element();
 };
 

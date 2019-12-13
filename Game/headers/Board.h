@@ -25,14 +25,18 @@ private:
 public:
     Board();
     Board(string name);
+
     bool boardPlay();
     void displayBoard();
     void boardSave();
+
+    Element getElement(const Position &position);
     bool addElement(Element &element);
     bool removeElement(Element &element);
-    Element getElement(const Position &position);
+
     string getBoardName();
     int getBoardScore();
+
     vector<vector<Element>> getElements;
     ~Board();
 };

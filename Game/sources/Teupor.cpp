@@ -8,11 +8,16 @@ Teupor::Teupor() {
 
 }
 
-Teupor::Teupor(char s, Position &p, Board &b) : Element(s, p, b) {
-
+Teupor::Teupor(Position &p, Board &b) : Element('-', p, b) {
 }
 
 bool Teupor::onCollision(Element &element) {
+    if(element.getSymbole()=='j'){
+        if(this->getSymbole()=='+'){
+            //win the board
+            return true;
+        }
+    }
     return false;
 }
 

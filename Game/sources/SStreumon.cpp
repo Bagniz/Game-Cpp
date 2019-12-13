@@ -8,7 +8,7 @@ SStreumon::SStreumon() {
     srand (time(NULL));
 }
 
-SStreumon::SStreumon(char s, Position &p, Board &b) : Element(s, p, b) {
+SStreumon::SStreumon(Position &p, Board &b) : Element('s', p, b) {
     srand (time(NULL));
 }
 
@@ -40,7 +40,7 @@ void SStreumon::move() {
         default:
             newPosition = Position(this->position.getX(), this->position.getY());
     };
-    if(this->board.getElement(newPosition).getSymbole()!='X'){
+    if(this->board.getElement(newPosition).onCollision(*this)){
         this->position=newPosition;
     }
 }
