@@ -21,12 +21,14 @@ private:
     string boardName;
     int boardScore;
     vector<vector<Element>> elements;
-
+    //this attribute takes 0 is the game is still going 1 if the ouerj did win the board and -1 if the ouerj lost
+    int endBoard=0;
 public:
     Board();
     Board(string name);
 
     bool boardPlay();
+    void boardEnd(bool isWinner);
     void displayBoard();
     void boardSave();
 

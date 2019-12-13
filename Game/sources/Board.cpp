@@ -14,10 +14,30 @@ Board::Board(string name) {
 }
 
 bool Board::boardPlay() {
-    return false;
+
+    while (endBoard == 0){
+        //moving eleements update
+
+        this->displayBoard();
+    }
+    if(endBoard == 1)
+        return true;
+    else
+        return false;
+}
+
+void Board::boardEnd(bool isWinner) {
+    if(isWinner)
+        endBoard=1;
+    else
+        endBoard=-1;
 }
 
 void Board::displayBoard() {
+    //system command to clean the previous version of the board
+    system("clear");
+
+    //double loop to print the board
 
 }
 

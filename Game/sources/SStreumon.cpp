@@ -13,8 +13,11 @@ SStreumon::SStreumon(Position &p, Board &b) : Element('s', p, b) {
 }
 
 bool SStreumon::onCollision(Element &element) {
-
-    return false;
+    if(element.getSymbole()=='j'){
+        //game over
+        return true;
+    }
+    return true;
 }
 
 void SStreumon::move() {
