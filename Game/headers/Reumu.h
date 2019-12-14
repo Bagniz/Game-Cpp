@@ -12,7 +12,7 @@ class Reumu : public Element, CollisionEffect
 {
 public:
     Reumu();
-    explicit Reumu(Position &p, Board &b);
+    explicit Reumu(Position &p, Board *b);
     bool onCollision(Element &element);
     ~Reumu();
 };

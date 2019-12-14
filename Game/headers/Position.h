@@ -17,6 +17,7 @@ public:
     void setX(int px);
     int getY() const;
     void setY(int py);
+    friend bool operator==(const Position &p,const Position &p1);
     ~Position();
 };
 

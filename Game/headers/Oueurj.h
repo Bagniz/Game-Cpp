@@ -20,7 +20,7 @@ private:
 
 public:
     Oueurj();
-    Oueurj(Position &p, Board &b);
+    Oueurj(Position &p, Board *b);
     void teleport();
     void move();
     ~Oueurj();

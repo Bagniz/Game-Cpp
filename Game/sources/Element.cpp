@@ -7,7 +7,7 @@
 
 Element::Element() : symbole(), position(), board() {}
 
-Element::Element(char s, Position &p, Board &b) : symbole(s), position(p), board(b) {}
+Element::Element(char s, Position &p, Board *b) : symbole(s), position(p), board(b) {}
 
 const Position &Element::getPosition() const
 {

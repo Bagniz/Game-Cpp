@@ -16,7 +16,7 @@ private:
 
 public:
     Diam();
-    Diam(Position &p, Teupor &t, Board &b);
+    Diam(Position &p, Teupor &t, Board *b);
     bool onCollision(Element &element);
     ~Diam();
 };

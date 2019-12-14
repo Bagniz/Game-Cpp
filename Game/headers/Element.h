@@ -15,16 +15,16 @@ class Element
 protected:
     char symbole;
     Position position;
-    Board board;
+    Board *board;
 
 public:
     Element();
-    Element(char s, Position &p, Board &b);
+    Element(char s, Position &p, Board *b);
     char getSymbole() const;
     void setSymbole(char s);
     const Position &getPosition() const;
     void setPosition(const Position &p);
-    bool onCollision(Element &element);
+    virtual bool onCollision(Element &element);
     virtual ~Element();
 };
 

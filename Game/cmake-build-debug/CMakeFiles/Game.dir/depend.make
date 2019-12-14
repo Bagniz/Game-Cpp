@@ -3,14 +3,26 @@
 
 CMakeFiles/Game.dir/main.cpp.o: ../headers/Board.h
 CMakeFiles/Game.dir/main.cpp.o: ../headers/CollisionEffect.h
+CMakeFiles/Game.dir/main.cpp.o: ../headers/Diam.h
 CMakeFiles/Game.dir/main.cpp.o: ../headers/Element.h
+CMakeFiles/Game.dir/main.cpp.o: ../headers/Geurchar.h
+CMakeFiles/Game.dir/main.cpp.o: ../headers/MovingElement.h
+CMakeFiles/Game.dir/main.cpp.o: ../headers/Oueurj.h
 CMakeFiles/Game.dir/main.cpp.o: ../headers/Position.h
 CMakeFiles/Game.dir/main.cpp.o: ../headers/Reumu.h
+CMakeFiles/Game.dir/main.cpp.o: ../headers/SStreumon.h
+CMakeFiles/Game.dir/main.cpp.o: ../headers/Teleportations.h
+CMakeFiles/Game.dir/main.cpp.o: ../headers/Teupor.h
 CMakeFiles/Game.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/Board.h
+CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/CollisionEffect.h
 CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/Element.h
+CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/MovingElement.h
+CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/Oueurj.h
 CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/Position.h
+CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/SStreumon.h
+CMakeFiles/Game.dir/sources/Board.cpp.o: ../headers/Teleportations.h
 CMakeFiles/Game.dir/sources/Board.cpp.o: ../sources/Board.cpp
 
 CMakeFiles/Game.dir/sources/Diam.cpp.o: ../headers/Board.h

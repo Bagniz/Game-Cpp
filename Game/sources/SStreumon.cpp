@@ -2,13 +2,14 @@
 // Created by netbook on 10/12/2019.
 //
 
+#include <iostream>
 #include "../headers/SStreumon.h"
 
 SStreumon::SStreumon() {
     srand (time(NULL));
 }
 
-SStreumon::SStreumon(Position &p, Board &b) : Element('s', p, b) {
+SStreumon::SStreumon(Position &p, Board *b) : Element('s', p, b) {
     srand (time(NULL));
 }
 
@@ -40,11 +41,13 @@ void SStreumon::move() {
             newPosition = Position(this->position.getX() - 1, this->position.getY() + 1);
         case 7:
             newPosition = Position(this->position.getX() - 1, this->position.getY());
-        default:
-            newPosition = Position(this->position.getX(), this->position.getY());
     };
-    if(this->board.getElement(newPosition).onCollision(*this)){
-        this->board.moveElement(this->getPosition(),newPosition);
+
+
+    cout<<moveTo<<" "<<newPosition.getX()<<"."<<newPosition.getY();
+
+    if(this->board->getElement(newPosition)->onCollision(*this)){
+        this->board->moveElement(this->getPosition(),newPosition);
         this->position=newPosition;
     }
 }

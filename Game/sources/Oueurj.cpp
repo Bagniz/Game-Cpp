@@ -7,11 +7,11 @@
 
 Oueurj::Oueurj() : Element(){}
 
-Oueurj::Oueurj(Position &p, Board &b) : Element('j', p, b), teleportations(){}
+Oueurj::Oueurj(Position &p, Board *b) : Element('j', p, b), teleportations(){}
 
 void Oueurj::teleport()
 {
-
+    cout<<"im teleportingggg";
 }
 
 void Oueurj::move()
