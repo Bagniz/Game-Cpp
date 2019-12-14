@@ -21,11 +21,16 @@ private:
     string boardName;
     int boardScore;
     vector<vector<Element>> elements;
+
     //this attribute takes 0 is the game is still going 1 if the ouerj did win the board and -1 if the ouerj lost
     int endBoard=0;
+
+    //this is a vector of superposed elements that means this vector is gonna be filled with elements that are super
+    // posed by stremons so that we dont lose them after the stremons is gone
+    vector<Element> superposedElements ;
 public:
     Board();
-    Board(string name);
+    Board(string name,int size);
 
     bool boardPlay();
     void boardEnd(bool isWinner);
@@ -35,7 +40,8 @@ public:
     Element getElement(const Position &position);
     bool addElement(Element &element);
     bool removeElement(Element &element);
-
+    void moveElement(Position oldPosition,Position newPosition);
+    void updateSuperposedElements();
     string getBoardName();
     int getBoardScore();
 

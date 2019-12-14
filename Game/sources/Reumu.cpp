@@ -6,7 +6,7 @@
 
 Reumu::Reumu() : Element() {}
 
-Reumu::Reumu(char s, Position &p, Board &b) : Element(s,p,b) {}
+Reumu::Reumu(Position &p, Board &b) : Element('x',p,b) {}
 
 bool Reumu::onCollision(Element & element)
 {

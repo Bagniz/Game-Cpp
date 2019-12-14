@@ -7,7 +7,7 @@
 
 Oueurj::Oueurj() : Element(){}
 
-Oueurj::Oueurj(char s, Position &p, Board &b) : Element(s, p, b), teleportations(){}
+Oueurj::Oueurj(Position &p, Board &b) : Element('j', p, b), teleportations(){}
 
 void Oueurj::teleport()
 {

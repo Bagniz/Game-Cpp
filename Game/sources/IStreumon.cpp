@@ -8,7 +8,7 @@ IStreumon::IStreumon() {
 
 }
 
-IStreumon::IStreumon(char s, Position &p, Board &b) : Element('s', p, b) {
+IStreumon::IStreumon(Position &p, Board &b) : Element('s', p, b) {
 
 }
 

@@ -31,7 +31,7 @@ void Element::setSymbole(char s)
 
 Element::~Element()
 {
-    cout << "Element " << this->symbole << " is deleted";
+    //cout << "Element " << this->symbole << " is deleted";
 }
 
 bool Element::onCollision(Element &element) {

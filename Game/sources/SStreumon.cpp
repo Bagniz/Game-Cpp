@@ -44,6 +44,7 @@ void SStreumon::move() {
             newPosition = Position(this->position.getX(), this->position.getY());
     };
     if(this->board.getElement(newPosition).onCollision(*this)){
+        this->board.moveElement(this->getPosition(),newPosition);
         this->position=newPosition;
     }
 }
