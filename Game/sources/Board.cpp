@@ -18,14 +18,17 @@ Board::~Board() {
 }
 
 Board::Board(string name,int size) {
+
     for (int i = 0; i < size; ++i) {
         elements.emplace_back();
+
     }
 }
 
 bool Board::boardPlay() {
+
     int time=0;
-    while (endBoard == 0 && time<5){
+    while (endBoard == 0 && time<2){
         //moving elements
         for (int i = 0; i < movingElements.size(); ++i) {
             Oueurj *j;
@@ -77,23 +80,23 @@ void Board::displayBoard() {
     //double loop to print the board
     for (auto i =elements.begin();i!=elements.end();++i) {
         for (auto j=i->begin();j!=i->end();++j) {
-            std::cout<<j.operator*()->getSymbole()<<" ";
+            std::cout<<j.operator*()->getSymbole();//"("<<j.operator*()->getPosition().getX()<<"."<<j.operator*()->getPosition().getY()<<") ";
         }
         std::cout<<"\n";
     }
 }
 
-bool Board::addElement(Element *element) {
+bool Board::addElement(Element &element) {
 
-    this->elements[element->getPosition().getX()].push_back(element);
-
-    if (element->getSymbole()=='j'||element->getSymbole()=='s'){
-        movingElements.push_back(element);
+    this->elements[element.getPosition().getX()].emplace_back(&element);
+    //[element.getPosition().getY()]=&element;
+    if (element.getSymbole()=='j'||element.getSymbole()=='s'){
+        movingElements.push_back(&element);
     }
     return true;
 }
 
-bool Board::removeElement(Element *element) {
+bool Board::removeElement(Element &element) {
     return false;
 }
 
@@ -110,7 +113,7 @@ Element* Board::getElement(const Position &position) {
 }
 
 void Board::moveElement(Position oldPosition, Position newPosition) {
-
+    cout<<"moving "<<getElement(oldPosition)->getSymbole()<<" to "<<getElement(newPosition)->getSymbole()<<endl;
     //storing the superposed element
     if(this->getElement(newPosition)->getSymbole()!=' '){
         this->superposedElements.push_back(this->getElement(newPosition));

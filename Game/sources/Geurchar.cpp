@@ -12,7 +12,7 @@ Geurchar::Geurchar() : Element()
 }
 
 // Constructor with @params
-Geurchar::Geurchar(Position &p, Teleportations t, Board *b) : Element('*',p,b)
+Geurchar::Geurchar(Position p, Teleportations t, Board &b) : Element('*',p,b)
 {
     this->teleportation = t;
 }
@@ -39,7 +39,7 @@ bool Geurchar::onCollision(Element &element)
         oueurj.teleportations.emplace_back(this->teleportation);
 
         // remove the element from the board
-        this->board->removeElement(this);
+        this->board->removeElement(*this);
 
     }
     return true;

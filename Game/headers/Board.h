@@ -41,8 +41,8 @@ public:
     void boardSave();
 
     Element* getElement(const Position &position);
-    bool addElement(Element *element);
-    bool removeElement(Element *element);
+    bool addElement(Element &element);
+    bool removeElement(Element &element);
     void moveElement(Position oldPosition,Position newPosition);
     void updateSuperposedElements();
     string getBoardName();

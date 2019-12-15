@@ -9,7 +9,7 @@ SStreumon::SStreumon() {
     srand (time(NULL));
 }
 
-SStreumon::SStreumon(Position &p, Board *b) : Element('s', p, b) {
+SStreumon::SStreumon(Position p, Board &b) : Element('s', p, b) {
     srand (time(NULL));
 }
 
@@ -22,7 +22,7 @@ bool SStreumon::onCollision(Element &element) {
 }
 
 void SStreumon::move() {
-    long moveTo=random()%8;
+    long moveTo=1;//random()%8;
     Position newPosition;
     switch (moveTo){
         case 0:
@@ -44,7 +44,7 @@ void SStreumon::move() {
     };
 
 
-    cout<<moveTo<<" "<<newPosition.getX()<<"."<<newPosition.getY();
+    //cout<<moveTo<<" "<<newPosition.getX()<<"."<<newPosition.getY();
 
     if(this->board->getElement(newPosition)->onCollision(*this)){
         this->board->moveElement(this->getPosition(),newPosition);

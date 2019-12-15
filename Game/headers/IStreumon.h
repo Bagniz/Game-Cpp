@@ -13,7 +13,7 @@ class IStreumon : public Element, CollisionEffect, MovingElement
 {
 public:
     IStreumon();
-    IStreumon(Position &p, Board *b);
+    IStreumon(Position p, Board &b);
     bool onCollision(Element &element);
     void move();
     ~IStreumon();

@@ -43,12 +43,14 @@ int main(int argc, char** argv)
 {
     srand (time(NULL));
 
-    int size=20;
+    const int size=20;
 
     Board board("first_try",size);
-    Position position(0,0);
-    Reumu reumu(position, &board);
-    Element element(' ',position,&board);
+
+    Position position;
+
+    Reumu reumu(position, board);
+    Element element(' ',position,board);
 
     switch (rand()%2){
         case 0:
@@ -58,42 +60,42 @@ int main(int argc, char** argv)
             position.setX((rand()%2)*(size-1));
             position.setY(rand()%size);
     }
-    Teupor teupor(position,&board);
+    Teupor teupor(position,board);
 
     position=generatePosition(size);
-    Oueurj oueurj(position,&board);
+    Oueurj oueurj(position,board);
 
     position=generatePosition(size);
-    Diam diam(position,teupor,&board);
+    Diam diam(position,teupor,board);
 
     position=generatePosition(size);
-    Geurchar geurchar(position,Teleportations::RandomTeleportation,&board);
+    Geurchar geurchar(position,Teleportations::RandomTeleportation,board);
 
     position=generatePosition(size);
-    SStreumon sStreumon(position,&board);
+    SStreumon sStreumon(position,board);
 
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < size; ++j) {
             if (teupor.getPosition().getX()==i && teupor.getPosition().getY()==j){
-                board.addElement(&teupor);
+                board.addElement(teupor);
             }else if (i==0 || j==0 || j==size-1 || i==size-1){
                 position.setX(i);
                 position.setY(j);
                 reumu.setPosition(position);
-                board.addElement(&reumu);
+                board.addElement(reumu);
             } else if (oueurj.getPosition().getX()==i && oueurj.getPosition().getY()==j){
-                board.addElement(&oueurj);
+                board.addElement(oueurj);
             } else if (diam.getPosition().getX()==i && diam.getPosition().getY()==j){
-                board.addElement(&diam);
+                board.addElement(diam);
             } else if (geurchar.getPosition().getX()==i && geurchar.getPosition().getY()==j){
-                board.addElement(&geurchar);
+                board.addElement(geurchar);
             } else if (sStreumon.getPosition().getX()==i && geurchar.getPosition().getY()==j){
-                board.addElement(&sStreumon);
+                board.addElement(sStreumon);
             } else{
                 position.setX(i);
                 position.setY(j);
                 element.setPosition(position);
-                board.addElement(&element);
+                board.addElement(element);
             }
         }
     }

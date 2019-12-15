@@ -8,13 +8,13 @@ Diam::Diam() {
 
 }
 
-Diam::Diam(Position &p, Teupor &t, Board *b):teupor(t),Element('$', p, b){
+Diam::Diam(Position p, Teupor &t, Board &b):teupor(&t),Element('$', p, b){
 }
 
 bool Diam::onCollision(Element &element) {
     if(element.getSymbole()=='j'){
-        this->teupor.setSymbole('+');
-        this->board->removeElement(this);
+        this->teupor->setSymbole('+');
+        this->board->removeElement(*this);
     }
     return true;
 }

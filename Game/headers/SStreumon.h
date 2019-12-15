@@ -13,7 +13,7 @@ class SStreumon : public Element, CollisionEffect, MovingElement
 {
 public:
     SStreumon();
-    SStreumon(Position &p, Board *b);
+    SStreumon(Position p, Board &b);
     bool onCollision(Element &element);
     void move();
     ~SStreumon();

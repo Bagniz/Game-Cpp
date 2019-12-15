@@ -8,7 +8,7 @@ Teupor::Teupor() {
 
 }
 
-Teupor::Teupor(Position &p, Board *b) : Element('-', p, b) {
+Teupor::Teupor(Position p, Board &b) : Element('-', p, b) {
 }
 
 bool Teupor::onCollision(Element &element) {
