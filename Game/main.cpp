@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <list>
 #include "headers/Board.h"
 #include "headers/Reumu.h"
 #include "headers/Oueurj.h"
@@ -8,6 +9,8 @@
 #include "headers/Teleportations.h"
 #include "headers/Geurchar.h"
 #include "headers/SStreumon.h"
+#include "headers/Position.h"
+
 
 using namespace std;
 
@@ -23,6 +26,11 @@ bool gameLoad(char** argv)
 
 bool operator==(const Position &p, const Position &p1) {
     return p.x == p1.x && p.y == p1.y;
+}
+
+ostream &operator<<(ostream &flux, Position const &position) {
+    flux<<"("<<position.getX()<<"."<<position.getY()<<")";
+    return flux;
 }
 
 vector<Position> positions;
@@ -49,53 +57,32 @@ int main(int argc, char** argv)
 
     Position position;
 
-    Reumu reumu(position, board);
-    Element element(' ',position,board);
+    std::list<Reumu> reumus;
+    std::list<Element> espaces;
 
-    switch (rand()%2){
-        case 0:
-            position.setX(rand()%size);
-            position.setY((rand()%2)*(size-1));
-        case 1:
-            position.setX((rand()%2)*(size-1));
-            position.setY(rand()%size);
-    }
-    Teupor teupor(position,board);
-
-    position=generatePosition(size);
-    Oueurj oueurj(position,board);
-
-    position=generatePosition(size);
-    Diam diam(position,teupor,board);
-
-    position=generatePosition(size);
-    Geurchar geurchar(position,Teleportations::RandomTeleportation,board);
-
-    position=generatePosition(size);
-    SStreumon sStreumon(position,board);
-
+    Teupor teupor(Position(0,10),board);
+    Oueurj oueurj(generatePosition(size),board);
+    Diam diam(generatePosition(size),teupor,board);
+    Geurchar geurchar(generatePosition(size),Teleportations::RandomTeleportation,board);
+    SStreumon sStreumon(generatePosition(size),board);
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < size; ++j) {
             if (teupor.getPosition().getX()==i && teupor.getPosition().getY()==j){
                 board.addElement(teupor);
             }else if (i==0 || j==0 || j==size-1 || i==size-1){
-                position.setX(i);
-                position.setY(j);
-                reumu.setPosition(position);
-                board.addElement(reumu);
+                reumus.emplace_back(Reumu(Position(i, j), board));
+                board.addElement(reumus.back());
             } else if (oueurj.getPosition().getX()==i && oueurj.getPosition().getY()==j){
                 board.addElement(oueurj);
             } else if (diam.getPosition().getX()==i && diam.getPosition().getY()==j){
                 board.addElement(diam);
             } else if (geurchar.getPosition().getX()==i && geurchar.getPosition().getY()==j){
                 board.addElement(geurchar);
-            } else if (sStreumon.getPosition().getX()==i && geurchar.getPosition().getY()==j){
+            } else if (sStreumon.getPosition().getX()==i && sStreumon.getPosition().getY()==j){
                 board.addElement(sStreumon);
             } else{
-                position.setX(i);
-                position.setY(j);
-                element.setPosition(position);
-                board.addElement(element);
+                espaces.emplace_back(Element(' ',Position(i,j),board));
+                board.addElement(espaces.back());
             }
         }
     }

@@ -22,33 +22,30 @@ bool SStreumon::onCollision(Element &element) {
 }
 
 void SStreumon::move() {
-    long moveTo=1;//random()%8;
+    int moveTo=rand()%8;
     Position newPosition;
-    switch (moveTo){
-        case 0:
-            newPosition = Position(this->position.getX() - 1, this->position.getY() - 1);
-        case 1:
-            newPosition = Position(this->position.getX(), this->position.getY() - 1);
-        case 2:
-            newPosition = Position(this->position.getX() + 1, this->position.getY() - 1);
-        case 3:
-            newPosition = Position(this->position.getX() + 1, this->position.getY());
-        case 4:
-            newPosition = Position(this->position.getX() + 1, this->position.getY() + 1);
-        case 5:
-            newPosition = Position(this->position.getX(), this->position.getY() + 1);
-        case 6:
-            newPosition = Position(this->position.getX() - 1, this->position.getY() + 1);
-        case 7:
-            newPosition = Position(this->position.getX() - 1, this->position.getY());
-    };
 
-
-    //cout<<moveTo<<" "<<newPosition.getX()<<"."<<newPosition.getY();
-
+    if(moveTo==0){
+        newPosition = Position(this->position.getX() - 1, this->position.getY() - 1);
+    } else if (moveTo==1){
+        newPosition = Position(this->position.getX(), this->position.getY() - 1);
+    } else if (moveTo==2){
+        newPosition = Position(this->position.getX() + 1, this->position.getY() - 1);
+    } else if (moveTo==3){
+        newPosition = Position(this->position.getX() + 1, this->position.getY());
+    } else if (moveTo==4){
+        newPosition = Position(this->position.getX() + 1, this->position.getY() + 1);
+    } else if (moveTo==5){
+        newPosition = Position(this->position.getX(), this->position.getY() + 1);
+    } else if (moveTo==6) {
+        newPosition = Position(this->position.getX() - 1, this->position.getY() + 1);
+    } else if (moveTo==7){
+        newPosition = Position(this->position.getX() - 1, this->position.getY());
+    }
     if(this->board->getElement(newPosition)->onCollision(*this)){
         this->board->moveElement(this->getPosition(),newPosition);
-        this->position=newPosition;
+        this->position.setX(newPosition.getX());
+        this->position.setY(newPosition.getY());
     }
 }
 

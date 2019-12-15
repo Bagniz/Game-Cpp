@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <thread>
 #include "../headers/Board.h"
 #include "../headers/Element.h"
 #include "../headers/Oueurj.h"
@@ -26,9 +27,9 @@ Board::Board(string name,int size) {
 }
 
 bool Board::boardPlay() {
-
+    displayBoard();
     int time=0;
-    while (endBoard == 0 && time<2){
+    while (endBoard == 0 && time<100){
         //moving elements
         for (int i = 0; i < movingElements.size(); ++i) {
             Oueurj *j;
@@ -48,6 +49,7 @@ bool Board::boardPlay() {
         this->displayBoard();
 
         time++;
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
     return endBoard == 1;
 }
@@ -80,7 +82,7 @@ void Board::displayBoard() {
     //double loop to print the board
     for (auto i =elements.begin();i!=elements.end();++i) {
         for (auto j=i->begin();j!=i->end();++j) {
-            std::cout<<j.operator*()->getSymbole();//"("<<j.operator*()->getPosition().getX()<<"."<<j.operator*()->getPosition().getY()<<") ";
+            std::cout<<j.operator*()->getSymbole();
         }
         std::cout<<"\n";
     }
@@ -89,7 +91,7 @@ void Board::displayBoard() {
 bool Board::addElement(Element &element) {
 
     this->elements[element.getPosition().getX()].emplace_back(&element);
-    //[element.getPosition().getY()]=&element;
+
     if (element.getSymbole()=='j'||element.getSymbole()=='s'){
         movingElements.push_back(&element);
     }
@@ -113,15 +115,17 @@ Element* Board::getElement(const Position &position) {
 }
 
 void Board::moveElement(Position oldPosition, Position newPosition) {
-    cout<<"moving "<<getElement(oldPosition)->getSymbole()<<" to "<<getElement(newPosition)->getSymbole()<<endl;
+
+    cout<<oldPosition<<this->getElement(oldPosition)->getSymbole()<<"="<<elements[oldPosition.getX()][oldPosition.getY()]->getPosition()<<
+    newPosition<<this->getElement(newPosition)->getSymbole()<<"="<<elements[newPosition.getX()][newPosition.getY()]->getPosition()<<endl;
+
     //storing the superposed element
     if(this->getElement(newPosition)->getSymbole()!=' '){
         this->superposedElements.push_back(this->getElement(newPosition));
     }
     //swaping the elements
     this->elements[newPosition.getX()][newPosition.getY()]=this->getElement(oldPosition);
-    //Element e(' ',oldPosition, this);
-    //this->elements[oldPosition.getX()][oldPosition.getY()]=&e;
+
 }
 
 void Board::updateSuperposedElements() {
