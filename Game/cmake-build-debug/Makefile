@@ -48,10 +48,10 @@ RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bagniz/dev/code/C++/Game-Cpp/Game
+CMAKE_SOURCE_DIR = /home/bagniz/dev/code/C++/Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bagniz/dev/code/C++/Game/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles /home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,356 +150,383 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sources/Board.o: sources/Board.cpp.o
+source/Board.o: source/Board.cpp.o
 
-.PHONY : sources/Board.o
-
-# target to build an object file
-sources/Board.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Board.cpp.o
-.PHONY : sources/Board.cpp.o
-
-sources/Board.i: sources/Board.cpp.i
-
-.PHONY : sources/Board.i
-
-# target to preprocess a source file
-sources/Board.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Board.cpp.i
-.PHONY : sources/Board.cpp.i
-
-sources/Board.s: sources/Board.cpp.s
-
-.PHONY : sources/Board.s
-
-# target to generate assembly for a file
-sources/Board.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Board.cpp.s
-.PHONY : sources/Board.cpp.s
-
-sources/Diam.o: sources/Diam.cpp.o
-
-.PHONY : sources/Diam.o
+.PHONY : source/Board.o
 
 # target to build an object file
-sources/Diam.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Diam.cpp.o
-.PHONY : sources/Diam.cpp.o
+source/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Board.cpp.o
+.PHONY : source/Board.cpp.o
 
-sources/Diam.i: sources/Diam.cpp.i
+source/Board.i: source/Board.cpp.i
 
-.PHONY : sources/Diam.i
+.PHONY : source/Board.i
 
 # target to preprocess a source file
-sources/Diam.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Diam.cpp.i
-.PHONY : sources/Diam.cpp.i
+source/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Board.cpp.i
+.PHONY : source/Board.cpp.i
 
-sources/Diam.s: sources/Diam.cpp.s
+source/Board.s: source/Board.cpp.s
 
-.PHONY : sources/Diam.s
+.PHONY : source/Board.s
 
 # target to generate assembly for a file
-sources/Diam.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Diam.cpp.s
-.PHONY : sources/Diam.cpp.s
+source/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Board.cpp.s
+.PHONY : source/Board.cpp.s
 
-sources/Element.o: sources/Element.cpp.o
+source/Diam.o: source/Diam.cpp.o
 
-.PHONY : sources/Element.o
+.PHONY : source/Diam.o
 
 # target to build an object file
-sources/Element.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Element.cpp.o
-.PHONY : sources/Element.cpp.o
+source/Diam.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Diam.cpp.o
+.PHONY : source/Diam.cpp.o
 
-sources/Element.i: sources/Element.cpp.i
+source/Diam.i: source/Diam.cpp.i
 
-.PHONY : sources/Element.i
+.PHONY : source/Diam.i
 
 # target to preprocess a source file
-sources/Element.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Element.cpp.i
-.PHONY : sources/Element.cpp.i
+source/Diam.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Diam.cpp.i
+.PHONY : source/Diam.cpp.i
 
-sources/Element.s: sources/Element.cpp.s
+source/Diam.s: source/Diam.cpp.s
 
-.PHONY : sources/Element.s
+.PHONY : source/Diam.s
 
 # target to generate assembly for a file
-sources/Element.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Element.cpp.s
-.PHONY : sources/Element.cpp.s
+source/Diam.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Diam.cpp.s
+.PHONY : source/Diam.cpp.s
 
-sources/Game.o: sources/Game.cpp.o
+source/Element.o: source/Element.cpp.o
 
-.PHONY : sources/Game.o
+.PHONY : source/Element.o
 
 # target to build an object file
-sources/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Game.cpp.o
-.PHONY : sources/Game.cpp.o
+source/Element.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Element.cpp.o
+.PHONY : source/Element.cpp.o
 
-sources/Game.i: sources/Game.cpp.i
+source/Element.i: source/Element.cpp.i
 
-.PHONY : sources/Game.i
+.PHONY : source/Element.i
 
 # target to preprocess a source file
-sources/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Game.cpp.i
-.PHONY : sources/Game.cpp.i
+source/Element.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Element.cpp.i
+.PHONY : source/Element.cpp.i
 
-sources/Game.s: sources/Game.cpp.s
+source/Element.s: source/Element.cpp.s
 
-.PHONY : sources/Game.s
+.PHONY : source/Element.s
 
 # target to generate assembly for a file
-sources/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Game.cpp.s
-.PHONY : sources/Game.cpp.s
+source/Element.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Element.cpp.s
+.PHONY : source/Element.cpp.s
 
-sources/Geurchar.o: sources/Geurchar.cpp.o
+source/Game.o: source/Game.cpp.o
 
-.PHONY : sources/Geurchar.o
+.PHONY : source/Game.o
 
 # target to build an object file
-sources/Geurchar.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Geurchar.cpp.o
-.PHONY : sources/Geurchar.cpp.o
+source/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Game.cpp.o
+.PHONY : source/Game.cpp.o
 
-sources/Geurchar.i: sources/Geurchar.cpp.i
+source/Game.i: source/Game.cpp.i
 
-.PHONY : sources/Geurchar.i
+.PHONY : source/Game.i
 
 # target to preprocess a source file
-sources/Geurchar.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Geurchar.cpp.i
-.PHONY : sources/Geurchar.cpp.i
+source/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Game.cpp.i
+.PHONY : source/Game.cpp.i
 
-sources/Geurchar.s: sources/Geurchar.cpp.s
+source/Game.s: source/Game.cpp.s
 
-.PHONY : sources/Geurchar.s
+.PHONY : source/Game.s
 
 # target to generate assembly for a file
-sources/Geurchar.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Geurchar.cpp.s
-.PHONY : sources/Geurchar.cpp.s
+source/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Game.cpp.s
+.PHONY : source/Game.cpp.s
 
-sources/IStreumon.o: sources/IStreumon.cpp.o
+source/Geurchar.o: source/Geurchar.cpp.o
 
-.PHONY : sources/IStreumon.o
+.PHONY : source/Geurchar.o
 
 # target to build an object file
-sources/IStreumon.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/IStreumon.cpp.o
-.PHONY : sources/IStreumon.cpp.o
+source/Geurchar.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Geurchar.cpp.o
+.PHONY : source/Geurchar.cpp.o
 
-sources/IStreumon.i: sources/IStreumon.cpp.i
+source/Geurchar.i: source/Geurchar.cpp.i
 
-.PHONY : sources/IStreumon.i
+.PHONY : source/Geurchar.i
 
 # target to preprocess a source file
-sources/IStreumon.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/IStreumon.cpp.i
-.PHONY : sources/IStreumon.cpp.i
+source/Geurchar.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Geurchar.cpp.i
+.PHONY : source/Geurchar.cpp.i
 
-sources/IStreumon.s: sources/IStreumon.cpp.s
+source/Geurchar.s: source/Geurchar.cpp.s
 
-.PHONY : sources/IStreumon.s
+.PHONY : source/Geurchar.s
 
 # target to generate assembly for a file
-sources/IStreumon.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/IStreumon.cpp.s
-.PHONY : sources/IStreumon.cpp.s
+source/Geurchar.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Geurchar.cpp.s
+.PHONY : source/Geurchar.cpp.s
 
-sources/Oueurj.o: sources/Oueurj.cpp.o
+source/IStreumon.o: source/IStreumon.cpp.o
 
-.PHONY : sources/Oueurj.o
+.PHONY : source/IStreumon.o
 
 # target to build an object file
-sources/Oueurj.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Oueurj.cpp.o
-.PHONY : sources/Oueurj.cpp.o
+source/IStreumon.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/IStreumon.cpp.o
+.PHONY : source/IStreumon.cpp.o
 
-sources/Oueurj.i: sources/Oueurj.cpp.i
+source/IStreumon.i: source/IStreumon.cpp.i
 
-.PHONY : sources/Oueurj.i
+.PHONY : source/IStreumon.i
 
 # target to preprocess a source file
-sources/Oueurj.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Oueurj.cpp.i
-.PHONY : sources/Oueurj.cpp.i
+source/IStreumon.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/IStreumon.cpp.i
+.PHONY : source/IStreumon.cpp.i
 
-sources/Oueurj.s: sources/Oueurj.cpp.s
+source/IStreumon.s: source/IStreumon.cpp.s
 
-.PHONY : sources/Oueurj.s
+.PHONY : source/IStreumon.s
 
 # target to generate assembly for a file
-sources/Oueurj.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Oueurj.cpp.s
-.PHONY : sources/Oueurj.cpp.s
+source/IStreumon.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/IStreumon.cpp.s
+.PHONY : source/IStreumon.cpp.s
 
-sources/PStreumon.o: sources/PStreumon.cpp.o
+source/Oueurj.o: source/Oueurj.cpp.o
 
-.PHONY : sources/PStreumon.o
+.PHONY : source/Oueurj.o
 
 # target to build an object file
-sources/PStreumon.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/PStreumon.cpp.o
-.PHONY : sources/PStreumon.cpp.o
+source/Oueurj.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Oueurj.cpp.o
+.PHONY : source/Oueurj.cpp.o
 
-sources/PStreumon.i: sources/PStreumon.cpp.i
+source/Oueurj.i: source/Oueurj.cpp.i
 
-.PHONY : sources/PStreumon.i
+.PHONY : source/Oueurj.i
 
 # target to preprocess a source file
-sources/PStreumon.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/PStreumon.cpp.i
-.PHONY : sources/PStreumon.cpp.i
+source/Oueurj.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Oueurj.cpp.i
+.PHONY : source/Oueurj.cpp.i
 
-sources/PStreumon.s: sources/PStreumon.cpp.s
+source/Oueurj.s: source/Oueurj.cpp.s
 
-.PHONY : sources/PStreumon.s
+.PHONY : source/Oueurj.s
 
 # target to generate assembly for a file
-sources/PStreumon.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/PStreumon.cpp.s
-.PHONY : sources/PStreumon.cpp.s
+source/Oueurj.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Oueurj.cpp.s
+.PHONY : source/Oueurj.cpp.s
 
-sources/Position.o: sources/Position.cpp.o
+source/PStreumon.o: source/PStreumon.cpp.o
 
-.PHONY : sources/Position.o
+.PHONY : source/PStreumon.o
 
 # target to build an object file
-sources/Position.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Position.cpp.o
-.PHONY : sources/Position.cpp.o
+source/PStreumon.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/PStreumon.cpp.o
+.PHONY : source/PStreumon.cpp.o
 
-sources/Position.i: sources/Position.cpp.i
+source/PStreumon.i: source/PStreumon.cpp.i
 
-.PHONY : sources/Position.i
+.PHONY : source/PStreumon.i
 
 # target to preprocess a source file
-sources/Position.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Position.cpp.i
-.PHONY : sources/Position.cpp.i
+source/PStreumon.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/PStreumon.cpp.i
+.PHONY : source/PStreumon.cpp.i
 
-sources/Position.s: sources/Position.cpp.s
+source/PStreumon.s: source/PStreumon.cpp.s
 
-.PHONY : sources/Position.s
+.PHONY : source/PStreumon.s
 
 # target to generate assembly for a file
-sources/Position.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Position.cpp.s
-.PHONY : sources/Position.cpp.s
+source/PStreumon.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/PStreumon.cpp.s
+.PHONY : source/PStreumon.cpp.s
 
-sources/Reumu.o: sources/Reumu.cpp.o
+source/Position.o: source/Position.cpp.o
 
-.PHONY : sources/Reumu.o
+.PHONY : source/Position.o
 
 # target to build an object file
-sources/Reumu.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Reumu.cpp.o
-.PHONY : sources/Reumu.cpp.o
+source/Position.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Position.cpp.o
+.PHONY : source/Position.cpp.o
 
-sources/Reumu.i: sources/Reumu.cpp.i
+source/Position.i: source/Position.cpp.i
 
-.PHONY : sources/Reumu.i
+.PHONY : source/Position.i
 
 # target to preprocess a source file
-sources/Reumu.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Reumu.cpp.i
-.PHONY : sources/Reumu.cpp.i
+source/Position.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Position.cpp.i
+.PHONY : source/Position.cpp.i
 
-sources/Reumu.s: sources/Reumu.cpp.s
+source/Position.s: source/Position.cpp.s
 
-.PHONY : sources/Reumu.s
+.PHONY : source/Position.s
 
 # target to generate assembly for a file
-sources/Reumu.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Reumu.cpp.s
-.PHONY : sources/Reumu.cpp.s
+source/Position.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Position.cpp.s
+.PHONY : source/Position.cpp.s
 
-sources/SStreumon.o: sources/SStreumon.cpp.o
+source/Reumu.o: source/Reumu.cpp.o
 
-.PHONY : sources/SStreumon.o
+.PHONY : source/Reumu.o
 
 # target to build an object file
-sources/SStreumon.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/SStreumon.cpp.o
-.PHONY : sources/SStreumon.cpp.o
+source/Reumu.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Reumu.cpp.o
+.PHONY : source/Reumu.cpp.o
 
-sources/SStreumon.i: sources/SStreumon.cpp.i
+source/Reumu.i: source/Reumu.cpp.i
 
-.PHONY : sources/SStreumon.i
+.PHONY : source/Reumu.i
 
 # target to preprocess a source file
-sources/SStreumon.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/SStreumon.cpp.i
-.PHONY : sources/SStreumon.cpp.i
+source/Reumu.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Reumu.cpp.i
+.PHONY : source/Reumu.cpp.i
 
-sources/SStreumon.s: sources/SStreumon.cpp.s
+source/Reumu.s: source/Reumu.cpp.s
 
-.PHONY : sources/SStreumon.s
+.PHONY : source/Reumu.s
 
 # target to generate assembly for a file
-sources/SStreumon.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/SStreumon.cpp.s
-.PHONY : sources/SStreumon.cpp.s
+source/Reumu.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Reumu.cpp.s
+.PHONY : source/Reumu.cpp.s
 
-sources/Teupor.o: sources/Teupor.cpp.o
+source/SStreumon.o: source/SStreumon.cpp.o
 
-.PHONY : sources/Teupor.o
+.PHONY : source/SStreumon.o
 
 # target to build an object file
-sources/Teupor.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Teupor.cpp.o
-.PHONY : sources/Teupor.cpp.o
+source/SStreumon.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/SStreumon.cpp.o
+.PHONY : source/SStreumon.cpp.o
 
-sources/Teupor.i: sources/Teupor.cpp.i
+source/SStreumon.i: source/SStreumon.cpp.i
 
-.PHONY : sources/Teupor.i
+.PHONY : source/SStreumon.i
 
 # target to preprocess a source file
-sources/Teupor.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Teupor.cpp.i
-.PHONY : sources/Teupor.cpp.i
+source/SStreumon.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/SStreumon.cpp.i
+.PHONY : source/SStreumon.cpp.i
 
-sources/Teupor.s: sources/Teupor.cpp.s
+source/SStreumon.s: source/SStreumon.cpp.s
 
-.PHONY : sources/Teupor.s
+.PHONY : source/SStreumon.s
 
 # target to generate assembly for a file
-sources/Teupor.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/Teupor.cpp.s
-.PHONY : sources/Teupor.cpp.s
+source/SStreumon.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/SStreumon.cpp.s
+.PHONY : source/SStreumon.cpp.s
 
-sources/XStreumon.o: sources/XStreumon.cpp.o
+source/Teupor.o: source/Teupor.cpp.o
 
-.PHONY : sources/XStreumon.o
+.PHONY : source/Teupor.o
 
 # target to build an object file
-sources/XStreumon.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/XStreumon.cpp.o
-.PHONY : sources/XStreumon.cpp.o
+source/Teupor.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Teupor.cpp.o
+.PHONY : source/Teupor.cpp.o
 
-sources/XStreumon.i: sources/XStreumon.cpp.i
+source/Teupor.i: source/Teupor.cpp.i
 
-.PHONY : sources/XStreumon.i
+.PHONY : source/Teupor.i
 
 # target to preprocess a source file
-sources/XStreumon.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/XStreumon.cpp.i
-.PHONY : sources/XStreumon.cpp.i
+source/Teupor.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Teupor.cpp.i
+.PHONY : source/Teupor.cpp.i
 
-sources/XStreumon.s: sources/XStreumon.cpp.s
+source/Teupor.s: source/Teupor.cpp.s
 
-.PHONY : sources/XStreumon.s
+.PHONY : source/Teupor.s
 
 # target to generate assembly for a file
-sources/XStreumon.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/sources/XStreumon.cpp.s
-.PHONY : sources/XStreumon.cpp.s
+source/Teupor.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/Teupor.cpp.s
+.PHONY : source/Teupor.cpp.s
+
+source/XStreumon.o: source/XStreumon.cpp.o
+
+.PHONY : source/XStreumon.o
+
+# target to build an object file
+source/XStreumon.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/XStreumon.cpp.o
+.PHONY : source/XStreumon.cpp.o
+
+source/XStreumon.i: source/XStreumon.cpp.i
+
+.PHONY : source/XStreumon.i
+
+# target to preprocess a source file
+source/XStreumon.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/XStreumon.cpp.i
+.PHONY : source/XStreumon.cpp.i
+
+source/XStreumon.s: source/XStreumon.cpp.s
+
+.PHONY : source/XStreumon.s
+
+# target to generate assembly for a file
+source/XStreumon.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/XStreumon.cpp.s
+.PHONY : source/XStreumon.cpp.s
+
+source/clicked_char.o: source/clicked_char.cpp.o
+
+.PHONY : source/clicked_char.o
+
+# target to build an object file
+source/clicked_char.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/clicked_char.cpp.o
+.PHONY : source/clicked_char.cpp.o
+
+source/clicked_char.i: source/clicked_char.cpp.i
+
+.PHONY : source/clicked_char.i
+
+# target to preprocess a source file
+source/clicked_char.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/clicked_char.cpp.i
+.PHONY : source/clicked_char.cpp.i
+
+source/clicked_char.s: source/clicked_char.cpp.s
+
+.PHONY : source/clicked_char.s
+
+# target to generate assembly for a file
+source/clicked_char.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/clicked_char.cpp.s
+.PHONY : source/clicked_char.cpp.s
 
 # Help Target
 help:
@@ -513,45 +540,48 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sources/Board.o"
-	@echo "... sources/Board.i"
-	@echo "... sources/Board.s"
-	@echo "... sources/Diam.o"
-	@echo "... sources/Diam.i"
-	@echo "... sources/Diam.s"
-	@echo "... sources/Element.o"
-	@echo "... sources/Element.i"
-	@echo "... sources/Element.s"
-	@echo "... sources/Game.o"
-	@echo "... sources/Game.i"
-	@echo "... sources/Game.s"
-	@echo "... sources/Geurchar.o"
-	@echo "... sources/Geurchar.i"
-	@echo "... sources/Geurchar.s"
-	@echo "... sources/IStreumon.o"
-	@echo "... sources/IStreumon.i"
-	@echo "... sources/IStreumon.s"
-	@echo "... sources/Oueurj.o"
-	@echo "... sources/Oueurj.i"
-	@echo "... sources/Oueurj.s"
-	@echo "... sources/PStreumon.o"
-	@echo "... sources/PStreumon.i"
-	@echo "... sources/PStreumon.s"
-	@echo "... sources/Position.o"
-	@echo "... sources/Position.i"
-	@echo "... sources/Position.s"
-	@echo "... sources/Reumu.o"
-	@echo "... sources/Reumu.i"
-	@echo "... sources/Reumu.s"
-	@echo "... sources/SStreumon.o"
-	@echo "... sources/SStreumon.i"
-	@echo "... sources/SStreumon.s"
-	@echo "... sources/Teupor.o"
-	@echo "... sources/Teupor.i"
-	@echo "... sources/Teupor.s"
-	@echo "... sources/XStreumon.o"
-	@echo "... sources/XStreumon.i"
-	@echo "... sources/XStreumon.s"
+	@echo "... source/Board.o"
+	@echo "... source/Board.i"
+	@echo "... source/Board.s"
+	@echo "... source/Diam.o"
+	@echo "... source/Diam.i"
+	@echo "... source/Diam.s"
+	@echo "... source/Element.o"
+	@echo "... source/Element.i"
+	@echo "... source/Element.s"
+	@echo "... source/Game.o"
+	@echo "... source/Game.i"
+	@echo "... source/Game.s"
+	@echo "... source/Geurchar.o"
+	@echo "... source/Geurchar.i"
+	@echo "... source/Geurchar.s"
+	@echo "... source/IStreumon.o"
+	@echo "... source/IStreumon.i"
+	@echo "... source/IStreumon.s"
+	@echo "... source/Oueurj.o"
+	@echo "... source/Oueurj.i"
+	@echo "... source/Oueurj.s"
+	@echo "... source/PStreumon.o"
+	@echo "... source/PStreumon.i"
+	@echo "... source/PStreumon.s"
+	@echo "... source/Position.o"
+	@echo "... source/Position.i"
+	@echo "... source/Position.s"
+	@echo "... source/Reumu.o"
+	@echo "... source/Reumu.i"
+	@echo "... source/Reumu.s"
+	@echo "... source/SStreumon.o"
+	@echo "... source/SStreumon.i"
+	@echo "... source/SStreumon.s"
+	@echo "... source/Teupor.o"
+	@echo "... source/Teupor.i"
+	@echo "... source/Teupor.s"
+	@echo "... source/XStreumon.o"
+	@echo "... source/XStreumon.i"
+	@echo "... source/XStreumon.s"
+	@echo "... source/clicked_char.o"
+	@echo "... source/clicked_char.i"
+	@echo "... source/clicked_char.s"
 .PHONY : help
 
 

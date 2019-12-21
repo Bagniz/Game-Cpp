@@ -4,20 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Board.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Board.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Diam.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Diam.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Element.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Element.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Game.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Game.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Geurchar.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Geurchar.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/IStreumon.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/IStreumon.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Oueurj.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Oueurj.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/PStreumon.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/PStreumon.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Position.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Position.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Reumu.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Reumu.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/SStreumon.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/SStreumon.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/Teupor.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/Teupor.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/sources/XStreumon.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/sources/XStreumon.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/main.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Board.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Board.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Diam.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Diam.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Element.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Element.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Game.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Game.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Geurchar.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Geurchar.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/IStreumon.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/IStreumon.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Oueurj.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Oueurj.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/PStreumon.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/PStreumon.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Position.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Position.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Reumu.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Reumu.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/SStreumon.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/SStreumon.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/Teupor.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Teupor.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/XStreumon.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/XStreumon.cpp.o"
+  "/home/bagniz/dev/code/C++/Game/source/clicked_char.cpp" "/home/bagniz/dev/code/C++/Game/cmake-build-debug/CMakeFiles/Game.dir/source/clicked_char.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
