@@ -1,25 +1,3 @@
 # Work
 
-## Akram
-* SStreumon
-* IStreumon
-* Teupor
-* Diam
-
-## Salim
-* Game
-* Board
-* XStreumon
-* PStreumon
-* Oueurj
-* Geurchar
-* Reumu
-* Element
-
-## Symboles
-* Geurchars: *
-* Streumon: s
-* Reumu: x
-* Diam: $
-* Teupor: +(Open) -(Close)
-* Oueurj: j
+Check out the TODOs in the IDE and choose what to do.
