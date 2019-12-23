@@ -15,8 +15,9 @@ using namespace std;
 class Game
 {
 private:
-    string gameName, currentBoard;
+    string gameName;
     Score playerScore;
+    Board* currentBoard;
     vector<Score*> playerTopTenScores;
     vector<Board*> gameBoards;
 
@@ -31,6 +32,12 @@ public:
     bool addBoard(Board* board);
     bool removeBoard(const string& boardName);
     bool saveNewTopScore(Score* score);
+    string getGameName() const;
+    Score getPlayerScore() const;
+    Board* getCurrentBoard() const;
+    void setGameName(const string& name);
+    void setPlayerScore(Score& score);
+    void setCurrentBoard(Board* board);
     ~Game();
 };
 

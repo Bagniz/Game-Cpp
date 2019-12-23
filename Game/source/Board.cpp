@@ -118,7 +118,9 @@ void Board::boardSave()
 Board *Board::boardLoad(const string& name)
 {
     Board* board = nullptr;
+    // Open board file
     ifstream boardFile("/home/bagniz/dev/" + name + ".board");
+
     if(boardFile.is_open())
     {
         string word, key, value, boardName;

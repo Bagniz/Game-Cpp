@@ -13,44 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d9f6169-3bef-4d3e-af59-aaaa3d347d6d" name="Default Changelist" comment="nothing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Board.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Diam.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Diam.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Element.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Element.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Game.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Geurchar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Geurchar.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/IStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/IStreumon.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Oueurj.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Oueurj.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/PStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/PStreumon.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Reumu.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Reumu.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/SStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/SStreumon.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Teupor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Teupor.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/XStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/XStreumon.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Game" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Board.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Diam.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Diam.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Element.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Element.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Geurchar.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Geurchar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/IStreumon.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/IStreumon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/PStreumon.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/PStreumon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Position.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Position.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Reumu.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Reumu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/SStreumon.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/SStreumon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Teupor.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Teupor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/XStreumon.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/XStreumon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Board.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Diam.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Diam.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Geurchar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Geurchar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/IStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/IStreumon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Oueurj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Oueurj.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/PStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/PStreumon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/SStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/SStreumon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Teupor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Teupor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/XStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/XStreumon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Game.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +94,7 @@
       <workItem from="1577066032059" duration="141000" />
       <workItem from="1577066359349" duration="136000" />
       <workItem from="1577066563991" duration="79000" />
-      <workItem from="1577107498355" duration="8033000" />
+      <workItem from="1577107498355" duration="11255000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1576962886942</created>
@@ -181,22 +146,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1577065846146" />
-    <state width="1878" height="288" key="GridCell.Tab.0.bottom" timestamp="1577114526630">
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom" timestamp="1577116274144">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577114526630" />
-    <state width="1878" height="288" key="GridCell.Tab.0.center" timestamp="1577114526630">
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577116274144" />
+    <state width="1878" height="288" key="GridCell.Tab.0.center" timestamp="1577116274141">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577114526630" />
-    <state width="1878" height="288" key="GridCell.Tab.0.left" timestamp="1577114526629">
+    <state width="1878" height="288" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577116274141" />
+    <state width="1878" height="288" key="GridCell.Tab.0.left" timestamp="1577116274141">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577114526629" />
-    <state width="1878" height="288" key="GridCell.Tab.0.right" timestamp="1577114526630">
+    <state width="1878" height="288" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577116274141" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right" timestamp="1577116274143">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577114526630" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577116274143" />
     <state width="1878" height="341" key="GridCell.Tab.1.bottom" timestamp="1577113384518">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

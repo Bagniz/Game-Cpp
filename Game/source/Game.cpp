@@ -5,7 +5,7 @@
 #include <fstream>
 #include "../header/Game.h"
 
-Game::Game() : gameName(""), currentBoard(""), playerScore() {}
+Game::Game() : gameName(""), currentBoard(nullptr), playerScore() {}
 
 Game::Game(const string& gameName) : Game()
 {
@@ -22,10 +22,61 @@ void Game::gameOver()
     // TODO: CONTINUE GAME OVER
 }
 
-Game* gameLoad(string name)
+Game* gameLoad(const string& name)
 {
-    // TODO : WRITE GAME LOAD
-    return nullptr;
+    Game* game = nullptr;
+    // Open game file
+    ifstream gameFile(name + ".game");
+
+    if(gameFile.is_open())
+    {
+        string word, key, value;
+        Score score;
+        int counter = 1;
+        game = new Game();
+
+        // Get the game information
+        while(counter < 5 && getline(gameFile, word, '\n'))
+        {
+            // Get the key and the value of the line
+            key = word.substr(0, word.find(':'));
+            value = word.substr(word.find(':') + 1, word.size());
+
+            // Get the value depending of the key
+            if(key == "name")
+                game->setGameName(value);
+            else if(key == "currentBoard")
+                game->setCurrentBoard(Board::boardLoad(value));
+            else if(key == "player")
+                score.playerName = value;
+            else if(key == "score")
+            {
+                score.playerScore = stoi(value);
+                game->setPlayerScore(score);
+            }
+            counter++;
+        }
+
+        // Get topTenScores
+        while(getline(gameFile, word, '\n'))
+        {
+            // Get the key and the value of the line
+            key = word.substr(0, word.find(':'));
+            value = word.substr(word.find(':') + 1, word.size());
+
+            // Get the value depending of the key
+            if(key == "player")
+                score.playerName = value;
+            else if(key == "score")
+            {
+                score.playerScore = stoi(value);
+                game->saveNewTopScore(new Score{score.playerName, score.playerScore});
+            }
+            else if(key == "board")
+                game->addBoard(Board::boardLoad(value));
+        }
+    }
+    return game;
 }
 
 void Game::gameSave()
@@ -36,11 +87,15 @@ void Game::gameSave()
     // Save game info
     gameFile << "name:" << this->gameName << endl;
     gameFile << "currentBoard:" << this->currentBoard << endl;
-    gameFile << "player:" << this->playerScore.playerName << ",score:" << this->playerScore.playerScore << endl;
+    gameFile << "player:" << this->playerScore.playerName << endl;
+    gameFile << "score:" << this->playerScore.playerScore << endl;
 
     // Save the topTenScores
     for(Score* score : this->playerTopTenScores)
-        gameFile << "player:" << score->playerName << ",score:" << score->playerScore << endl;
+    {
+        gameFile << "player:" << score->playerName << endl;
+        gameFile << "score:" << score->playerScore << endl;
+    }
 
     // Save the boards
     for(Board* board : this->gameBoards)
@@ -133,7 +188,39 @@ bool Game::saveNewTopScore(Score* score)
             return true;
         }
     }
+    if(this->playerTopTenScores.size() < 10)
+        this->playerTopTenScores.emplace_back(score);
     return false;
+}
+
+string Game::getGameName() const
+{
+    return this->gameName;
+}
+
+Score Game::getPlayerScore() const
+{
+    return this->playerScore;
+}
+
+Board *Game::getCurrentBoard() const
+{
+    return this->currentBoard;
+}
+
+void Game::setGameName(const string &name)
+{
+    this->gameName = name;
+}
+
+void Game::setPlayerScore(Score& score)
+{
+    this->playerScore = score;
+}
+
+void Game::setCurrentBoard(Board *board)
+{
+    this->currentBoard = board;
 }
 
 Game::~Game() {
