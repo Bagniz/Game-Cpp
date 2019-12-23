@@ -5,7 +5,6 @@
 #ifndef GAME_ISTREUMON_H
 #define GAME_ISTREUMON_H
 
-
 #include "MovingElement.h"
 #include "Element.h"
 

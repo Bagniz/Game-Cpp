@@ -19,7 +19,9 @@ CMakeFiles/Game.dir/main.cpp.o: ../header/XStreumon.h
 CMakeFiles/Game.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Board.h
+CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Diam.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Element.h
+CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Geurchar.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/IStreumon.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/MovingElement.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Oueurj.h
@@ -29,6 +31,7 @@ CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Reumu.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/SStreumon.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Score.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Teleportations.h
+CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Teupor.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/XStreumon.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../source/Board.cpp
 

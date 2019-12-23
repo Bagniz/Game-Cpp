@@ -29,24 +29,27 @@ bool gamePlay(char** argv)
 int main()
 {
     auto* board = new Board("Test", 20, 20);
-    auto* oueurj = new Oueurj(new Position(10,10), board);
-    board->addElement(oueurj);
-    for(vector<Element*> ligne : board->getBoardElements())
-        for(Element* element : ligne)
-            if((element->getPosition()->getX() == 0) || (element->getPosition()->getX() == 19) || (element->getPosition()->getY() == 0) || (element->getPosition()->getY() == 19))
-                board->addElement(new Reumu(element->getPosition(), board));
-    auto* teupor = new Teupor(new Position(5,0), board);
-    board->addElement(teupor);
-    board->addElement(new Diam(new Position(5,5), teupor, board));
-    board->addElement(new Geurchar(new Position(9,9), Teleportations::SmartTeleportation, board));
-    board->addElement(new Geurchar(new Position(14,9), Teleportations::RandomTeleportation, board));
-    board->addElement(new SStreumon(new Position(10,11), board));
-    board->addElement(new PStreumon(new Position(17,17), board));
-    board->addElement(new XStreumon(new Position(1,4), board));
-    board->addElement(new IStreumon(new Position(5,7),board));
-    board->displayBoard();
-    cout << board->boardPlay() << endl;
+//    auto* oueurj = new Oueurj(new Position(10,10), board);
+//    board->addElement(oueurj);
+//    for(vector<Element*> ligne : board->getBoardElements())
+//        for(Element* element : ligne)
+//            if((element->getPosition()->getX() == 0) || (element->getPosition()->getX() == 19) || (element->getPosition()->getY() == 0) || (element->getPosition()->getY() == 19))
+//                board->addElement(new Reumu(element->getPosition(), board));
+//    auto* teupor = new Teupor(new Position(5,0), board);
+//    board->addElement(teupor);
+//    board->addElement(new Diam(new Position(5,5), teupor, board));
+//    board->addElement(new Geurchar(new Position(9,9), Teleportations::SmartTeleportation, board));
+//    board->addElement(new Geurchar(new Position(14,9), Teleportations::RandomTeleportation, board));
+//    board->addElement(new SStreumon(new Position(10,11), board));
+//    board->addElement(new PStreumon(new Position(17,17), board));
+//    board->addElement(new XStreumon(new Position(1,4), board));
+//    board->addElement(new IStreumon(new Position(5,7),board));
+//    board->displayBoard();
+//    cout << board->boardPlay() << endl;
+//    board->boardSave();
 
-//    Board::boardLoad("/home/bagniz/dev/test");
+    board = Board::boardLoad("Test");
+    board->boardPlay();
+
     return 0;
 }

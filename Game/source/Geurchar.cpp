@@ -33,3 +33,8 @@ bool Geurchar::onCollision(Element *element) {
     }
     return false;
 }
+
+Teleportations Geurchar::getTeleportation() const
+{
+    return this->teleportation;
+}

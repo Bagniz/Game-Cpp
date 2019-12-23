@@ -17,11 +17,11 @@ private:
 
 public:
     Diam();
+    Diam(Position* p, Board* b);
     Diam(Position* p, Teupor* t, Board* b);
     bool onCollision(Element* element);
     Teupor* getTeupor() const;
     void setTeuport(Teupor* t);
 };
-
 
 #endif //GAME_DIAM_H

@@ -9,7 +9,6 @@
 #include "Element.h"
 #include "Oueurj.h"
 
-
 class Geurchar : public Element
 {
 private:
@@ -19,6 +18,7 @@ public:
     Geurchar();
     Geurchar(Position* p, Teleportations t, Board* b);
     bool onCollision(Element *element);
+    Teleportations getTeleportation() const;
 };
 
 #endif //GAME_GEURCHAR_H

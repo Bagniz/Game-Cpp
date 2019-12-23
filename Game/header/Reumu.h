@@ -5,7 +5,6 @@
 #ifndef GAME_REUMU_H
 #define GAME_REUMU_H
 
-
 #include "Element.h"
 
 class Reumu : public Element
@@ -15,6 +14,5 @@ public:
     Reumu(Position* p, Board* b);
     bool onCollision(Element* element);
 };
-
 
 #endif //GAME_REUMU_H

@@ -20,7 +20,7 @@ bool Teupor::onCollision(Element *element)
     {
         if(this->symbole == '+')
         {
-            board->setBoardStat(1);
+            board->setBoardState(1);
             return true;
         }
     }

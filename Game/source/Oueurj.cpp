@@ -283,7 +283,7 @@ void Oueurj::move()
         // Case exit game 'delete'
         case 127:
         {
-            this->board->setBoardStat(-1);
+            this->board->setBoardState(-1);
             return;
         }
 

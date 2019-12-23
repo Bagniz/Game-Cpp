@@ -19,7 +19,7 @@ bool PStreumon::onCollision(Element *element)
 {
     if(element->getSymbole() == 'J')
     {
-        board->setBoardStat(-2);
+        board->setBoardState(-2);
         return false;
     }
     return true;
@@ -69,4 +69,3 @@ void PStreumon::move()
     if(this->board->getElement(newPosition)->onCollision(this))
         this->board->moveElement(this->getPosition(), newPosition);
 }
-

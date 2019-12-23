@@ -19,7 +19,7 @@ bool IStreumon::onCollision(Element *element)
 {
     if(element->getSymbole() == 'J')
     {
-        board->setBoardStat(-2);
+        board->setBoardState(-2);
         return false;
     }
     return true;
@@ -27,9 +27,8 @@ bool IStreumon::onCollision(Element *element)
 
 void IStreumon::move()
 {
-    auto* newPosition = new Position(this->position->getX(),this->position->getY());
-    if(this->board->getElement(newPosition)->onCollision(this)){
-        this->board->moveElement(this->getPosition(),newPosition);
-    }
+//    auto* newPosition = new Position(this->position->getX(),this->position->getY());
+//    if(this->board->getElement(newPosition)->onCollision(this)){
+//        this->board->moveElement(this->getPosition(),newPosition);
+//    }
 }
-

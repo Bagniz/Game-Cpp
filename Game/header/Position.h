@@ -24,5 +24,4 @@ public:
     friend bool operator==(const Position &p,const Position &p1);
 };
 
-
 #endif //GAME_POSITION_H

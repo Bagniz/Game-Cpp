@@ -5,7 +5,6 @@
 #ifndef GAME_ELEMENT_H
 #define GAME_ELEMENT_H
 
-
 #include "Position.h"
 #include "Board.h"
 
@@ -26,6 +25,5 @@ public:
     virtual bool onCollision(Element* element);
     virtual ~Element();
 };
-
 
 #endif //GAME_ELEMENT_H

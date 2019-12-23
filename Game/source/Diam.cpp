@@ -9,6 +9,11 @@ Diam::Diam() : teupor(), Element()
     this->symbole = '$';
 }
 
+Diam::Diam(Position* p, Board *b) : teupor(nullptr), Element(p,b)
+{
+    this->symbole = '$';
+}
+
 Diam::Diam(Position* p, Teupor *t, Board *b) : teupor(t), Element(p,b)
 {
     this->symbole = '$';

@@ -19,7 +19,7 @@ bool SStreumon::onCollision(Element *element)
 {
     if(element->getSymbole() == 'J')
     {
-        board->setBoardStat(-2);
+        board->setBoardState(-2);
         return false;
     }
     return true;

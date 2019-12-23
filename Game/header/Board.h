@@ -34,9 +34,10 @@ public:
     void displayBoard() const;
     Element* getElement(const Position* position);
     int getBoardState();
-    void setBoardStat(int state);
+    void setBoardState(int state);
     string getBoardName() const;
     Score getPlayerScore() const;
+    void setBoardScore(Score& score);
     vector<vector<Element*>> getBoardElements();
     ~Board();
 };
