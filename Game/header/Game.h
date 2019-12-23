@@ -26,6 +26,7 @@ public:
     void gamePlay();
     void gameOver();
     void gameSave();
+    static Game* gameLoad(const string& name);
     void displayGame() const;
     bool addBoard(Board* board);
     bool removeBoard(const string& boardName);

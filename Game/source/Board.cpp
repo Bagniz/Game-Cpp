@@ -5,6 +5,9 @@
 #include <fstream>
 #include <utility>
 #include <thread>
+#include <string>
+#include <sstream>
+#include <regex>
 #include "../header/Board.h"
 #include "../header/Element.h"
 #include "../header/Position.h"
@@ -12,6 +15,8 @@
 #include "../header/SStreumon.h"
 #include "../header/PStreumon.h"
 #include "../header/XStreumon.h"
+#include "../header/Reumu.h"
+#include "../header/IStreumon.h"
 
 
 Board::Board() : boardName(""), boardState(0){}
@@ -34,34 +39,34 @@ int Board::boardPlay()
     SStreumon* sStreumon = nullptr;
     PStreumon* pStreumon = nullptr;
     XStreumon* xStreumon = nullptr;
+    IStreumon* iStreumon = nullptr;
 
     for(Element* element : movingElements)
     {
         if(element->getSymbole() == 'J')
-        {
             oueurj = dynamic_cast<Oueurj*>(element);
-        }
-        else if(element->getSymbole() == 'S')
-        {
+        if(element->getSymbole() == 'S')
             sStreumon = dynamic_cast<SStreumon*>(element);
-        }
-        else if(element->getSymbole() == 'P')
-        {
+        if(element->getSymbole() == 'P')
             pStreumon = dynamic_cast<PStreumon*>(element);
-        }
-        else if(element->getSymbole() == 'M')
-        {
+        if(element->getSymbole() == 'M')
             xStreumon = dynamic_cast<XStreumon*>(element);
-        }
+        if(element->getSymbole() == 'I')
+            iStreumon = dynamic_cast<IStreumon*>(element);
     }
     do
     {
         this->displayBoard();
-        oueurj->move();
-        sStreumon->move();
-        pStreumon->move();
-        xStreumon->move();
-//        std::this_thread::sleep_for(std::chrono::milliseconds(200));
+        if(oueurj != nullptr)
+            oueurj->move();
+        if(sStreumon != nullptr)
+            sStreumon->move();
+        if(pStreumon != nullptr)
+            pStreumon->move();
+        if(xStreumon != nullptr)
+            xStreumon->move();
+        if(iStreumon != nullptr)
+            iStreumon->move();
     }while(this->boardState == 0);
     return boardState;
 }
@@ -72,24 +77,64 @@ void Board::boardSave()
     ofstream boardFile(this->boardName + ".board");
 
     // Save board info
+    boardFile << "width:" << this->boardElements[0].size() << endl;
+    boardFile << "height" << this->boardElements.size() << endl;
     boardFile << "name:" << this->boardName << endl;
-    boardFile << "player:" << this->playerScore.playerName << ",score:" << this->playerScore.playerScore << endl;
+    boardFile << "player:" << this->playerScore.playerName << endl;
+    boardFile << "score:" << this->playerScore.playerScore << endl;
+    boardFile << "state:" << this->boardState << endl;
 
     // Save board Elements
     for(const vector<Element*>& ligneElements : boardElements)
     {
         for(Element* element : ligneElements)
-            boardFile << element->getSymbole();
+        {
+            if(element->getSymbole() == ' ')
+                boardFile << '.' << ' ';
+            else
+                boardFile << element->getSymbole() << ' ';
+        }
         boardFile << endl;
     }
-
     boardFile.close();
 }
 
-Board *Board::boardLoad(string name)
+Board *Board::boardLoad(const string& name)
 {
-    // TODO : BOARD LOAD
-    return nullptr;
+    Board* board = nullptr;
+    ifstream boardFile(name + ".board");
+    if(boardFile.is_open())
+    {
+        board = new Board("",0,0);
+        string word, key, value;
+        int counter = 0;
+
+        // Get the board information
+        while(counter < 4 && getline(boardFile, word, '\n'))
+        {
+            key = word.substr(0, word.find(':') - 1);
+            value = word.substr(word.find(':') + 1, word.size());
+            if(key == "state")
+                board->boardState = stoi(value);
+            else if(key == "name")
+                board->boardName = value;
+            else if(key == "player")
+                board->playerScore.playerName = value;
+            else if(key == "score")
+                board->playerScore.playerScore = stoi(value);
+            counter++;
+        }
+
+        // Get the board elements
+        while(getline(boardFile, word, ' '))
+        {
+
+        }
+
+        // Close the file
+        boardFile.close();
+    }
+    return board;
 }
 
 bool Board::addElement(Element *element)

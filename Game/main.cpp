@@ -44,5 +44,7 @@ int main()
     board->addElement(new XStreumon(new Position(1,4), board));
     board->displayBoard();
     cout << board->boardPlay() << endl;
+
+//    Board::boardLoad("/home/bagniz/dev/test");
     return 0;
 }

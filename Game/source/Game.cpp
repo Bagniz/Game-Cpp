@@ -52,6 +52,11 @@ void Game::gameSave()
     gameFile.close();
 }
 
+Game *Game::gameLoad(const string &name)
+{
+    return nullptr;
+}
+
 void Game::displayGame() const
 {
     // System command to clean terminal
