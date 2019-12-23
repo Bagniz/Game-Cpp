@@ -8,6 +8,7 @@
 #include "header/SStreumon.h"
 #include "header/PStreumon.h"
 #include "header/XStreumon.h"
+#include "header/IStreumon.h"
 
 using namespace std;
 
@@ -42,6 +43,7 @@ int main()
     board->addElement(new SStreumon(new Position(10,11), board));
     board->addElement(new PStreumon(new Position(17,17), board));
     board->addElement(new XStreumon(new Position(1,4), board));
+    board->addElement(new IStreumon(new Position(5,7),board));
     board->displayBoard();
     cout << board->boardPlay() << endl;
 
