@@ -6,41 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Board.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Board.h
 iostream
 -
 vector
 -
 Score.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Score.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Score.h
 Position.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Position.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Position.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Element.h
 Position.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Position.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Position.h
 Board.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Board.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Board.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/IStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/IStreumon.h
 MovingElement.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/MovingElement.h
 Element.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Element.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Element.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/MovingElement.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/MovingElement.h
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Position.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Position.h
 iostream
 -
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Score.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Score.h
 string
 -
 
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/IStreumon.cpp
+/home/bagniz/dev/code/C++/Game-Cpp/Game/source/IStreumon.cpp
 random
 -
 ../header/IStreumon.h
-/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/IStreumon.h
+/home/bagniz/dev/code/C++/Game-Cpp/Game/header/IStreumon.h
 

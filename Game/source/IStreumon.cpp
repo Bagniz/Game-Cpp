@@ -27,8 +27,7 @@ bool IStreumon::onCollision(Element *element)
 
 void IStreumon::move()
 {
-    auto *newPosition = new Position;
-    newPosition=new Position(this->position->getX(),this->position->getY());
+    auto* newPosition = new Position(this->position->getX(),this->position->getY());
     if(this->board->getElement(newPosition)->onCollision(this)){
         this->board->moveElement(this->getPosition(),newPosition);
     }

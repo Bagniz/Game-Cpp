@@ -25,6 +25,7 @@ CMakeFiles/Game.dir/source/Board.cpp.o: ../header/MovingElement.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Oueurj.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/PStreumon.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Position.h
+CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Reumu.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/SStreumon.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Score.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Teleportations.h
