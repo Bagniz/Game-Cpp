@@ -12,6 +12,7 @@
 #include "../header/SStreumon.h"
 #include "../header/PStreumon.h"
 #include "../header/XStreumon.h"
+#include "../header/IStreumon.h"
 
 
 Board::Board() : boardName(""), boardState(0){}
@@ -34,6 +35,7 @@ int Board::boardPlay()
     SStreumon* sStreumon = nullptr;
     PStreumon* pStreumon = nullptr;
     XStreumon* xStreumon = nullptr;
+    IStreumon* iStreumon = nullptr;
 
     for(Element* element : movingElements)
     {
@@ -53,6 +55,10 @@ int Board::boardPlay()
         {
             xStreumon = dynamic_cast<XStreumon*>(element);
         }
+        else if(element->getSymbole() == 'I')
+        {
+            iStreumon = dynamic_cast<IStreumon*>(element);
+        }
     }
     do
     {
@@ -61,6 +67,7 @@ int Board::boardPlay()
         sStreumon->move();
         pStreumon->move();
         xStreumon->move();
+        iStreumon->move();
 //        std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }while(this->boardState == 0);
     return boardState;
@@ -96,7 +103,7 @@ bool Board::addElement(Element *element)
 {
     // Add the new element
     this->boardElements[element->getPosition()->getX()][element->getPosition()->getY()] = element;
-    if((element->getSymbole() == 'S') || (element->getSymbole() == 'J') || (element->getSymbole() == 'P') || (element->getSymbole() == 'M'))
+    if((element->getSymbole() == 'S') || (element->getSymbole() == 'J') || (element->getSymbole() == 'P')|| (element->getSymbole() == 'I') || (element->getSymbole() == 'M'))
         this->movingElements.emplace_back(element);
     return true;
 }

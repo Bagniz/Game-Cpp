@@ -8,179 +8,179 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug"/>
+				<Option working_dir="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug"/>
+				<Option working_dir="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Game">
-				<Option output="/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Game" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug"/>
+				<Option output="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Game/fast">
-				<Option output="/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Game" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug"/>
+				<Option output="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug"/>
+				<Option working_dir="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Board.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Board.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Diam.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Diam.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Element.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Element.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Game.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Game.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Geurchar.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Geurchar.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/IStreumon.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/IStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/MovingElement.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/MovingElement.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Oueurj.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Oueurj.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/PStreumon.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/PStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Position.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Position.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Reumu.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Reumu.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/SStreumon.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/SStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Score.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Score.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Teleportations.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Teleportations.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/Teupor.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/Teupor.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/XStreumon.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/XStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/clicked_char.h">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/header/clicked_char.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/main.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Board.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Board.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Diam.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Diam.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Element.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Element.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Game.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Game.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Geurchar.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Geurchar.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/IStreumon.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/IStreumon.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Oueurj.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Oueurj.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/PStreumon.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/PStreumon.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Position.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Position.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Reumu.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Reumu.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/SStreumon.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/SStreumon.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Teupor.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/Teupor.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/XStreumon.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/XStreumon.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/clicked_char.cpp">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/source/clicked_char.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/CMakeLists.txt">
+		<Unit filename="/home/netbook/Bureau/ObjetsAvances/Game-Cpp/Game/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

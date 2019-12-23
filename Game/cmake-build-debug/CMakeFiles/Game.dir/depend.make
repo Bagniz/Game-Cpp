@@ -5,6 +5,7 @@ CMakeFiles/Game.dir/main.cpp.o: ../header/Board.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/Diam.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/Element.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/Geurchar.h
+CMakeFiles/Game.dir/main.cpp.o: ../header/IStreumon.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/MovingElement.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/Oueurj.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/PStreumon.h
@@ -19,6 +20,7 @@ CMakeFiles/Game.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Board.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Element.h
+CMakeFiles/Game.dir/source/Board.cpp.o: ../header/IStreumon.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/MovingElement.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/Oueurj.h
 CMakeFiles/Game.dir/source/Board.cpp.o: ../header/PStreumon.h

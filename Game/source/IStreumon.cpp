@@ -2,6 +2,7 @@
 // Created by bagniz on 12/19/19.
 //
 
+#include <random>
 #include "../header/IStreumon.h"
 
 IStreumon::IStreumon() : Element()
@@ -26,6 +27,10 @@ bool IStreumon::onCollision(Element *element)
 
 void IStreumon::move()
 {
-    // TODO: IST MOVE
+    auto *newPosition = new Position;
+    newPosition=new Position(this->position->getX(),this->position->getY());
+    if(this->board->getElement(newPosition)->onCollision(this)){
+        this->board->moveElement(this->getPosition(),newPosition);
+    }
 }
 
