@@ -81,7 +81,6 @@ void Board::boardSave()
     boardFile << "name:" << this->boardName << endl;
     boardFile << "player:" << this->playerScore.playerName << endl;
     boardFile << "score:" << this->playerScore.playerScore << endl;
-    boardFile << "state:" << this->boardState << endl;
 
     // Save board Elements
     for(const vector<Element*>& ligneElements : boardElements)
@@ -139,8 +138,6 @@ Board *Board::boardLoad(const string& name)
                 boardWidth = stoi(value);
             else if(key == "height")
                 boardHeight = stoi(value);
-            else if(key == "state")
-                boardState = stoi(value);
             else if(key == "name")
                 boardName = value;
             else if(key == "player")
