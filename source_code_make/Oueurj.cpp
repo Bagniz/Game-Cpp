@@ -5,8 +5,8 @@
 #include <algorithm>
 #include <random>
 #include <thread>
-#include "../header/Oueurj.h"
-#include "../header/clicked_char.h"
+#include "Oueurj.h"
+#include "clicked_char.h"
 
 Oueurj::Oueurj() : Element()
 {

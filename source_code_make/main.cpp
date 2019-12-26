@@ -1,16 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
-#include "header/Board.h"
-#include "header/Oueurj.h"
-#include "header/Reumu.h"
-#include "header/Teupor.h"
-#include "header/Diam.h"
-#include "header/Geurchar.h"
-#include "header/SStreumon.h"
-#include "header/PStreumon.h"
-#include "header/XStreumon.h"
-#include "header/IStreumon.h"
+#include "Board.h"
+#include "Oueurj.h"
+#include "Reumu.h"
+#include "Teupor.h"
+#include "Diam.h"
+#include "Geurchar.h"
+#include "SStreumon.h"
+#include "PStreumon.h"
+#include "XStreumon.h"
+#include "IStreumon.h"
 
 using namespace std;
 
