@@ -9,9 +9,12 @@ Teupor::Teupor() : Element()
     this->symbole = '-';
 }
 
-Teupor::Teupor(Position *p, Board *b) : Element(p, b)
+Teupor::Teupor(Position *p, Board *b, bool isOpen) : Element(p, b)
 {
-    this->symbole = '-';
+    if(isOpen)
+        this->symbole = '+';
+    else
+        this->symbole = '-';
 }
 
 bool Teupor::onCollision(Element *element)

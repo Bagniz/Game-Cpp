@@ -11,47 +11,47 @@ gp: Game.o Board.o Element.o clicked_char.o Teupor.o Diam.o Reumu.o Geurchar.o O
 main.o: main.cpp
 	$(CPP) -c main.cpp
 
-Position.o: Position.h Position.cpp
-	$(CPP) -c Position.cpp
+Position.o: header/Position.h source/Position.cpp
+	$(CPP) -c source/Position.cpp
 
-Game.o: Game.h Game.cpp
-	$(CPP) -c Game.cpp
+Game.o: header/Game.h source/Game.cpp
+	$(CPP) -c source/Game.cpp
 
-Board.o: Board.h Board.cpp
-	$(CPP) -c Board.cpp
+Board.o: header/Board.h source/Board.cpp
+	$(CPP) -c source/Board.cpp
 
-Diam.o: Diam.h Diam.cpp
-	$(CPP) -c Diam.cpp
+Diam.o: header/Diam.h source/Diam.cpp
+	$(CPP) -c source/Diam.cpp
 
-SStreumon.o: SStreumon.h SStreumon.cpp 
-	$(CPP) -c SStreumon.cpp PStreumon.cpp XStreumon.cpp IStreumon.cpp
+SStreumon.o: header/SStreumon.h source/SStreumon.cpp 
+	$(CPP) -c source/SStreumon.cpp
 
-PStreumon.o: PStreumon.h PStreumon.cpp
-	$(CPP) -c PStreumon.cpp
+PStreumon.o: header/PStreumon.h source/PStreumon.cpp
+	$(CPP) -c source/PStreumon.cpp
 
-XStreumon.o: XStreumon.h XStreumon.cpp
-	$(CPP) -c XStreumon.cpp
+XStreumon.o: header/XStreumon.h source/XStreumon.cpp
+	$(CPP) -c source/XStreumon.cpp
 
-IStreumon.o: IStreumon.h IStreumon.cpp
-	$(CPP) -c IStreumon.cpp
+IStreumon.o: header/IStreumon.h source/IStreumon.cpp
+	$(CPP) -c source/IStreumon.cpp
 
-Teupor.o: Teupor.h Teupor.cpp
-	$(CPP) -c Teupor.cpp
+Teupor.o: header/Teupor.h source/Teupor.cpp
+	$(CPP) -c source/Teupor.cpp
 
-Geurchar.o: Geurchar.h Geurchar.cpp
-	$(CPP) -c Geurchar.cpp
+Geurchar.o: header/Geurchar.h source/Geurchar.cpp
+	$(CPP) -c source/Geurchar.cpp
 
-Oueurj.o: Oueurj.h Oueurj.cpp
-	$(CPP) -c Oueurj.cpp
+Oueurj.o: header/Oueurj.h source/Oueurj.cpp
+	$(CPP) -c source/Oueurj.cpp
 
-Reumu.o: Reumu.h Reumu.cpp
-	$(CPP) -c Reumu.cpp
+Reumu.o: header/Reumu.h source/Reumu.cpp
+	$(CPP) -c source/Reumu.cpp
 
-Element.o: Element.h Element.cpp
-	$(CPP) -c Element.cpp
+Element.o: header/Element.h source/Element.cpp
+	$(CPP) -c source/Element.cpp
 
-clicked_char.o: clicked_char.h clicked_char.cpp
-	$(CPP) -c clicked_char.cpp
+clicked_char.o: header/clicked_char.h source/clicked_char.cpp
+	$(CPP) -c source/clicked_char.cpp
 
 clean:
 	rm *.o

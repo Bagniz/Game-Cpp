@@ -2,8 +2,8 @@
 // Created by bagniz on 12/19/19.
 //
 
-#include "Geurchar.h"
-#include "Oueurj.h"
+#include "../header/Geurchar.h"
+#include "../header/Oueurj.h"
 
 Geurchar::Geurchar() : teleportation(Teleportations::RandomTeleportation), Element()
 {

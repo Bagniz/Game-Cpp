@@ -329,5 +329,12 @@ void Oueurj::move()
     // Check if it can move to the desired
     // position and move to it
     if(this->board->getElement(newPosition)->onCollision(this))
+    {
+        // Move
         this->board->moveElement(this->getPosition(), newPosition);
+
+        // Add score
+        Score newScore{this->board->getPlayerScore().playerName, this->board->getPlayerScore().playerScore + 1};
+        this->board->setBoardScore(newScore);
+    }
 }

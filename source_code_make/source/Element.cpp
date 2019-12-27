@@ -2,7 +2,7 @@
 // Created by bagniz on 12/19/19.
 //
 
-#include "Element.h"
+#include "../header/Element.h"
 
 Element::Element() : position(), board() {}
 

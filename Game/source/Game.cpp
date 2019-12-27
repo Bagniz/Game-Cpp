@@ -88,16 +88,19 @@ void Game::gameOver()
             }
             else
                 cout << "The game did not save." << endl;
+            break;
         }
 
         case -2:
         {
             cout << "\nYou lost!!!!" << endl;
+            break;
         }
 
         case -3:
         {
-            cout << "\nThis game does not containe any board!!" << endl;
+            cout << "\nThis game does not contain any board!!" << endl;
+            break;
         }
         default:
             throw bad_exception();

@@ -6,17 +6,17 @@
 #include <utility>
 #include <string>
 #include <sstream>
-#include "Board.h"
-#include "Element.h"
-#include "Position.h"
-#include "Oueurj.h"
-#include "SStreumon.h"
-#include "PStreumon.h"
-#include "XStreumon.h"
-#include "Reumu.h"
-#include "IStreumon.h"
-#include "Diam.h"
-#include "Geurchar.h"
+#include "../header/Board.h"
+#include "../header/Element.h"
+#include "../header/Position.h"
+#include "../header/Oueurj.h"
+#include "../header/SStreumon.h"
+#include "../header/PStreumon.h"
+#include "../header/XStreumon.h"
+#include "../header/Reumu.h"
+#include "../header/IStreumon.h"
+#include "../header/Diam.h"
+#include "../header/Geurchar.h"
 
 Board::Board() : boardName(""), boardState(0){}
 
@@ -114,6 +114,59 @@ void Board::boardSave()
     boardFile.close();
 }
 
+void Board::boardOver()
+{
+    // Clear the terminal
+    system("clear");
+
+    // Print messages depending on the game status
+    switch (this->boardState)
+    {
+        case 2:
+        {
+            cout << "\tCongratulations you won the game with new high score" << endl;
+            cout << "Player : " <<  this->playerScore.playerName << "\tScore : " << this->playerScore.playerScore << endl;
+            break;
+        }
+
+        case 1:
+        {
+            cout << "\tCongratulations you won the game with new high score" << endl;
+            break;
+        }
+
+        case -1:
+        {
+            char response;
+            cout << "\nSorry to see you leave" << endl;
+            cout << "Do you want to save the game for other time ?(Y/N)";
+            cin >> response;
+            if(response == 'Y')
+            {
+                this->boardSave();
+                cout << "The game is saved" << endl;
+            }
+            else
+                cout << "The game did not save." << endl;
+            break;
+        }
+
+        case -2:
+        {
+            cout << "\nYou lost!!!!" << endl;
+            break;
+        }
+
+        case -3:
+        {
+            cout << "\nThis game does not contain any board!!" << endl;
+            break;
+        }
+        default:
+            throw bad_exception();
+    }
+}
+
 Board *Board::boardLoad(const string& name)
 {
     Board* board = nullptr;
@@ -127,7 +180,7 @@ Board *Board::boardLoad(const string& name)
         Score playerScore;
 
         // Get the board information
-        while(counter < 7 && getline(boardFile, word, '\n'))
+        while(counter < 6 && getline(boardFile, word, '\n'))
         {
             // Get the key and the value of the line
             key = word.substr(0, word.find(':'));
@@ -153,7 +206,7 @@ Board *Board::boardLoad(const string& name)
         board->setBoardScore(playerScore);
 
         // Get the board elements
-        int i = 0, j = 0;
+        int i = 0, j = 0, t = 0;
         vector<Teupor*> ports;
         vector<Diam*> diams;
         while(getline(boardFile, word, ' '))
@@ -178,8 +231,14 @@ Board *Board::boardLoad(const string& name)
             }
             else if(word == "-" || word == "+" || word == "\n-"|| word == "\n+") // Teupor
             {
-                auto* port = new Teupor(new Position(i, j), board);
-                ports.emplace_back(port);
+                Teupor* port = nullptr;
+                if(word == "-" || word == "\n-")
+                {
+                    port = new Teupor(new Position(i, j), board, false);
+                    ports.emplace_back(port);
+                }
+                else
+                    port = new Teupor(new Position(i, j), board, true);
                 board->addElement(port);
             }
             else if(word == "X" || word == "\nX") // Reumu
@@ -194,7 +253,7 @@ Board *Board::boardLoad(const string& name)
                 board->addElement(new Geurchar(new Position(i, j), Teleportations::SmartTeleportation,board));
 
             // Go to the next line
-            if(++j == boardHeight)
+            if(++j == boardWidth)
             {
                 j = 0;
                 i++;

@@ -4,6 +4,7 @@
 CMakeFiles/Game.dir/main.cpp.o: ../header/Board.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/Diam.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/Element.h
+CMakeFiles/Game.dir/main.cpp.o: ../header/Game.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/Geurchar.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/IStreumon.h
 CMakeFiles/Game.dir/main.cpp.o: ../header/MovingElement.h

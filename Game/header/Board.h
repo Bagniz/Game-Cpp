@@ -27,6 +27,7 @@ public:
     Board(string boardName, const int width, const int height);
     int boardPlay();
     void boardSave();
+    void boardOver();
     static Board* boardLoad(const string& name);
     bool addElement(Element* element);
     bool removeElement(Element* element);

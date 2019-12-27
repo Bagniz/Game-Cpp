@@ -11,7 +11,7 @@ class Teupor : public Element
 {
 public:
     Teupor();
-    Teupor(Position* p, Board* b);
+    Teupor(Position* p, Board* b, bool isOpen);
     bool onCollision(Element* element);
 };
 

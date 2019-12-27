@@ -5,8 +5,8 @@
 #include <algorithm>
 #include <random>
 #include <thread>
-#include "Oueurj.h"
-#include "clicked_char.h"
+#include "../header/Oueurj.h"
+#include "../header/clicked_char.h"
 
 Oueurj::Oueurj() : Element()
 {
@@ -329,5 +329,12 @@ void Oueurj::move()
     // Check if it can move to the desired
     // position and move to it
     if(this->board->getElement(newPosition)->onCollision(this))
+    {
+        // Move
         this->board->moveElement(this->getPosition(), newPosition);
+
+        // Add score
+        Score newScore{this->board->getPlayerScore().playerName, this->board->getPlayerScore().playerScore + 1};
+        this->board->setBoardScore(newScore);
+    }
 }
