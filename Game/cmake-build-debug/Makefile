@@ -501,33 +501,6 @@ source/XStreumon.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/XStreumon.cpp.s
 .PHONY : source/XStreumon.cpp.s
 
-source/clicked_char.o: source/clicked_char.cpp.o
-
-.PHONY : source/clicked_char.o
-
-# target to build an object file
-source/clicked_char.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/clicked_char.cpp.o
-.PHONY : source/clicked_char.cpp.o
-
-source/clicked_char.i: source/clicked_char.cpp.i
-
-.PHONY : source/clicked_char.i
-
-# target to preprocess a source file
-source/clicked_char.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/clicked_char.cpp.i
-.PHONY : source/clicked_char.cpp.i
-
-source/clicked_char.s: source/clicked_char.cpp.s
-
-.PHONY : source/clicked_char.s
-
-# target to generate assembly for a file
-source/clicked_char.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/source/clicked_char.cpp.s
-.PHONY : source/clicked_char.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -579,9 +552,6 @@ help:
 	@echo "... source/XStreumon.o"
 	@echo "... source/XStreumon.i"
 	@echo "... source/XStreumon.s"
-	@echo "... source/clicked_char.o"
-	@echo "... source/clicked_char.i"
-	@echo "... source/clicked_char.s"
 .PHONY : help
 
 

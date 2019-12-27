@@ -13,65 +13,23 @@
   <component name="ChangeListManager">
     <list default="true" id="2d9f6169-3bef-4d3e-af59-aaaa3d347d6d" name="Default Changelist" comment="nothing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Board.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Diam.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Diam.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Element.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Element.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Game.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Geurchar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Geurchar.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/IStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/IStreumon.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Oueurj.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Oueurj.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/PStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/PStreumon.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Reumu.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Reumu.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/SStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/SStreumon.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Teupor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Teupor.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/XStreumon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/XStreumon.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Game" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Board.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Teupor.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Teupor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Board.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Game.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Game.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Oueurj.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Oueurj.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/clicked_char.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Oueurj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Oueurj.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Teupor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Teupor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Board.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Board.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Diam.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Diam.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Element.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Element.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Game.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Game.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Geurchar.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Geurchar.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/IStreumon.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/IStreumon.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/MovingElement.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Oueurj.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Oueurj.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/PStreumon.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/PStreumon.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Position.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Position.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Reumu.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Reumu.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/SStreumon.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/SStreumon.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Score.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Teleportations.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Teupor.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/Teupor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/XStreumon.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/XStreumon.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/clicked_char.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/clicked_char.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/gc" beforeDir="false" afterPath="$PROJECT_DIR$/../source_code_make/gc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/gp" beforeDir="false" afterPath="$PROJECT_DIR$/../source_code_make/gp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../source_code_make/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../source_code_make/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../source_code_make/makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/clicked_char.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/game.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/../UML/game.mdj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +116,7 @@
       <workItem from="1577394700124" duration="1518000" />
       <workItem from="1577446545327" duration="12483000" />
       <workItem from="1577464876436" duration="762000" />
+      <workItem from="1577470663105" duration="196000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1576962886942</created>
@@ -265,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1577066421715" />
-    <state x="643" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1577446608843">
+    <state x="643" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1577470663610">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="643" y="366" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577446608843" />
+    <state x="643" y="366" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577470663610" />
     <state x="757" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577065906684">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

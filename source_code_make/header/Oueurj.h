@@ -19,12 +19,13 @@ private:
     static void displayEmptyPositions(const vector<Element*>& elements) ;
     bool displayAvailableTeleportations() const;
     bool hasTeleportation(Teleportations teleportation);
+    static char clickedChar();
 
 public:
     Oueurj();
     Oueurj(Position* p, Board* b);
     void teleport();
-    void move();
+    void move() override;
 };
 
 #endif //GAME_OUEURJ_H

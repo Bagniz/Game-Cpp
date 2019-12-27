@@ -132,9 +132,6 @@
 		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/XStreumon.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/header/clicked_char.h">
-			<Option target="Game"/>
-		</Unit>
 		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/main.cpp">
 			<Option target="Game"/>
 		</Unit>
@@ -175,9 +172,6 @@
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/XStreumon.cpp">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/source/clicked_char.cpp">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/bagniz/dev/code/C++/Game-Cpp/Game/CMakeLists.txt">

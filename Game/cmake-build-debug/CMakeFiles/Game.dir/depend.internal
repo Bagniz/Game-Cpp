@@ -82,7 +82,6 @@ CMakeFiles/Game.dir/source/Oueurj.cpp.o
  /home/bagniz/dev/code/C++/Game-Cpp/Game/header/Position.h
  /home/bagniz/dev/code/C++/Game-Cpp/Game/header/Score.h
  /home/bagniz/dev/code/C++/Game-Cpp/Game/header/Teleportations.h
- /home/bagniz/dev/code/C++/Game-Cpp/Game/header/clicked_char.h
  /home/bagniz/dev/code/C++/Game-Cpp/Game/source/Oueurj.cpp
 CMakeFiles/Game.dir/source/PStreumon.cpp.o
  /home/bagniz/dev/code/C++/Game-Cpp/Game/header/Board.h
@@ -125,5 +124,3 @@ CMakeFiles/Game.dir/source/XStreumon.cpp.o
  /home/bagniz/dev/code/C++/Game-Cpp/Game/header/Score.h
  /home/bagniz/dev/code/C++/Game-Cpp/Game/header/XStreumon.h
  /home/bagniz/dev/code/C++/Game-Cpp/Game/source/XStreumon.cpp
-CMakeFiles/Game.dir/source/clicked_char.cpp.o
- /home/bagniz/dev/code/C++/Game-Cpp/Game/source/clicked_char.cpp

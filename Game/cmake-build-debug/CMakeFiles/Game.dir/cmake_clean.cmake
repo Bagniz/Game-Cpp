@@ -13,7 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Game.dir/source/SStreumon.cpp.o"
   "CMakeFiles/Game.dir/source/Teupor.cpp.o"
   "CMakeFiles/Game.dir/source/XStreumon.cpp.o"
-  "CMakeFiles/Game.dir/source/clicked_char.cpp.o"
   "Game"
   "Game.pdb"
 )

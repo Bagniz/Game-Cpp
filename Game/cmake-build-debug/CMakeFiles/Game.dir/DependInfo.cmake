@@ -18,7 +18,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bagniz/dev/code/C++/Game-Cpp/Game/source/SStreumon.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/source/SStreumon.cpp.o"
   "/home/bagniz/dev/code/C++/Game-Cpp/Game/source/Teupor.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/source/Teupor.cpp.o"
   "/home/bagniz/dev/code/C++/Game-Cpp/Game/source/XStreumon.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/source/XStreumon.cpp.o"
-  "/home/bagniz/dev/code/C++/Game-Cpp/Game/source/clicked_char.cpp" "/home/bagniz/dev/code/C++/Game-Cpp/Game/cmake-build-debug/CMakeFiles/Game.dir/source/clicked_char.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

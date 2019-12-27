@@ -2,11 +2,11 @@ CPP=g++ --std=c++11 -Wall
 
 all: gp gc clean
 
-gc: Game.o Board.o Element.o clicked_char.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o
-	$(CPP) -o gc Game.o Board.o Element.o clicked_char.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o	
+gc: Game.o Board.o Element.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o
+	$(CPP) -o gc Game.o Board.o Element.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o	
 
-gp: Game.o Board.o Element.o clicked_char.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o
-	$(CPP) -o gp Game.o Board.o Element.o clicked_char.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o	
+gp: Game.o Board.o Element.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o
+	$(CPP) -o gp Game.o Board.o Element.o Teupor.o Diam.o Reumu.o Geurchar.o Oueurj.o SStreumon.o PStreumon.o XStreumon.o IStreumon.o main.o Position.o	
 
 main.o: main.cpp
 	$(CPP) -c main.cpp
@@ -49,9 +49,6 @@ Reumu.o: header/Reumu.h source/Reumu.cpp
 
 Element.o: header/Element.h source/Element.cpp
 	$(CPP) -c source/Element.cpp
-
-clicked_char.o: header/clicked_char.h source/clicked_char.cpp
-	$(CPP) -c source/clicked_char.cpp
 
 clean:
 	rm *.o
