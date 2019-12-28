@@ -18,11 +18,8 @@ IStreumon::IStreumon(Position *p, Board *b) : Element(p, b)
 bool IStreumon::onCollision(Element *element)
 {
     if(element->getSymbole() == 'J')
-    {
         board->setBoardState(-2);
-        return false;
-    }
-    return true;
+    return false;
 }
 
 void IStreumon::move()

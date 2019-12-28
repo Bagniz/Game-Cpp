@@ -5,7 +5,7 @@
 #include <fstream>
 #include "../header/Game.h"
 
-Game::Game() : gameName(""), gameState(0),currentBoard(nullptr), playerScore() {}
+Game::Game() : gameName(""), gameState(0),currentBoard(nullptr), playerScore{"", 0} {}
 
 Game::Game(const string& gameName) : Game()
 {
@@ -111,7 +111,7 @@ Game *Game::gameLoad(const string& name)
 {
     Game* game = nullptr;
     // Open game file
-    ifstream gameFile(name + ".game");
+    ifstream gameFile("./Games/" + name + ".game");
 
     if(gameFile.is_open())
     {
@@ -167,7 +167,7 @@ Game *Game::gameLoad(const string& name)
 void Game::gameSave(bool saveBoards)
 {
     // Open the game file
-    ofstream gameFile(this->gameName + ".game");
+    ofstream gameFile("./Games/" + this->gameName + ".game");
 
     // Save game info
     gameFile << "name:" << this->gameName << endl;

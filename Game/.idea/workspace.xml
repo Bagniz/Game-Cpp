@@ -13,23 +13,17 @@
   <component name="ChangeListManager">
     <list default="true" id="2d9f6169-3bef-4d3e-af59-aaaa3d347d6d" name="Default Changelist" comment="nothing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Oueurj.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Game.dir/source/Oueurj.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Game" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Game.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Game.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Oueurj.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Oueurj.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/clicked_char.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Oueurj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Oueurj.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/clicked_char.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UML/game.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/../UML/game.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/IStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/IStreumon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/PStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/PStreumon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/SStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/SStreumon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/XStreumon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/XStreumon.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +111,7 @@
       <workItem from="1577446545327" duration="12483000" />
       <workItem from="1577464876436" duration="762000" />
       <workItem from="1577470663105" duration="196000" />
+      <workItem from="1577540927698" duration="11224000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1576962886942</created>
@@ -164,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="693" y="289" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576792479124" />
-    <state x="560" y="134" width="790" height="804" key="CommitChangelistDialog2" timestamp="1577107553226">
+    <state x="560" y="134" width="790" height="804" key="CommitChangelistDialog2" timestamp="1577546715483">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="134" width="790" height="804" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577107553226" />
+    <state x="560" y="134" width="790" height="804" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577546715483" />
     <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1577065846146">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -208,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="253" width="430" height="567" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577453588032" />
-    <state x="464" y="174" key="SettingsEditor" timestamp="1577107743911">
+    <state x="464" y="174" key="SettingsEditor" timestamp="1577546727389">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="464" y="174" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577107743911" />
+    <state x="464" y="174" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577546727389" />
     <state x="689" y="275" width="540" height="524" key="StructurePopup" timestamp="1576766444028">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -224,10 +219,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1577066421715" />
-    <state x="643" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1577470663610">
+    <state x="643" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1577540928127">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="643" y="366" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577470663610" />
+    <state x="643" y="366" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577540928127" />
     <state x="757" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577065906684">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

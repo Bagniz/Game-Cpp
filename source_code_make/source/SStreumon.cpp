@@ -18,11 +18,8 @@ SStreumon::SStreumon(Position *p, Board *b) : Element(p, b)
 bool SStreumon::onCollision(Element *element)
 {
     if(element->getSymbole() == 'J')
-    {
         board->setBoardState(-2);
-        return false;
-    }
-    return true;
+    return false;
 }
 
 void SStreumon::move()

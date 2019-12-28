@@ -18,9 +18,9 @@
 #include "../header/Diam.h"
 #include "../header/Geurchar.h"
 
-Board::Board() : boardName(""), boardState(0){}
+Board::Board() : boardName(""), boardState(0), playerScore{"", 0}{}
 
-Board::Board(string boardName, const int width, const int height) : boardName(std::move(boardName)), boardState(0)
+Board::Board(string boardName, const int width, const int height) : boardName(std::move(boardName)), boardState(0), playerScore{"", 0}
 {
     for (int i = 0; i < height; ++i)
     {
@@ -73,7 +73,7 @@ int Board::boardPlay()
 void Board::boardSave()
 {
     // Open board file
-    ofstream boardFile("/home/bagniz/dev/" + this->boardName + ".board");
+    ofstream boardFile("./Boards/" + this->boardName + ".board");
 
     // Save board info
     boardFile << "width:" << this->boardElements[0].size() << endl;
@@ -171,7 +171,7 @@ Board *Board::boardLoad(const string& name)
 {
     Board* board = nullptr;
     // Open board file
-    ifstream boardFile("/home/bagniz/dev/" + name + ".board");
+    ifstream boardFile("./Boards/" + name + ".board");
 
     if(boardFile.is_open())
     {

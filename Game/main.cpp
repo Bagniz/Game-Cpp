@@ -15,7 +15,7 @@
 using namespace std;
 
 // Create a board
-void createBoard(const string& boardName)
+Board* createBoard(const string& boardName)
 {
     /////////////// Create a board /////////////////////
     int boardWidth, boardHeight, elementChoice = 0, xPosition = 0, yPosition = 0;
@@ -68,7 +68,7 @@ void createBoard(const string& boardName)
             if(board->getElement(new Position(xPosition, yPosition))->getSymbole() == ' ')
                 board->addElement(new Oueurj(new Position(xPosition, yPosition), board));
         }
-        else
+        else if(elementChoice < 7 && elementChoice > 0)
         {
             // Enter the elements position
             cout << "Please enter the elements position:" << endl;
@@ -163,6 +163,7 @@ void createBoard(const string& boardName)
         }
     }while(elementChoice != 0);
     board->boardSave();
+    return board;
 }
 
 // Create a game app
@@ -191,6 +192,7 @@ bool gameCreate(int argc, char** argv)
         for(int i = 0; i < argc; i++)
         {
             arguments.emplace_back(*argv);
+            argv++;
         }
 
         // Are they all boards or not
@@ -216,12 +218,23 @@ bool gameCreate(int argc, char** argv)
                 {
                     /////////////// Create a game /////////////////////
                     // Starting to create the game
-                    cout << "\t\tCreating Game: " << argumentName << endl;
+                    cout << "\tCreating Game: " << argumentName << endl;
+
+                    // Creating the game
+                    Game game(argumentName);
 
                     // Creating game boards
                     arguments.erase(arguments.begin());
-                    for(const string& board : arguments)
-                        createBoard(board.substr(0, board.find('.')));
+                    for(const string& boardName : arguments)
+                    {
+                        Board* board = Board::boardLoad(boardName.substr(0, boardName.find('.')));
+                        if(board == nullptr)
+                            game.addBoard(createBoard(boardName.substr(0, boardName.find('.'))));
+                        else
+                            game.addBoard(board);
+                    }
+                    game.gameSave(true);
+                    return true;
                 }
             }
         }
