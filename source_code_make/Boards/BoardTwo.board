@@ -1,8 +1,8 @@
 width:30
 height:15
-name:test
-player:bagniz
-score:182
+name:BoardTwo
+player:
+score:0
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 
 + . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 

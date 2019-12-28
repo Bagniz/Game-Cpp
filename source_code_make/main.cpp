@@ -232,6 +232,9 @@ bool gameCreate(int argc, char** argv)
                             game.addBoard(createBoard(boardName.substr(0, boardName.find('.'))));
                         else
                             game.addBoard(board);
+                        
+                        if(boardName == *arguments.begin())
+                            game.setCurrentBoard(board);
                     }
                     game.gameSave(true);
                     return true;

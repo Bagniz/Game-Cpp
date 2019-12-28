@@ -1,5 +1,8 @@
 name:game
-currentBoard:0
+currentBoard:BoardOne
 player:
 score:0
-board:test
+board:BoardOne
+board:BoardTwo
+board:BoardThree
+board:BoardFour

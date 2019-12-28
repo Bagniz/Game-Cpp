@@ -171,9 +171,9 @@ void Game::gameSave(bool saveBoards)
 
     // Save game info
     gameFile << "name:" << this->gameName << endl;
-    gameFile << "currentBoard:" << this->currentBoard << endl;
-    gameFile << "player:" << this->playerScore.playerName << endl;
-    gameFile << "score:" << this->playerScore.playerScore << endl;
+    gameFile << "currentBoard:" << (*this->gameBoards.begin())->getBoardName() << endl;
+    gameFile << "player:" << "" << endl;
+    gameFile << "score:" << 0 << endl;
 
     // Save the topTenScores
     for(const Score& score : this->playerTopTenScores)
@@ -183,12 +183,12 @@ void Game::gameSave(bool saveBoards)
     }
 
     // Save the boards
-    if(saveBoards)
-        for(Board* board : this->gameBoards)
-        {
-            gameFile << "board:" << board->getBoardName() << endl;
+    for(Board* board : this->gameBoards)
+    {
+        gameFile << "board:" << board->getBoardName() << endl;
+        if(saveBoards)
             board->boardSave();
-        }
+    }
     gameFile.close();
 }
 
@@ -265,6 +265,8 @@ bool Game::saveNewTopScore(const Score& score)
         if(iterator.operator*().playerScore < score.playerScore)
         {
             this->playerTopTenScores.emplace(iterator, score);
+            if(this->playerTopTenScores.size() > 10)
+                this->playerTopTenScores.erase(this->playerTopTenScores.end());
             return true;
         }
     }
@@ -301,9 +303,9 @@ bool Game::goToNextBoard(const string& currentBoardName)
         {
             if(iterator.operator*()->getBoardName() == currentBoardName)
             {
-                if(++iterator != this->gameBoards.end())
+                if((iterator + 1) != this->gameBoards.end())
                 {
-                    this->currentBoard = iterator.operator*();
+                    this->currentBoard = (iterator + 1).operator*();
                     return true;
                 }
             }
