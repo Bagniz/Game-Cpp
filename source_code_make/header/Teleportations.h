@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #ifndef GAME_TELEPORTATIONS_H
 #define GAME_TELEPORTATIONS_H
 

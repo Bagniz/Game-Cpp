@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #include <random>
 #include "../header/IStreumon.h"
 

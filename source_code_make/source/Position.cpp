@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #include "../header/Position.h"
 
 Position::Position(int x, int y) : x(x), y(y) {}

@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #include "../header/Diam.h"
 
 Diam::Diam() : teupor(), Element()

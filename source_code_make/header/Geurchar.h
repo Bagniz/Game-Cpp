@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #ifndef GAME_GEURCHAR_H
 #define GAME_GEURCHAR_H
 

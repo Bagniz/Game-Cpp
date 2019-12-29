@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #include <algorithm>
 #include <random>
 #include <thread>
@@ -232,6 +228,13 @@ void Oueurj::teleport()
             this->board->displayBoard();
         }
     }
+}
+
+bool Oueurj::onCollision(Element* element)
+{
+    if(element->getSymbole() == 'M' || element->getSymbole() == 'P' || element->getSymbole() == 'X' || element->getSymbole() == 'I')
+        this->board->setBoardState(-2);
+    return false;
 }
 
 void Oueurj::move()

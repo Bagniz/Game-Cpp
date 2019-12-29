@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #ifndef GAME_PSTREUMON_H
 #define GAME_PSTREUMON_H
 

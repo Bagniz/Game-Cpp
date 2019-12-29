@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #include "../header/Teupor.h"
 
 Teupor::Teupor() : Element()

@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #ifndef GAME_TEUPOR_H
 #define GAME_TEUPOR_H
 

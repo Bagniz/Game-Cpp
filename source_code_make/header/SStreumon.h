@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #ifndef GAME_SSTREUMON_H
 #define GAME_SSTREUMON_H
 

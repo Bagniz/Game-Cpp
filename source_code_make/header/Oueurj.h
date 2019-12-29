@@ -1,7 +1,3 @@
-//
-// Created by bagniz on 12/19/19.
-//
-
 #ifndef GAME_OUEURJ_H
 #define GAME_OUEURJ_H
 
@@ -25,6 +21,7 @@ public:
     Oueurj();
     Oueurj(Position* p, Board* b);
     void teleport();
+    bool onCollision(Element* element) override;
     void move() override;
 };
 
