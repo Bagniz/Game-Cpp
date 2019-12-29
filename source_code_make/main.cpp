@@ -14,20 +14,39 @@
 
 using namespace std;
 
+// Check if an other object already exists in the position
+bool isPositionEmpty(Position* position, Board* board)
+{
+    if(board->getElement(position)->getSymbole() != ' ')
+    {
+        char response;
+        cout << "An element already exists in the indicated position" << endl;
+        cout << "Would you like to continue ?(Y/N)";
+        cin >> response;
+
+        if(response != 'Y')
+            return false;
+    }
+    return true;
+}
+
 // Create a board
 Board* createBoard(const string& boardName)
 {
     /////////////// Create a board /////////////////////
     int boardWidth, boardHeight, elementChoice = 0, xPosition = 0, yPosition = 0;
 
-    // Starting to create the board
-    cout << "Creating board: " << boardName << endl;
+    do
+    {
+        // Starting to create the board
+        cout << "Creating board: " << boardName << endl;
 
-    // Get board dimensions
-    cout << "Please enter board width:";
-    cin >> boardWidth;
-    cout << "Please enter board height:";
-    cin >> boardHeight;
+        // Get board dimensions
+        cout << "Please enter board width > 3:";
+        cin >> boardWidth;
+        cout << "Please enter board height > 3:";
+        cin >> boardHeight;
+    } while (boardWidth <= 3 || boardHeight <= 3);
 
     // Create the board
     auto* board = new Board(boardName, boardWidth, boardHeight);
@@ -64,9 +83,14 @@ Board* createBoard(const string& boardName)
                 cin >> xPosition;
                 cout << "Y:";
                 cin >> yPosition;
-            }while(((xPosition == 0) || (xPosition == boardHeight)) || ((yPosition == 0) || (yPosition == boardWidth)));
-            if(board->getElement(new Position(xPosition, yPosition))->getSymbole() == ' ')
-                board->addElement(new Oueurj(new Position(xPosition, yPosition), board));
+            }while(((xPosition == 0) || (xPosition >= (boardHeight - 1))) || ((yPosition == 0) || (yPosition >= (boardWidth - 1))));
+
+            // Check if the position is empty
+            Position* position = new Position(xPosition, yPosition);
+            if(isPositionEmpty(position, board))
+                board->addElement(new Oueurj(position, board));
+            else
+                elementChoice = -1;
         }
         else if(elementChoice < 7 && elementChoice > 0)
         {
@@ -77,7 +101,7 @@ Board* createBoard(const string& boardName)
             cout << "Y:";
             cin >> yPosition;
 
-            while(((xPosition == 0) || (xPosition == boardHeight)) || ((yPosition == 0) || (yPosition == boardWidth)))
+            while(((xPosition == 0) || (xPosition >= (boardHeight - 1))) || ((yPosition == 0) || (yPosition >= (boardWidth - 1))))
             {
                 cout << "\t\tInvalid entered position" << endl;
                 cout << "Please enter the elements position:" << endl;
@@ -87,79 +111,83 @@ Board* createBoard(const string& boardName)
                 cin >> yPosition;
             }
 
-            if(elementChoice == 1)
-                board->addElement(new Reumu(new Position(xPosition, yPosition), board));
-            else if(elementChoice == 2)
+            if(isPositionEmpty(new Position(xPosition, yPosition), board))
             {
-                int txPosition, tyPosition;
-                cout << "Please enter the position of teupor associated with this diam:" << endl;
-                cout << "X:";
-                cin >> txPosition;
-                cout << "Y:";
-                cin >> tyPosition;
-                while((txPosition != 0) && (txPosition != boardHeight) && (tyPosition != 0) && (tyPosition != boardWidth))
+                if(elementChoice == 1)
+                    board->addElement(new Reumu(new Position(xPosition, yPosition), board));
+                else if(elementChoice == 2)
                 {
-                    cout << "\t\tInvalid entered position" << endl;
+                    int txPosition, tyPosition;
                     cout << "Please enter the position of teupor associated with this diam:" << endl;
                     cout << "X:";
                     cin >> txPosition;
                     cout << "Y:";
                     cin >> tyPosition;
-                }
-                auto* tempTeupor = new Teupor(new Position(txPosition, tyPosition), board, false);
-                board->addElement(new Diam(new Position(xPosition, yPosition), tempTeupor, board));
-                board->addElement(tempTeupor);
-            }
-            else if(elementChoice == 3)
-            {
-                int teleportationType;
-                do
-                {
-                    cout << "Please choose the type of the teleporation given by the geurchar:" << endl;
-                    cout << "1. Random Teleporation" << endl;
-                    cout << "2. Place Teleportation" << endl;
-                    cout << "3. Axes Teleportation" << endl;
-                    cout << "4. Smart Teleportation" << endl;
-                    cout << "Teleporation number: ";
-                    cin >> teleportationType;
-                    switch (teleportationType)
+                    while((txPosition != 0) && (txPosition != (boardHeight - 1)) && (tyPosition != 0) && (tyPosition != (boardWidth - 1)))
                     {
-                        case 1:
-                        {
-                            board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::RandomTeleportation, board));
-                            break;
-                        }
-
-                        case 2:
-                        {
-                            board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::PlaceTeleportation, board));
-                            break;
-                        }
-
-                        case 3:
-                        {
-                            board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::AxesTeleportation, board));
-                            break;
-                        }
-
-                        case 4:
-                        {
-                            board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::SmartTeleportation, board));
-                            break;
-                        }
-                        default:
-                            continue;
+                        cout << "\t\tInvalid entered position" << endl;
+                        cout << "Please enter the position of teupor associated with this diam:" << endl;
+                        cout << "X:";
+                        cin >> txPosition;
+                        cout << "Y:";
+                        cin >> tyPosition;
                     }
-                }while((teleportationType > 4) || (teleportationType < 1));
+
+                    auto* tempTeupor = new Teupor(new Position(txPosition, tyPosition), board, false);
+                    board->addElement(new Diam(new Position(xPosition, yPosition), tempTeupor, board));
+                    board->addElement(tempTeupor);
+                }
+                else if(elementChoice == 3)
+                {
+                    int teleportationType;
+                    do
+                    {
+                        cout << "Please choose the type of the teleporation given by the geurchar:" << endl;
+                        cout << "1. Random Teleporation" << endl;
+                        cout << "2. Place Teleportation" << endl;
+                        cout << "3. Axes Teleportation" << endl;
+                        cout << "4. Smart Teleportation" << endl;
+                        cout << "Teleporation number: ";
+                        cin >> teleportationType;
+                        switch (teleportationType)
+                        {
+                            case 1:
+                            {
+                                board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::RandomTeleportation, board));
+                                break;
+                            }
+
+                            case 2:
+                            {
+                                board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::PlaceTeleportation, board));
+                                break;
+                            }
+
+                            case 3:
+                            {
+                                board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::AxesTeleportation, board));
+                                break;
+                            }
+
+                            case 4:
+                            {
+                                board->addElement(new Geurchar(new Position(xPosition, yPosition), Teleportations::SmartTeleportation, board));
+                                break;
+                            }
+                            default:
+                                continue;
+                        }
+                    }while((teleportationType > 4) || (teleportationType < 1));
+                }
+                else if(elementChoice == 4)
+                    board->addElement(new SStreumon(new Position(xPosition, yPosition), board));
+                else if(elementChoice == 5)
+                    board->addElement(new XStreumon(new Position(xPosition, yPosition), board));
+                else if(elementChoice == 6)
+                    board->addElement(new PStreumon(new Position(xPosition, yPosition), board));
+                else if(elementChoice == 7)
+                    board->addElement(new IStreumon(new Position(xPosition, yPosition), board));
             }
-            else if(elementChoice == 4)
-                board->addElement(new SStreumon(new Position(xPosition, yPosition), board));
-            else if(elementChoice == 5)
-                board->addElement(new XStreumon(new Position(xPosition, yPosition), board));
-            else if(elementChoice == 6)
-                board->addElement(new PStreumon(new Position(xPosition, yPosition), board));
-            else if(elementChoice == 7)
-                board->addElement(new IStreumon(new Position(xPosition, yPosition), board));
         }
     }while(elementChoice != 0);
     board->boardSave();
