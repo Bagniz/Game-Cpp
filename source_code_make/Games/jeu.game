@@ -1,9 +1,9 @@
 name:jeu
-currentBoard:b1
+currentBoard:BoardSix
 player:
 score:0
 player:akram
 score:64
-board:b1
-board:b2
-board:b3
+board:BoardSix
+board:BoardSeven
+board:BoardEight

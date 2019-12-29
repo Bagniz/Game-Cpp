@@ -83,7 +83,7 @@ Board* createBoard(const string& boardName)
                 cin >> xPosition;
                 cout << "Y:";
                 cin >> yPosition;
-            }while(((xPosition <= 0) || (xPosition >= (boardHeight - 1))) || ((yPosition == 0) || (yPosition >= (boardWidth - 1))));
+            }while(((xPosition <= 0) || (xPosition >= (boardHeight - 1))) || ((yPosition <= 0) || (yPosition >= (boardWidth - 1))));
 
             // Check if the position is empty
             Position* position = new Position(xPosition, yPosition);
@@ -101,7 +101,7 @@ Board* createBoard(const string& boardName)
             cout << "Y:";
             cin >> yPosition;
 
-            while(((xPosition == 0) || (xPosition >= (boardHeight - 1))) || ((yPosition == 0) || (yPosition >= (boardWidth - 1))))
+            while(((xPosition <= 0) || (xPosition >= (boardHeight - 1))) || ((yPosition <= 0) || (yPosition >= (boardWidth - 1))))
             {
                 cout << "\t\tInvalid entered position" << endl;
                 cout << "Please enter the elements position:" << endl;

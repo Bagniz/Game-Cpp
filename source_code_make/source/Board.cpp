@@ -31,10 +31,10 @@ Board::Board(string boardName, const int width, const int height) : boardName(st
 int Board::boardPlay()
 {
     Oueurj* oueurj = nullptr;
-    vector<SStreumon*> sStreumon ;//= nullptr;
-    vector<PStreumon*> pStreumon ;//= nullptr;
-    vector<XStreumon*> xStreumon ;//= nullptr;
-    vector<IStreumon*> iStreumon ;//= nullptr;
+    vector<SStreumon*> sStreumon;
+    vector<PStreumon*> pStreumon;
+    vector<XStreumon*> xStreumon;
+    vector<IStreumon*> iStreumon;
 
     for(Element* element : movingElements)
     {
