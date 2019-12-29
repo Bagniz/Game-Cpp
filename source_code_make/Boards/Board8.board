@@ -1,0 +1,15 @@
+width:10
+height:10
+name:Board8
+player:
+score:0
+X X X X X - X X X X 
+X . . . . . . . . X 
+X . S . . . . . . X 
+X . . . . . . . . X 
+X . . . $ . . . . X 
+X . . . . . . . . X 
+X . . I . . . . . X 
+X . . . . . . . . X 
+X . . . . . . . J X 
+X X X X X X X X X X 
