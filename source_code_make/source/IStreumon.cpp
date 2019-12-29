@@ -4,6 +4,7 @@
 IStreumon::IStreumon() : Element()
 {
     this->symbole = 'I';
+    
 }
 
 IStreumon::IStreumon(Position *p, Board *b) : Element(p, b)
@@ -20,8 +21,34 @@ bool IStreumon::onCollision(Element *element)
 
 void IStreumon::move()
 {
-//    auto* newPosition = new Position(this->position->getX(),this->position->getY());
-//    if(this->board->getElement(newPosition)->onCollision(this)){
-//        this->board->moveElement(this->getPosition(),newPosition);
-//    }
+    int xDirection=0,yDirection=0;
+  
+    for(const vector<Element*>& ligneElements : this->board->getBoardElements())
+    {
+        for(Element* element : ligneElements)
+        {
+            if(element->getSymbole()=='J'){
+                if(element->getPosition()->getX() < this->getPosition()->getX())
+                    xDirection=-1;
+                else
+                    xDirection=1;
+                if(element->getPosition()->getY() < this->getPosition()->getY())
+                    yDirection=-1;
+                else
+                    yDirection=1; 
+                
+                break;
+            }
+        }
+        if(xDirection!=0 && yDirection!=0)
+            break;
+    }
+    random_device randomDevice;
+    uniform_int_distribution<int> uniformIntDistribution(0,1);
+    int xMove = xDirection * uniformIntDistribution(randomDevice),yMove = yDirection * uniformIntDistribution(randomDevice);
+    auto* newPosition = new Position(this->position->getX()+xMove,this->position->getY()+yMove);
+
+    if(this->board->getElement(newPosition)->onCollision(this)){
+        this->board->moveElement(this->getPosition(),newPosition);
+    }
 }

@@ -31,37 +31,53 @@ Board::Board(string boardName, const int width, const int height) : boardName(st
 int Board::boardPlay()
 {
     Oueurj* oueurj = nullptr;
-    SStreumon* sStreumon = nullptr;
-    PStreumon* pStreumon = nullptr;
-    XStreumon* xStreumon = nullptr;
-    IStreumon* iStreumon = nullptr;
+    vector<SStreumon*> sStreumon ;//= nullptr;
+    vector<PStreumon*> pStreumon ;//= nullptr;
+    vector<XStreumon*> xStreumon ;//= nullptr;
+    vector<IStreumon*> iStreumon ;//= nullptr;
 
     for(Element* element : movingElements)
     {
         if(element->getSymbole() == 'J')
             oueurj = dynamic_cast<Oueurj*>(element);
         if(element->getSymbole() == 'S')
-            sStreumon = dynamic_cast<SStreumon*>(element);
+            sStreumon.emplace_back(dynamic_cast<SStreumon*>(element));
         if(element->getSymbole() == 'P')
-            pStreumon = dynamic_cast<PStreumon*>(element);
+            pStreumon.emplace_back(dynamic_cast<PStreumon*>(element));
         if(element->getSymbole() == 'M')
-            xStreumon = dynamic_cast<XStreumon*>(element);
+            xStreumon.emplace_back(dynamic_cast<XStreumon*>(element));
         if(element->getSymbole() == 'I')
-            iStreumon = dynamic_cast<IStreumon*>(element);
+            iStreumon.emplace_back(dynamic_cast<IStreumon*>(element));
     }
     do
     {
         this->displayBoard();
         if(oueurj != nullptr)
             oueurj->move();
-        if(sStreumon != nullptr)
-            sStreumon->move();
-        if(pStreumon != nullptr)
-            pStreumon->move();
-        if(xStreumon != nullptr)
-            xStreumon->move();
-        if(iStreumon != nullptr)
-            iStreumon->move();
+        if(!sStreumon.empty()){
+            for (SStreumon *s :sStreumon)
+            {
+                if(s!=nullptr)s->move();
+            }
+        }
+        if(!pStreumon.empty()){
+            for (PStreumon *p :pStreumon)
+            {
+                if(p!=nullptr)p->move();
+            }
+        }
+        if(!xStreumon.empty()){
+            for (XStreumon *x :xStreumon)
+            {
+                if(x!=nullptr)x->move();
+            }
+        }
+        if(!iStreumon.empty()){
+            for (IStreumon *i :iStreumon)
+            {
+                if(i!=nullptr)i->move();
+            }
+        }
     }while(this->boardState == 0);
     return boardState;
 }
