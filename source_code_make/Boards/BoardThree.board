@@ -1,10 +1,10 @@
 width:30
 height:30
 name:BoardThree
-player:
-score:0
-X + X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X J . . . . . . . . . . . . . . . . . . . . . . . . . . . X 
+player:akkram
+score:1
+X J X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 
 X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 
 X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 
 X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 

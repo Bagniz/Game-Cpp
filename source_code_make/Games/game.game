@@ -1,7 +1,11 @@
 name:game
-currentBoard:BoardOne
+currentBoard:0x562377a82a70
 player:
 score:0
+player:akk
+score:123
+player:akkram
+score:74
 board:BoardOne
 board:BoardTwo
 board:BoardThree
