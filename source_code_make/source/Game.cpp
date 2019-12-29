@@ -167,7 +167,10 @@ void Game::gameSave(bool saveBoards)
 
     // Save game info
     gameFile << "name:" << this->gameName << endl;
-    gameFile << "currentBoard:" << (*this->gameBoards.begin())->getBoardName() << endl;
+    if(saveBoards)
+        gameFile << "currentBoard:" << this->getCurrentBoard() << endl;
+    else
+        gameFile << "currentBoard:" << (*this->gameBoards.begin())->getBoardName() << endl;
     gameFile << "player:" << "" << endl;
     gameFile << "score:" << 0 << endl;
 
