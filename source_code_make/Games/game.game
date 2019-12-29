@@ -1,5 +1,5 @@
 name:game
-currentBoard:BoardTwo
+currentBoard:BoardOne
 player:
 score:0
 board:BoardOne
