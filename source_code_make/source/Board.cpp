@@ -1,4 +1,5 @@
 #include <fstream>
+#include <iomanip>
 #include <utility>
 #include <string>
 #include <sstream>
@@ -331,8 +332,21 @@ void Board::displayBoard() const
 
     // Print the board
     int counter = 0;
+    
+    //coordinates
+    int x=0,y=0;
+    
+    //display of y coordinate
+    cout<<"  ";
+    for (y = 0; y < this->boardElements[0].size(); y++) cout<<setw(2)<<y;
+    cout<<endl;
+
     for(const vector<Element*>& ligneElements : boardElements)
     {
+        //display of x coordinate
+        cout<<setw(2)<<x<<' ';
+        x++;
+
         // Display elements
         for(Element* element : ligneElements)
             cout << element->getSymbole() << ' ';
