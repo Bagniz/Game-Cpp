@@ -1,8 +1,8 @@
 width:30
 height:15
 name:Board2
-player:akk
-score:4
+player:
+score:0
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 
 + . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 

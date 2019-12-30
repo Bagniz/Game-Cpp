@@ -1,8 +1,8 @@
 width:20
 height:20
 name:Board4
-player:akk
-score:7
+player:
+score:0
 X X X X X X X X X X X X X X X X X X X X 
 X . . . . . . . . . . J . I . . . . . X 
 X . . . . . . . . . X X . . . . . . . X 

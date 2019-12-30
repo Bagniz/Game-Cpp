@@ -1,8 +1,8 @@
 width:30
 height:30
 name:Board3
-player:akk
-score:18
+player:
+score:0
 X + X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 
 X . . . . . . . . . . . . . . . . . . . . . . . . . . . . X 

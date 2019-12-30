@@ -130,11 +130,16 @@ void Oueurj::teleport()
                 {
                     if(this->hasTeleportation(Teleportations::PlaceTeleportation))
                     {
-                        // Get the empty elements
-                        for(vector<Element*> ligneElements : this->board->getBoardElements())
-                            copy_if(ligneElements.begin(), ligneElements.end(), back_inserter(emptyElements), [](Element* element){
-                                return element->getSymbole() == ' ';
-                            });
+                        // Get the empty elements hoizontaly
+                        for(Element* element: this->board->getBoardElements()[this->getPosition()->getX()]){
+                            if(element->getSymbole() == ' ')
+                                emptyElements.emplace_back(element);
+                        }
+                        // Get the empty elements verticly
+                        for(int i = 1; i < (this->board->getBoardElements().size() - 1); i++){
+                            if(this->board->getBoardElements()[i][this->getPosition()->getY()]->getSymbole() == ' ')
+                                emptyElements.emplace_back(this->board->getBoardElements()[i][this->getPosition()->getY()]);
+                        }
 
                         // Delete teleportation from the player
                         for(int i = 0; i < this->teleportations.size(); ++i)
@@ -154,11 +159,23 @@ void Oueurj::teleport()
                 {
                     if(this->hasTeleportation(Teleportations::AxesTeleportation))
                     {
-                        // Get the empty elements
-                        for(vector<Element*> ligneElements : this->board->getBoardElements())
-                            copy_if(ligneElements.begin(), ligneElements.end(), back_inserter(emptyElements), [](Element* element){
-                                return element->getSymbole() == ' ';
-                            });
+                        // Get the empty elements of the diagonal
+                        int boardWidth = this->board->getBoardElements()[0].size(), boardHeight = this->board->getBoardElements().size();
+                        int pivot = (this->getPosition()->getX() < this->getPosition()->getY())? this->getPosition()->getX() : this->getPosition()->getY(); 
+                        int startingXPosition = this->getPosition()->getX() - pivot, startingYPosition = this->getPosition()->getY() - pivot;
+                        for(int i = startingXPosition + 1, j = startingYPosition + 1; i < (boardHeight - 1) && j < (boardWidth - 1); i++,j++){
+                            if(this->board->getBoardElements()[i][j]->getSymbole() == ' ')
+                                emptyElements.emplace_back(this->board->getBoardElements()[i][j]);
+                        }
+
+                        // Get the empty elements of the antidiagonal
+                        int yDiffrence = boardWidth - this->getPosition()->getY();
+                        pivot = (this->getPosition()->getX() < yDiffrence)? this->getPosition()->getX() : yDiffrence;
+                        startingXPosition = this->getPosition()->getX() - pivot, startingYPosition = this->getPosition()->getY() + pivot;
+                        for(int i = startingXPosition + 1, j = startingYPosition - 1; i < (boardHeight - 1) && j > 0; i++,j--){
+                            if(this->board->getBoardElements()[i][j]->getSymbole() == ' ')
+                                emptyElements.emplace_back(this->board->getBoardElements()[i][j]);
+                        }
 
                         // Delete teleportation from the player
                         for(int i = 0; i < this->teleportations.size(); ++i)
@@ -206,9 +223,10 @@ void Oueurj::teleport()
 
             // Show the empty elements positions
             if(emptyElements.empty())
+            {
                 cout << "There is no empty positions" << endl;
-            else
-                Oueurj::displayEmptyPositions(emptyElements);
+                break;
+            }
 
             // Choose the empty position
             do{

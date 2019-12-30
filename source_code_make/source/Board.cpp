@@ -330,21 +330,23 @@ void Board::displayBoard() const
     // System command to clean terminal
     system("clear");
 
-    // Print the board
+    // Print the board //
     int counter = 0;
     
-    //coordinates
-    int x=0,y=0;
+    // coordinates
+    int x = 0, y = 0;
     
-    //display of y coordinate
-    cout<<"  ";
-    for (y = 0; y < this->boardElements[0].size(); y++) cout<<setw(2)<<y;
+    // Print Y coordinates
+    cout << "  ";
+    for (y = 0; y < this->boardElements[0].size(); y++)
+        cout << setw(2) << y;
     cout<<endl;
 
+    // Print other elements
     for(const vector<Element*>& ligneElements : boardElements)
     {
-        //display of x coordinate
-        cout<<setw(2)<<x<<' ';
+        // Print X coordinates
+        cout << setw(2) << x << ' ';
         x++;
 
         // Display elements
@@ -352,11 +354,11 @@ void Board::displayBoard() const
             cout << element->getSymbole() << ' ';
 
         // Print board info
-        if(counter == 1)
+        if(counter == 0)
             cout << "\tboard : " << this->getBoardName();
-        else if(counter == 2)
+        else if(counter == 1)
             cout << "\tplayer : " << this->getPlayerScore().playerName;
-        else if(counter == 3)
+        else if(counter == 2)
             cout << "\tscore : " << this->getPlayerScore().playerScore;
         cout << endl;
         counter++;
