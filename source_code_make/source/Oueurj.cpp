@@ -356,6 +356,8 @@ void Oueurj::move()
     {
         // Move
         this->board->moveElement(this->getPosition(), newPosition);
+        board->setPlayerXPosition(this->getPosition()->getX());
+        board->setPlayerYPosition(this->getPosition()->getY());
 
         // Add score
         Score newScore{this->board->getPlayerScore().playerName, this->board->getPlayerScore().playerScore + 1};

@@ -12,7 +12,7 @@ class Element;
 
 class Board {
 private:
-    int boardState;
+    int boardState, playerXPosition, playerYPosition;
     string boardName;
     Score playerScore;
     vector<vector<Element*>> boardElements;
@@ -21,8 +21,9 @@ private:
 public:
     Board();
     Board(string boardName, const int width, const int height);
+    void deleteSaveBoardFiles(string playerName);
     int boardPlay();
-    void boardSave();
+    void boardSave(bool saveToNew);
     void boardOver();
     static Board* boardLoad(const string& name);
     bool addElement(Element* element);
@@ -35,6 +36,8 @@ public:
     string getBoardName() const;
     Score getPlayerScore() const;
     void setBoardScore(Score& score);
+    void setPlayerXPosition(int x);
+    void setPlayerYPosition(int y);
     vector<vector<Element*>> getBoardElements();
     ~Board();
 };

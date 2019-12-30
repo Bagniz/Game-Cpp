@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <stdio.h>
 #include "header/Board.h"
 #include "header/Oueurj.h"
 #include "header/Reumu.h"
@@ -190,7 +191,7 @@ Board* createBoard(const string& boardName)
             }
         }
     }while(elementChoice != 0);
-    board->boardSave();
+    board->boardSave(false);
     return board;
 }
 
@@ -295,6 +296,19 @@ bool gamePlay(int argc, char** argv)
                 cout << "Please enter you name:";
                 cin >> player.playerName;
 
+                Board* playerBoard = Board::boardLoad(argName + player.playerName);
+                if(playerBoard != nullptr){
+                    char response;
+                    cout << "These is a save board with your name, Do you want to continue or delete it? (C/D)";
+                    cin >> response;
+                    if(response == 'C'){
+                        board = playerBoard;
+                    }
+                    else{
+                        board->deleteSaveBoardFiles(player.playerName);
+                    }
+                }
+
                 // Set the player and play the board
                 if(player.playerName != board->getPlayerScore().playerName)
                     board->setBoardScore(player);
@@ -315,6 +329,19 @@ bool gamePlay(int argc, char** argv)
                 Score player{"", 0};
                 cout << "Please enter you name:";
                 cin >> player.playerName;
+
+                Game* playerGame = Game::gameLoad(argName + player.playerName);
+                if(playerGame != nullptr){
+                    char response;
+                    cout << "These is a save game with your name, Do you want to continue or delete it? (C/D)";
+                    cin >> response;
+                    if(response == 'C'){
+                        game = playerGame;
+                    }
+                    else{
+                        game->deleteSaveGameFiles(player.playerName);
+                    }
+                }
 
                 // Set the player and play the game
                 if(player.playerName != game->getPlayerScore().playerName)
@@ -345,5 +372,3 @@ int main(int argc, char** argv)
         gameCreate(--argc,++argv);
     return 0;
 }
-
-// TODO: Save Board to player name

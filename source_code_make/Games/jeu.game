@@ -1,9 +1,7 @@
 name:jeu
-currentBoard:Board3
+currentBoard:Board1
 player:
 score:0
-player:akk
-score:123
 board:Board1
 board:Board2
 board:Board3

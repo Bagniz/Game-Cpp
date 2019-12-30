@@ -50,6 +50,17 @@ void Game::gamePlay()
     }while(this->gameState == 0);
 }
 
+// Delete Game Save Files
+void Game::deleteSaveGameFiles(string playerName){
+    string fileName = "./Games/" + this->getGameName() + playerName + ".game";
+    remove(fileName.c_str());
+
+    for(Board* board : this->getGameBoards()){
+        board->deleteSaveBoardFiles(playerName);
+    }
+}
+
+
 void Game::gameOver()
 {
     // Clear the terminal
@@ -62,12 +73,14 @@ void Game::gameOver()
         {
             cout << "\tCongratulations you won the game with new high score" << endl;
             cout << "Player : " <<  this->playerScore.playerName << "\tScore : " << this->playerScore.playerScore << endl;
+            this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
 
         case 1:
         {
             cout << "\tCongratulations you won the game with new high score" << endl;
+            this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
 
@@ -90,6 +103,7 @@ void Game::gameOver()
         case -2:
         {
             cout << "\nYou lost!!!!" << endl;
+            this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
 
@@ -163,16 +177,26 @@ Game *Game::gameLoad(const string& name)
 void Game::gameSave(bool saveBoards)
 {
     // Open the game file
-    ofstream gameFile("./Games/" + this->gameName + ".game");
+    ofstream gameFile;
+    if(saveBoards)
+        gameFile.open("./Games/" + this->gameName + this->getPlayerScore().playerName + ".game");
+    else
+        gameFile.open("./Games/" + this->gameName + ".game");
 
     // Save game info
     gameFile << "name:" << this->gameName << endl;
     if(saveBoards)
-        gameFile << "currentBoard:" << this->getCurrentBoard()->getBoardName() << endl;
+    {
+        gameFile << "currentBoard:" << this->getCurrentBoard()->getBoardName() + this->getPlayerScore().playerName << endl;
+        gameFile << "player:" << this->getPlayerScore().playerName << endl;
+        gameFile << "score:" << this->getPlayerScore().playerScore << endl;
+    }
     else
+    {
         gameFile << "currentBoard:" << (*this->gameBoards.begin())->getBoardName() << endl;
-    gameFile << "player:" << "" << endl;
-    gameFile << "score:" << 0 << endl;
+        gameFile << "player:" << "" << endl;
+        gameFile << "score:" << 0 << endl;
+    }
 
     // Save the topTenScores
     for(const Score& score : this->playerTopTenScores)
@@ -184,9 +208,18 @@ void Game::gameSave(bool saveBoards)
     // Save the boards
     for(Board* board : this->gameBoards)
     {
-        gameFile << "board:" << board->getBoardName() << endl;
-        if(saveBoards)
-            board->boardSave();
+        // Delete old file 
+        string fileName = "./Boards/" + board->getBoardName() + this->getPlayerScore().playerName + ".board";
+        int i = remove(fileName.c_str());
+        cout<<i<<endl;
+        // Create new one if necessary
+        if(saveBoards && board->getBoardName() == currentBoard->getBoardName())
+        {
+            gameFile << "board:" << board->getBoardName() + this->getPlayerScore().playerName << endl;
+            board->boardSave(true);
+        }
+        else
+            gameFile << "board:" << board->getBoardName() << endl;
     }
     gameFile.close();
 }
@@ -326,6 +359,10 @@ void Game::setPlayerScore(Score& score)
 void Game::setCurrentBoard(Board *board)
 {
     this->currentBoard = board;
+}
+
+vector<Board*> Game::getGameBoards(){
+    return this->gameBoards;
 }
 
 Game::~Game() {
