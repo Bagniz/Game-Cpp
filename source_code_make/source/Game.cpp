@@ -211,7 +211,7 @@ void Game::gameSave(bool saveBoards)
         // Delete old file 
         string fileName = "./Boards/" + board->getBoardName() + this->getPlayerScore().playerName + ".board";
         int i = remove(fileName.c_str());
-        cout<<i<<endl;
+        
         // Create new one if necessary
         if(saveBoards && board->getBoardName() == currentBoard->getBoardName())
         {
