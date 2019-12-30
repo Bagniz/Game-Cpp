@@ -115,7 +115,7 @@ void Oueurj::teleport()
                         this->board->moveElement(this->getPosition(), teleportPosition);
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::RandomTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);
@@ -136,13 +136,13 @@ void Oueurj::teleport()
                                 emptyElements.emplace_back(element);
                         }
                         // Get the empty elements verticly
-                        for(int i = 1; i < (this->board->getBoardElements().size() - 1); i++){
+                        for(unsigned i = 1; i < (this->board->getBoardElements().size() - 1); i++){
                             if(this->board->getBoardElements()[i][this->getPosition()->getY()]->getSymbole() == ' ')
                                 emptyElements.emplace_back(this->board->getBoardElements()[i][this->getPosition()->getY()]);
                         }
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::PlaceTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);
@@ -178,7 +178,7 @@ void Oueurj::teleport()
                         }
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::AxesTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);
@@ -202,7 +202,7 @@ void Oueurj::teleport()
                             });
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::SmartTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);

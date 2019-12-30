@@ -1,7 +1,7 @@
 #include <fstream>
 #include "../header/Game.h"
 
-Game::Game() : gameName(""), gameState(0),currentBoard(nullptr), playerScore{"", 0} {}
+Game::Game() : gameName(""), gameState(0), playerScore{"", 0}, currentBoard(nullptr) {}
 
 Game::Game(const string& gameName) : Game()
 {

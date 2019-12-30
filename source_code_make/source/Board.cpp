@@ -15,9 +15,9 @@
 #include "../header/Diam.h"
 #include "../header/Geurchar.h"
 
-Board::Board() : boardName(""), boardState(0), playerScore{"", 0}, playerXPosition(0), playerYPosition(0){}
+Board::Board() : boardState(0), playerXPosition(0), playerYPosition(0), boardName("") , playerScore{"", 0}{}
 
-Board::Board(string boardName, const int width, const int height) : boardName(std::move(boardName)), boardState(0), playerScore{"", 0}, playerXPosition(0), playerYPosition(0)
+Board::Board(string boardName, const int width, const int height) : boardState(0), playerXPosition(0), playerYPosition(0), boardName(std::move(boardName)), playerScore{"", 0}
 {
     for (int i = 0; i < height; ++i)
     {
@@ -232,7 +232,7 @@ Board *Board::boardLoad(const string& name)
         board->setBoardScore(playerScore);
 
         // Get the board elements
-        int i = 0, j = 0, t = 0;
+        int i = 0, j = 0;
         vector<Teupor*> ports;
         vector<Diam*> diams;
         while(getline(boardFile, word, ' '))
@@ -291,7 +291,7 @@ Board *Board::boardLoad(const string& name)
         }
 
         // Link diam and port
-        for(int n = 0; n < ports.size(); n++)
+        for(unsigned n = 0; n < ports.size(); n++)
             diams.at(n)->setTeuport(ports.at(n));
 
         // Close the file
@@ -360,7 +360,7 @@ void Board::displayBoard() const
     int counter = 0;
     
     // coordinates
-    int x = 0, y = 0;
+    unsigned x = 0, y = 0;
     
     // Print Y coordinates
     cout << "  ";
