@@ -209,8 +209,22 @@ bool gameCreate(int argc, char** argv)
         // Is it a game or a board
         if(objectType == "game")
             cout << "Please specify at least one board to create the game: " << objectName << endl;
-        else if(objectType == "board")
+        else if(objectType == "board"){
+            Board* board = Board::boardLoad(objectName);
+            if(board != nullptr){
+                char response;
+
+                cout << "There is already a board : " << objectName << ", Do you want to recreate the board ?(Y/N)";
+                cin >> response;
+
+                if(response != 'Y'){
+                    return false;
+                }
+            }
+
             createBoard(objectName);
+            return true;
+        }
     }
     else if(argc > 1)
     {
@@ -299,7 +313,7 @@ bool gamePlay(int argc, char** argv)
                 Board* playerBoard = Board::boardLoad(argName + player.playerName);
                 if(playerBoard != nullptr){
                     char response;
-                    cout << "These is a save board with your name, Do you want to continue or delete it? (C/D)";
+                    cout << "There is a save board with your name, Do you want to continue or delete it? (C/D)";
                     cin >> response;
                     if(response == 'C'){
                         board = playerBoard;

@@ -145,17 +145,9 @@ void Board::boardOver()
     // Print messages depending on the game status
     switch (this->boardState)
     {
-        case 2:
-        {
-            cout << "\tCongratulations you won the game with new high score" << endl;
-            cout << "Player : " <<  this->playerScore.playerName << "\tScore : " << this->playerScore.playerScore << endl;
-            this->deleteSaveBoardFiles(this->getPlayerScore().playerName);
-            break;
-        }
-
         case 1:
         {
-            cout << "\tCongratulations you won the game with new high score" << endl;
+            cout << "\tCongratulations you won the game" << endl;
             this->deleteSaveBoardFiles(this->getPlayerScore().playerName);
             break;
         }
@@ -381,15 +373,15 @@ void Board::displayBoard() const
 
         // Print board info
         if(counter == 0)
-            cout << "\tboard : " << this->getBoardName();
+            cout << "\tboard: " << this->getBoardName();
         else if(counter == 1)
-            cout << "\tplayer : " << this->getPlayerScore().playerName;
+            cout << "\tplayer: " << this->getPlayerScore().playerName;
         else if(counter == 2)
-            cout << "\tscore : " << this->getPlayerScore().playerScore;
+            cout << "\tscore: " << this->getPlayerScore().playerScore;
         else if(counter == 3)
-            cout << "\tplayer position x:" << this->playerXPosition;
+            cout << "\tplayer position x: " << this->playerXPosition;
         else if(counter == 4)
-            cout << "\tplayer position y:" << this->playerYPosition;
+            cout << "\tplayer position y: " << this->playerYPosition;
         cout << endl;
         counter++;
     }

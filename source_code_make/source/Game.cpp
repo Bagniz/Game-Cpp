@@ -79,7 +79,7 @@ void Game::gameOver()
 
         case 1:
         {
-            cout << "\tCongratulations you won the game with new high score" << endl;
+            cout << "\tCongratulations you won the game" << endl;
             this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
