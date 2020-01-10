@@ -147,7 +147,7 @@ void Board::boardOver()
     {
         case 1:
         {
-            cout << "\tCongratulations you won the game" << endl;
+            cout << "\tCongratulations you won the board" << endl;
             this->deleteSaveBoardFiles(this->getPlayerScore().playerName);
             break;
         }
@@ -156,15 +156,15 @@ void Board::boardOver()
         {
             char response;
             cout << "\nSorry to see you leave" << endl;
-            cout << "Do you want to save the game for other time ?(Y/N)";
+            cout << "Do you want to save the board for other time ?(Y/N)";
             cin >> response;
             if(response == 'Y')
             {
                 this->boardSave(true);
-                cout << "The game is saved" << endl;
+                cout << "The board is saved" << endl;
             }
             else
-                cout << "The game did not save." << endl;
+                cout << "The board did not save." << endl;
             break;
         }
 
@@ -175,11 +175,6 @@ void Board::boardOver()
             break;
         }
 
-        case -3:
-        {
-            cout << "\nThis game does not contain any board!!" << endl;
-            break;
-        }
         default:
             throw bad_exception();
     }

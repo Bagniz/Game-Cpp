@@ -326,6 +326,8 @@ bool gamePlay(int argc, char** argv)
                 // Set the player and play the board
                 if(player.playerName != board->getPlayerScore().playerName)
                     board->setBoardScore(player);
+
+                // Play the board
                 board->boardPlay();
 
                 // Board Over
@@ -340,11 +342,11 @@ bool gamePlay(int argc, char** argv)
             if(game != nullptr)
             {
                 // Get the players name
-                Score player{"", 0};
+                Score newPlayer{"", 0};
                 cout << "Please enter you name:";
-                cin >> player.playerName;
+                cin >> newPlayer.playerName;
 
-                Game* playerGame = Game::gameLoad(argName + player.playerName);
+                Game* playerGame = Game::gameLoad(argName + newPlayer.playerName);
                 if(playerGame != nullptr){
                     char response;
                     cout << "These is a save game with your name, Do you want to continue or delete it? (C/D)";
@@ -353,13 +355,15 @@ bool gamePlay(int argc, char** argv)
                         game = playerGame;
                     }
                     else{
-                        game->deleteSaveGameFiles(player.playerName);
+                        game->deleteSaveGameFiles(newPlayer.playerName);
                     }
                 }
 
                 // Set the player and play the game
-                if(player.playerName != game->getPlayerScore().playerName)
-                    game->setPlayerScore(player);
+                if(newPlayer.playerName != game->getPlayerScore().playerName)
+                    game->setPlayerScore(newPlayer);
+
+                // Play the game
                 game->gamePlay();
 
                 // Game Over

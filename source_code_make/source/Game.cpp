@@ -13,21 +13,12 @@ void Game::gamePlay()
     // Variables
     int playedBoardStatus = 0;
 
-    // Get the next board
-    if(this->currentBoard == nullptr)
-        if(!this->goToNextBoard(""))
-        {
-            this->gameState = -3;
-            return;
-        }
-
-    do
-    {
+    do{
         // Set the player and score
         Score score{this->playerScore.playerName, 0};
         this->currentBoard->setBoardScore(score);
 
-        // Play the current board
+        // Play the current board status
         playedBoardStatus = currentBoard->boardPlay();
 
         // Test board status
@@ -107,11 +98,6 @@ void Game::gameOver()
             break;
         }
 
-        case -3:
-        {
-            cout << "\nThis game does not contain any board!!" << endl;
-            break;
-        }
         default:
             throw bad_exception();
     }
@@ -215,8 +201,8 @@ void Game::gameSave(bool saveBoards)
         // Create new one if necessary
         if(saveBoards && board->getBoardName() == currentBoard->getBoardName())
         {
-            gameFile << "board:" << board->getBoardName() + this->getPlayerScore().playerName << endl;
-            board->boardSave(true);
+            gameFile << "board:" << currentBoard->getBoardName() + this->getPlayerScore().playerName << endl;
+            currentBoard->boardSave(true);
         }
         else
             gameFile << "board:" << board->getBoardName() << endl;
