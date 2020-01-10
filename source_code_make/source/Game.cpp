@@ -15,7 +15,7 @@ void Game::gamePlay()
 
     do{
         // Set the player and score
-        Score score{this->playerScore.playerName, 0};
+        Score score{this->playerScore.playerName, this->currentBoard->getPlayerScore().playerScore};
         this->currentBoard->setBoardScore(score);
 
         // Play the current board status
