@@ -25,7 +25,7 @@ bool isPositionEmpty(Position* position, Board* board)
         cout << "Would you like to continue ?(Y/N)";
         cin >> response;
 
-        if(response != 'Y')
+        if(response != 'Y' || response != 'y')
             return false;
     }
     return true;
@@ -217,7 +217,7 @@ bool gameCreate(int argc, char** argv)
                 cout << "There is already a board : " << objectName << ", Do you want to recreate the board ?(Y/N)";
                 cin >> response;
 
-                if(response != 'Y'){
+                if(response != 'Y' || response != 'y'){
                     return false;
                 }
             }
@@ -315,7 +315,7 @@ bool gamePlay(int argc, char** argv)
                     char response;
                     cout << "There is a save board with your name, Do you want to continue or delete it? (C/D)";
                     cin >> response;
-                    if(response == 'C'){
+                    if(response == 'C' || response == 'c'){
                         board = playerBoard;
                     }
                     else{
@@ -351,7 +351,7 @@ bool gamePlay(int argc, char** argv)
                     char response;
                     cout << "These is a save game with your name, Do you want to continue or delete it? (C/D)";
                     cin >> response;
-                    if(response == 'C'){
+                    if(response == 'C' || response == 'c'){
                         game = playerGame;
                     }
                     else{
@@ -362,6 +362,9 @@ bool gamePlay(int argc, char** argv)
                 // Set the player and play the game
                 if(newPlayer.playerName != game->getPlayerScore().playerName)
                     game->setPlayerScore(newPlayer);
+
+                // Display some game info
+                game->displayGameInfo();
 
                 // Play the game
                 game->gamePlay();

@@ -37,7 +37,9 @@ public:
     void setGameName(const string& name);
     void setPlayerScore(Score& score);
     void setCurrentBoard(Board* board);
+    vector<Score> getPlayerTopTenScores();
     vector<Board*> getGameBoards();
+    void displayGameInfo();
     ~Game();
 };
 

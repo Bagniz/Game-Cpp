@@ -158,7 +158,7 @@ void Board::boardOver()
             cout << "\nSorry to see you leave" << endl;
             cout << "Do you want to save the board for other time ?(Y/N)";
             cin >> response;
-            if(response == 'Y')
+            if(response == 'Y' || response == 'y')
             {
                 this->boardSave(true);
                 cout << "The board is saved" << endl;

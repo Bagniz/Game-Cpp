@@ -81,7 +81,7 @@ void Game::gameOver()
             cout << "\nSorry to see you leave" << endl;
             cout << "Do you want to save the game for other time ?(Y/N)";
             cin >> response;
-            if(response == 'Y')
+            if(response == 'Y' || response == 'y')
             {
                 this->gameSave(true);
                 cout << "The game is saved" << endl;
@@ -347,8 +347,28 @@ void Game::setCurrentBoard(Board *board)
     this->currentBoard = board;
 }
 
+vector<Score> Game::getPlayerTopTenScores(){
+    return this->playerTopTenScores;
+}
+
 vector<Board*> Game::getGameBoards(){
     return this->gameBoards;
+}
+
+void Game::displayGameInfo(){
+    cout << "Welcome to " << this->getGameName() << " game !!" << endl;
+    if(!this->getPlayerTopTenScores().empty()){
+        cout << "Here are the top ten player scores:" << endl;
+        for(Score playerScore : this->getPlayerTopTenScores()){
+            cout << "Player: " << playerScore.playerName << ", Score: " << playerScore.playerScore << endl;
+        }
+    }
+    else{
+        cout << "There is no top scores in this game, Try to the best score to beat!!" << endl;
+    }
+    cout << "Please click enter to start playing...";
+    cin.get();
+    cin.get();
 }
 
 Game::~Game() {

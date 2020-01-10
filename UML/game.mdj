@@ -49,7 +49,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -576,
-											"top": -288,
+											"top": -304,
 											"height": 13
 										},
 										{
@@ -60,7 +60,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 53,
-											"top": 55,
+											"top": 47,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "Game"
@@ -74,7 +74,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -576,
-											"top": -288,
+											"top": -304,
 											"width": 162.525390625,
 											"height": 13,
 											"text": "(from Game Class Diagram)"
@@ -88,14 +88,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -576,
-											"top": -288,
+											"top": -304,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 48,
-									"top": 48,
+									"top": 40,
 									"width": 296.50146484375,
 									"height": 25,
 									"stereotypeLabel": {
@@ -132,7 +132,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 78,
+											"top": 70,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "-gameName: string",
@@ -149,7 +149,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 93,
+											"top": 85,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "-gameState: int",
@@ -166,7 +166,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 108,
+											"top": 100,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "-currentBoard: Board*",
@@ -183,7 +183,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 123,
+											"top": 115,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "-playerTopTenScores: vector<Score>",
@@ -192,7 +192,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 48,
-									"top": 73,
+									"top": 65,
 									"width": 296.50146484375,
 									"height": 68
 								},
@@ -217,7 +217,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 146,
+											"top": 138,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+Game()",
@@ -234,7 +234,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 161,
+											"top": 153,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+Game(name: string)",
@@ -251,7 +251,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 176,
+											"top": 168,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+gamePlay(): void",
@@ -268,7 +268,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 191,
+											"top": 183,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+deleteSaveGameFiles(playerName: string): void",
@@ -285,7 +285,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 206,
+											"top": 198,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+gameOver(): void",
@@ -302,7 +302,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 221,
+											"top": 213,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+gameSave(saveBoards: bool): void",
@@ -319,7 +319,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 236,
+											"top": 228,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+displayGame(): void",
@@ -336,7 +336,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 251,
+											"top": 243,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+addBoard(board: Board*): bool",
@@ -353,7 +353,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 266,
+											"top": 258,
 											"width": 286.50146484375,
 											"height": 13,
 											"underline": true,
@@ -371,7 +371,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 281,
+											"top": 273,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+removeBoard(boardName: string): bool",
@@ -388,7 +388,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 296,
+											"top": 288,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+saveNewTopScore(score: Score): bool",
@@ -405,10 +405,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 311,
+											"top": 303,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+goToNextBoard(currentBoardName: string): bool",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFvj/Y7QfKSuzA=",
+											"_parent": {
+												"$ref": "AAAAAAFu6ql0tRPqe3g="
+											},
+											"model": {
+												"$ref": "AAAAAAFvj/Y7E/KPb4I="
+											},
+											"font": "Arial;13;0",
+											"left": 53,
+											"top": 318,
+											"width": 286.50146484375,
+											"height": 13,
+											"text": "+displayGameInfo(): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -422,7 +439,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 53,
-											"top": 326,
+											"top": 333,
 											"width": 286.50146484375,
 											"height": 13,
 											"text": "+~Game()",
@@ -431,9 +448,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 48,
-									"top": 141,
+									"top": 133,
 									"width": 296.50146484375,
-									"height": 203
+									"height": 218
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -447,7 +464,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -296,
-									"top": -152,
+									"top": -160,
 									"width": 10,
 									"height": 10
 								},
@@ -463,7 +480,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -296,
-									"top": -152,
+									"top": -160,
 									"width": 10,
 									"height": 10
 								}
@@ -471,9 +488,9 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 48,
-							"top": 48,
+							"top": 40,
 							"width": 296.50146484375,
-							"height": 296,
+							"height": 311,
 							"nameCompartment": {
 								"$ref": "AAAAAAFu6ql0tRPk+r0="
 							},
@@ -7904,6 +7921,25 @@
 										"$ref": "AAAAAAFvSGs9yrpczAs="
 									},
 									"type": "bool",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFvj/Y7E/KPb4I=",
+							"_parent": {
+								"$ref": "AAAAAAFu6ql0tBPhvW4="
+							},
+							"name": "displayGameInfo",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFvj/ZlYvL/+TU=",
+									"_parent": {
+										"$ref": "AAAAAAFvj/Y7E/KPb4I="
+									},
+									"type": "void",
 									"direction": "return"
 								}
 							]
