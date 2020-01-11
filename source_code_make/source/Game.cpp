@@ -63,7 +63,7 @@ void Game::gameOver()
         case 2:
         {
             cout << "\tCongratulations you won the game with new high score" << endl;
-            cout << "Player : " <<  this->playerScore.playerName << "\tScore : " << this->playerScore.playerScore << endl;
+            cout << "Player : " <<  this->playerScore.playerName << "\t,Score : " << this->playerScore.playerScore << endl;
             this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
@@ -195,8 +195,10 @@ void Game::gameSave(bool saveBoards)
     for(Board* board : this->gameBoards)
     {
         // Delete old file 
-        string fileName = "./Boards/" + board->getBoardName() + this->getPlayerScore().playerName + ".board";
-        remove(fileName.c_str());
+        if(!this->playerScore.playerName.empty()){
+            string fileName = "./Boards/" + board->getBoardName() + this->getPlayerScore().playerName + ".board";
+            remove(fileName.c_str());
+        }
         
         // Create new one if necessary
         if(saveBoards && board->getBoardName() == currentBoard->getBoardName())
@@ -288,8 +290,10 @@ bool Game::saveNewTopScore(const Score& score)
             return true;
         }
     }
-    if(this->playerTopTenScores.size() < 10)
+    if(this->playerTopTenScores.size() < 10){
         this->playerTopTenScores.emplace_back(score);
+        return true;
+    }
     return false;
 }
 
