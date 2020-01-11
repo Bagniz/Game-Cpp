@@ -1,14 +1,15 @@
 #include "../header/Geurchar.h"
 #include "../header/Oueurj.h"
 
-Geurchar::Geurchar() : teleportation(Teleportations::RandomTeleportation), Element()
+Geurchar::Geurchar() : Element()
 {
-    this->symbole = '*';
+    this->symbole = '*';   
 }
 
-Geurchar::Geurchar(Position* p, Teleportations t, Board* b) : teleportation(t), Element(p,b)
+Geurchar::Geurchar(Position* p, Teleportations t, Board* b) : Element(p,b)
 {
     this->symbole = '*';
+    this->teleportation = t;
 }
 
 bool Geurchar::onCollision(Element *element) {

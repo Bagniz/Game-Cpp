@@ -1,18 +1,21 @@
 #include "../header/Diam.h"
 
-Diam::Diam() : teupor(), Element()
+Diam::Diam() : Element()
 {
     this->symbole = '$';
+    this->teupor = nullptr;
 }
 
-Diam::Diam(Position* p, Board *b) : teupor(nullptr), Element(p,b)
+Diam::Diam(Position* p, Board *b) : Element(p,b)
 {
     this->symbole = '$';
+    this->teupor = nullptr;
 }
 
-Diam::Diam(Position* p, Teupor *t, Board *b) : teupor(t), Element(p,b)
+Diam::Diam(Position* p, Teupor *t, Board *b) : Element(p,b)
 {
     this->symbole = '$';
+    this->teupor = t;
 }
 
 bool Diam::onCollision(Element *element)

@@ -22,6 +22,7 @@ public:
     Game();
     Game(const string& gameName);
     void gamePlay();
+    void deleteSaveGameFiles(string playerName);
     void gameOver();
     void gameSave(bool saveBoards);
     static Game* gameLoad(const string& name);
@@ -36,6 +37,9 @@ public:
     void setGameName(const string& name);
     void setPlayerScore(Score& score);
     void setCurrentBoard(Board* board);
+    vector<Score> getPlayerTopTenScores();
+    vector<Board*> getGameBoards();
+    void displayGameInfo();
     ~Game();
 };
 

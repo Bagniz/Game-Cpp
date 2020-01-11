@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <stdio.h>
 #include "header/Board.h"
 #include "header/Oueurj.h"
 #include "header/Reumu.h"
@@ -24,7 +25,7 @@ bool isPositionEmpty(Position* position, Board* board)
         cout << "Would you like to continue ?(Y/N)";
         cin >> response;
 
-        if(response != 'Y')
+        if(response != 'Y' || response != 'y')
             return false;
     }
     return true;
@@ -190,7 +191,8 @@ Board* createBoard(const string& boardName)
             }
         }
     }while(elementChoice != 0);
-    board->boardSave();
+    board->boardSave(false);
+    cout << "Board " << boardName << " created" << endl;
     return board;
 }
 
@@ -208,8 +210,22 @@ bool gameCreate(int argc, char** argv)
         // Is it a game or a board
         if(objectType == "game")
             cout << "Please specify at least one board to create the game: " << objectName << endl;
-        else if(objectType == "board")
+        else if(objectType == "board"){
+            Board* board = Board::boardLoad(objectName);
+            if(board != nullptr){
+                char response;
+
+                cout << "There is already a board : " << objectName << ", Do you want to recreate the board ?(Y/N)";
+                cin >> response;
+
+                if(response != 'Y' || response != 'y'){
+                    return false;
+                }
+            }
+
             createBoard(objectName);
+            return true;
+        }
     }
     else if(argc > 1)
     {
@@ -264,7 +280,8 @@ bool gameCreate(int argc, char** argv)
                         if(boardName == *arguments.begin())
                             game.setCurrentBoard(board);
                     }
-                    game.gameSave(true);
+                    game.gameSave(false);
+                    cout << "Game " << argumentName << " created" << endl;
                     return true;
                 }
             }
@@ -295,9 +312,24 @@ bool gamePlay(int argc, char** argv)
                 cout << "Please enter you name:";
                 cin >> player.playerName;
 
+                Board* playerBoard = Board::boardLoad(argName + player.playerName);
+                if(playerBoard != nullptr){
+                    char response;
+                    cout << "There is a save board with your name, Do you want to continue or delete it? (C/D)";
+                    cin >> response;
+                    if(response == 'C' || response == 'c'){
+                        board = playerBoard;
+                    }
+                    else{
+                        board->deleteSaveBoardFiles(player.playerName);
+                    }
+                }
+
                 // Set the player and play the board
                 if(player.playerName != board->getPlayerScore().playerName)
                     board->setBoardScore(player);
+
+                // Play the board
                 board->boardPlay();
 
                 // Board Over
@@ -312,13 +344,31 @@ bool gamePlay(int argc, char** argv)
             if(game != nullptr)
             {
                 // Get the players name
-                Score player{"", 0};
+                Score newPlayer{"", 0};
                 cout << "Please enter you name:";
-                cin >> player.playerName;
+                cin >> newPlayer.playerName;
+
+                Game* playerGame = Game::gameLoad(argName + newPlayer.playerName);
+                if(playerGame != nullptr){
+                    char response;
+                    cout << "There is a saved point with your name, Do you want to continue or delete it? (C/D)";
+                    cin >> response;
+                    if(response == 'C' || response == 'c'){
+                        game = playerGame;
+                    }
+                    else{
+                        game->deleteSaveGameFiles(newPlayer.playerName);
+                    }
+                }
 
                 // Set the player and play the game
-                if(player.playerName != game->getPlayerScore().playerName)
-                    game->setPlayerScore(player);
+                if(newPlayer.playerName != game->getPlayerScore().playerName)
+                    game->setPlayerScore(newPlayer);
+
+                // Display some game info
+                game->displayGameInfo();
+
+                // Play the game
                 game->gamePlay();
 
                 // Game Over

@@ -1,7 +1,7 @@
 #include <fstream>
 #include "../header/Game.h"
 
-Game::Game() : gameName(""), gameState(0),currentBoard(nullptr), playerScore{"", 0} {}
+Game::Game() : gameName(""), gameState(0), playerScore{"", 0}, currentBoard(nullptr) {}
 
 Game::Game(const string& gameName) : Game()
 {
@@ -13,21 +13,12 @@ void Game::gamePlay()
     // Variables
     int playedBoardStatus = 0;
 
-    // Get the next board
-    if(this->currentBoard == nullptr)
-        if(!this->goToNextBoard(""))
-        {
-            this->gameState = -3;
-            return;
-        }
-
-    do
-    {
+    do{
         // Set the player and score
-        Score score{this->playerScore.playerName, 0};
+        Score score{this->playerScore.playerName, this->currentBoard->getPlayerScore().playerScore};
         this->currentBoard->setBoardScore(score);
 
-        // Play the current board
+        // Play the current board status
         playedBoardStatus = currentBoard->boardPlay();
 
         // Test board status
@@ -50,6 +41,17 @@ void Game::gamePlay()
     }while(this->gameState == 0);
 }
 
+// Delete Game Save Files
+void Game::deleteSaveGameFiles(string playerName){
+    string fileName = "./Games/" + this->getGameName() + playerName + ".game";
+    remove(fileName.c_str());
+
+    for(Board* board : this->getGameBoards()){
+        board->deleteSaveBoardFiles(playerName);
+    }
+}
+
+
 void Game::gameOver()
 {
     // Clear the terminal
@@ -61,13 +63,15 @@ void Game::gameOver()
         case 2:
         {
             cout << "\tCongratulations you won the game with new high score" << endl;
-            cout << "Player : " <<  this->playerScore.playerName << "\tScore : " << this->playerScore.playerScore << endl;
+            cout << "Player : " <<  this->playerScore.playerName << "\t,Score : " << this->playerScore.playerScore << endl;
+            this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
 
         case 1:
         {
-            cout << "\tCongratulations you won the game with new high score" << endl;
+            cout << "\tCongratulations you won the game" << endl;
+            this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
 
@@ -77,7 +81,7 @@ void Game::gameOver()
             cout << "\nSorry to see you leave" << endl;
             cout << "Do you want to save the game for other time ?(Y/N)";
             cin >> response;
-            if(response == 'Y')
+            if(response  == 'Y' || response == 'y')
             {
                 this->gameSave(true);
                 cout << "The game is saved" << endl;
@@ -90,14 +94,10 @@ void Game::gameOver()
         case -2:
         {
             cout << "\nYou lost!!!!" << endl;
+            this->deleteSaveGameFiles(this->getPlayerScore().playerName);
             break;
         }
 
-        case -3:
-        {
-            cout << "\nThis game does not contain any board!!" << endl;
-            break;
-        }
         default:
             throw bad_exception();
     }
@@ -163,16 +163,26 @@ Game *Game::gameLoad(const string& name)
 void Game::gameSave(bool saveBoards)
 {
     // Open the game file
-    ofstream gameFile("./Games/" + this->gameName + ".game");
+    ofstream gameFile;
+    if(saveBoards)
+        gameFile.open("./Games/" + this->gameName + this->getPlayerScore().playerName + ".game");
+    else
+        gameFile.open("./Games/" + this->gameName + ".game");
 
     // Save game info
     gameFile << "name:" << this->gameName << endl;
     if(saveBoards)
-        gameFile << "currentBoard:" << this->getCurrentBoard()->getBoardName() << endl;
+    {
+        gameFile << "currentBoard:" << this->getCurrentBoard()->getBoardName() + this->getPlayerScore().playerName << endl;
+        gameFile << "player:" << this->getPlayerScore().playerName << endl;
+        gameFile << "score:" << this->getPlayerScore().playerScore << endl;
+    }
     else
+    {
         gameFile << "currentBoard:" << (*this->gameBoards.begin())->getBoardName() << endl;
-    gameFile << "player:" << "" << endl;
-    gameFile << "score:" << 0 << endl;
+        gameFile << "player:" << "" << endl;
+        gameFile << "score:" << 0 << endl;
+    }
 
     // Save the topTenScores
     for(const Score& score : this->playerTopTenScores)
@@ -184,9 +194,20 @@ void Game::gameSave(bool saveBoards)
     // Save the boards
     for(Board* board : this->gameBoards)
     {
-        gameFile << "board:" << board->getBoardName() << endl;
-        if(saveBoards)
-            board->boardSave();
+        // Delete old file 
+        if(!this->playerScore.playerName.empty()){
+            string fileName = "./Boards/" + board->getBoardName() + this->getPlayerScore().playerName + ".board";
+            remove(fileName.c_str());
+        }
+        
+        // Create new one if necessary
+        if(saveBoards && board->getBoardName() == currentBoard->getBoardName())
+        {
+            gameFile << "board:" << currentBoard->getBoardName() + this->getPlayerScore().playerName << endl;
+            currentBoard->boardSave(true);
+        }
+        else
+            gameFile << "board:" << board->getBoardName() << endl;
     }
     gameFile.close();
 }
@@ -269,8 +290,10 @@ bool Game::saveNewTopScore(const Score& score)
             return true;
         }
     }
-    if(this->playerTopTenScores.size() < 10)
+    if(this->playerTopTenScores.size() < 10){
         this->playerTopTenScores.emplace_back(score);
+        return true;
+    }
     return false;
 }
 
@@ -326,6 +349,30 @@ void Game::setPlayerScore(Score& score)
 void Game::setCurrentBoard(Board *board)
 {
     this->currentBoard = board;
+}
+
+vector<Score> Game::getPlayerTopTenScores(){
+    return this->playerTopTenScores;
+}
+
+vector<Board*> Game::getGameBoards(){
+    return this->gameBoards;
+}
+
+void Game::displayGameInfo(){
+    cout << "Welcome to " << this->getGameName() << " game !!" << endl;
+    if(!this->getPlayerTopTenScores().empty()){
+        cout << "Here are the top ten player scores:" << endl;
+        for(Score playerScore : this->getPlayerTopTenScores()){
+            cout << "Player: " << playerScore.playerName << ", Score: " << playerScore.playerScore << endl;
+        }
+    }
+    else{
+        cout << "There is no top scores in this game, Try to make the best score to beat!!" << endl;
+    }
+    cout << "Please click enter to start playing...";
+    cin.get();
+    cin.get();
 }
 
 Game::~Game() {

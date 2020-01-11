@@ -15,9 +15,9 @@
 #include "../header/Diam.h"
 #include "../header/Geurchar.h"
 
-Board::Board() : boardName(""), boardState(0), playerScore{"", 0}{}
+Board::Board() : boardState(0), playerXPosition(0), playerYPosition(0), boardName("") , playerScore{"", 0}{}
 
-Board::Board(string boardName, const int width, const int height) : boardName(std::move(boardName)), boardState(0), playerScore{"", 0}
+Board::Board(string boardName, const int width, const int height) : boardState(0), playerXPosition(0), playerYPosition(0), boardName(std::move(boardName)), playerScore{"", 0}
 {
     for (int i = 0; i < height; ++i)
     {
@@ -27,6 +27,12 @@ Board::Board(string boardName, const int width, const int height) : boardName(st
             this->boardElements[i].emplace_back(new Element(new Position(i,j), this));
         }
     }
+}
+
+// Delete Board Save Files
+void Board::deleteSaveBoardFiles(string playerName){
+    string fileName = "./Boards/" + this->getBoardName() + playerName + ".board";
+    remove(fileName.c_str());
 }
 
 int Board::boardPlay()
@@ -80,13 +86,17 @@ int Board::boardPlay()
             }
         }
     }while(this->boardState == 0);
-    return boardState;
+    return this->boardState;
 }
 
-void Board::boardSave()
+void Board::boardSave(bool saveToNew)
 {
     // Open board file
-    ofstream boardFile("./Boards/" + this->boardName + ".board");
+    ofstream boardFile;
+    if(saveToNew)
+        boardFile.open("./Boards/" + this->boardName + this->getPlayerScore().playerName + ".board");
+    else
+        boardFile.open("./Boards/" + this->boardName + ".board");
 
     // Save board info
     boardFile << "width:" << this->boardElements[0].size() << endl;
@@ -135,16 +145,10 @@ void Board::boardOver()
     // Print messages depending on the game status
     switch (this->boardState)
     {
-        case 2:
-        {
-            cout << "\tCongratulations you won the game with new high score" << endl;
-            cout << "Player : " <<  this->playerScore.playerName << "\tScore : " << this->playerScore.playerScore << endl;
-            break;
-        }
-
         case 1:
         {
-            cout << "\tCongratulations you won the game with new high score" << endl;
+            cout << "\tCongratulations you won the board" << endl;
+            this->deleteSaveBoardFiles(this->getPlayerScore().playerName);
             break;
         }
 
@@ -152,29 +156,25 @@ void Board::boardOver()
         {
             char response;
             cout << "\nSorry to see you leave" << endl;
-            cout << "Do you want to save the game for other time ?(Y/N)";
+            cout << "Do you want to save the board for other time ?(Y/N)";
             cin >> response;
-            if(response == 'Y')
+            if(response == 'Y' || response == 'y')
             {
-                this->boardSave();
-                cout << "The game is saved" << endl;
+                this->boardSave(true);
+                cout << "The board is saved" << endl;
             }
             else
-                cout << "The game did not save." << endl;
+                cout << "The board did not save." << endl;
             break;
         }
 
         case -2:
         {
             cout << "\nYou lost!!!!" << endl;
+            this->deleteSaveBoardFiles(this->getPlayerScore().playerName);
             break;
         }
 
-        case -3:
-        {
-            cout << "\nThis game does not contain any board!!" << endl;
-            break;
-        }
         default:
             throw bad_exception();
     }
@@ -219,7 +219,7 @@ Board *Board::boardLoad(const string& name)
         board->setBoardScore(playerScore);
 
         // Get the board elements
-        int i = 0, j = 0, t = 0;
+        int i = 0, j = 0;
         vector<Teupor*> ports;
         vector<Diam*> diams;
         while(getline(boardFile, word, ' '))
@@ -227,7 +227,11 @@ Board *Board::boardLoad(const string& name)
             if(word == ".") // Element
                 board->addElement(new Element(new Position(i, j), board));
             else if(word == "J") // Oueurj
+            {
                 board->addElement(new Oueurj(new Position(i, j), board));
+                board->setPlayerXPosition(i);
+                board->setPlayerYPosition(j);
+            }
             else if(word == "S") // SStreumon
                 board->addElement(new SStreumon(new Position(i, j), board));
             else if(word == "P") // PStreumon
@@ -274,7 +278,7 @@ Board *Board::boardLoad(const string& name)
         }
 
         // Link diam and port
-        for(int n = 0; n < ports.size(); n++)
+        for(unsigned n = 0; n < ports.size(); n++)
             diams.at(n)->setTeuport(ports.at(n));
 
         // Close the file
@@ -325,26 +329,37 @@ void Board::moveElement(Position* oldPosition, Position* newPosition)
     }
 }
 
+
+void Board::setPlayerXPosition(int x){
+    this->playerXPosition = x;
+}
+
+void Board::setPlayerYPosition(int y){
+    this->playerYPosition = y;
+}
+
 void Board::displayBoard() const
 {
     // System command to clean terminal
     system("clear");
 
-    // Print the board
+    // Print the board //
     int counter = 0;
     
-    //coordinates
-    int x=0,y=0;
+    // coordinates
+    unsigned x = 0, y = 0;
     
-    //display of y coordinate
-    cout<<"  ";
-    for (y = 0; y < this->boardElements[0].size(); y++) cout<<setw(2)<<y;
+    // Print Y coordinates
+    cout << "  ";
+    for (y = 0; y < this->boardElements[0].size(); y++)
+        cout << setw(2) << y;
     cout<<endl;
 
+    // Print other elements
     for(const vector<Element*>& ligneElements : boardElements)
     {
-        //display of x coordinate
-        cout<<setw(2)<<x<<' ';
+        // Print X coordinates
+        cout << setw(2) << x << ' ';
         x++;
 
         // Display elements
@@ -352,12 +367,16 @@ void Board::displayBoard() const
             cout << element->getSymbole() << ' ';
 
         // Print board info
-        if(counter == 1)
-            cout << "\tboard : " << this->getBoardName();
+        if(counter == 0)
+            cout << "\tboard: " << this->getBoardName();
+        else if(counter == 1)
+            cout << "\tplayer: " << this->getPlayerScore().playerName;
         else if(counter == 2)
-            cout << "\tplayer : " << this->getPlayerScore().playerName;
+            cout << "\tscore: " << this->getPlayerScore().playerScore;
         else if(counter == 3)
-            cout << "\tscore : " << this->getPlayerScore().playerScore;
+            cout << "\tplayer position x: " << this->playerXPosition;
+        else if(counter == 4)
+            cout << "\tplayer position y: " << this->playerYPosition;
         cout << endl;
         counter++;
     }

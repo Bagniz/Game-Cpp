@@ -115,7 +115,7 @@ void Oueurj::teleport()
                         this->board->moveElement(this->getPosition(), teleportPosition);
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::RandomTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);
@@ -130,14 +130,19 @@ void Oueurj::teleport()
                 {
                     if(this->hasTeleportation(Teleportations::PlaceTeleportation))
                     {
-                        // Get the empty elements
-                        for(vector<Element*> ligneElements : this->board->getBoardElements())
-                            copy_if(ligneElements.begin(), ligneElements.end(), back_inserter(emptyElements), [](Element* element){
-                                return element->getSymbole() == ' ';
-                            });
+                        // Get the empty elements hoizontaly
+                        for(Element* element: this->board->getBoardElements()[this->getPosition()->getX()]){
+                            if(element->getSymbole() == ' ')
+                                emptyElements.emplace_back(element);
+                        }
+                        // Get the empty elements verticly
+                        for(unsigned i = 1; i < (this->board->getBoardElements().size() - 1); i++){
+                            if(this->board->getBoardElements()[i][this->getPosition()->getY()]->getSymbole() == ' ')
+                                emptyElements.emplace_back(this->board->getBoardElements()[i][this->getPosition()->getY()]);
+                        }
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::PlaceTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);
@@ -154,14 +159,26 @@ void Oueurj::teleport()
                 {
                     if(this->hasTeleportation(Teleportations::AxesTeleportation))
                     {
-                        // Get the empty elements
-                        for(vector<Element*> ligneElements : this->board->getBoardElements())
-                            copy_if(ligneElements.begin(), ligneElements.end(), back_inserter(emptyElements), [](Element* element){
-                                return element->getSymbole() == ' ';
-                            });
+                        // Get the empty elements of the diagonal
+                        int boardWidth = this->board->getBoardElements()[0].size(), boardHeight = this->board->getBoardElements().size();
+                        int pivot = (this->getPosition()->getX() < this->getPosition()->getY())? this->getPosition()->getX() : this->getPosition()->getY(); 
+                        int startingXPosition = this->getPosition()->getX() - pivot, startingYPosition = this->getPosition()->getY() - pivot;
+                        for(int i = startingXPosition + 1, j = startingYPosition + 1; i < (boardHeight - 1) && j < (boardWidth - 1); i++,j++){
+                            if(this->board->getBoardElements()[i][j]->getSymbole() == ' ')
+                                emptyElements.emplace_back(this->board->getBoardElements()[i][j]);
+                        }
+
+                        // Get the empty elements of the antidiagonal
+                        int yDiffrence = boardWidth - this->getPosition()->getY();
+                        pivot = (this->getPosition()->getX() < yDiffrence)? this->getPosition()->getX() : yDiffrence;
+                        startingXPosition = this->getPosition()->getX() - pivot, startingYPosition = this->getPosition()->getY() + pivot;
+                        for(int i = startingXPosition + 1, j = startingYPosition - 1; i < (boardHeight - 1) && j > 0; i++,j--){
+                            if(this->board->getBoardElements()[i][j]->getSymbole() == ' ')
+                                emptyElements.emplace_back(this->board->getBoardElements()[i][j]);
+                        }
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::AxesTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);
@@ -185,7 +202,7 @@ void Oueurj::teleport()
                             });
 
                         // Delete teleportation from the player
-                        for(int i = 0; i < this->teleportations.size(); ++i)
+                        for(unsigned i = 0; i < this->teleportations.size(); ++i)
                             if(this->teleportations[i] == Teleportations::SmartTeleportation)
                             {
                                 this->teleportations.erase(this->teleportations.begin() + i);
@@ -206,9 +223,10 @@ void Oueurj::teleport()
 
             // Show the empty elements positions
             if(emptyElements.empty())
+            {
                 cout << "There is no empty positions" << endl;
-            else
-                Oueurj::displayEmptyPositions(emptyElements);
+                break;
+            }
 
             // Choose the empty position
             do{
@@ -246,7 +264,7 @@ void Oueurj::move()
     clickedButton = int(clickedChar());
     switch (clickedButton)
     {
-        // Case move up 'a' || 'A'
+        // Case move up left 'a' || 'A'
         case 97:
         case 65:
         {
@@ -262,7 +280,7 @@ void Oueurj::move()
             break;
         }
 
-        // Case move up 'e' || 'E'
+        // Case move up right 'e' || 'E'
         case 101:
         case 69:
         {
@@ -294,7 +312,7 @@ void Oueurj::move()
             break;
         }
 
-        // Case move up 'w' || 'W'
+        // Case move down left 'w' || 'W'
         case 119:
         case 87:
         {
@@ -302,7 +320,7 @@ void Oueurj::move()
             break;
         }
 
-        // Case move up 'c' || 'C'
+        // Case move down right 'c' || 'C'
         case 99:
         case 67:
         {
@@ -338,6 +356,8 @@ void Oueurj::move()
     {
         // Move
         this->board->moveElement(this->getPosition(), newPosition);
+        board->setPlayerXPosition(this->getPosition()->getX());
+        board->setPlayerYPosition(this->getPosition()->getY());
 
         // Add score
         Score newScore{this->board->getPlayerScore().playerName, this->board->getPlayerScore().playerScore + 1};
@@ -355,7 +375,14 @@ char Oueurj::clickedChar()
     fd_set set;
     FD_ZERO( &set );
     FD_SET( fileno( stdin ), &set );
-    int res = select( fileno( stdin )+1, &set, nullptr, nullptr, nullptr);
+    
+    //code added to set time out to the player's choice 
+    struct timeval timeout;
+    timeout.tv_sec =1;
+    timeout.tv_usec=0;
+
+    //its added here ---------------------------------------------vvvvvvv
+    int res = select( fileno( stdin )+1, &set, nullptr, nullptr, &timeout);
     if( res > 0 )
     {
         char c;
@@ -369,7 +396,7 @@ char Oueurj::clickedChar()
     }
     else
     {
-        printf( "Select timeout\n" );
+        //printf( "Select timeout\n" );
     }
     tcsetattr( fileno( stdin ), TCSANOW, &oldSettings );
     return '\0';

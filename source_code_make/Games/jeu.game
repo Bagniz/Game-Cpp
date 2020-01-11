@@ -2,15 +2,7 @@ name:jeu
 currentBoard:Board1
 player:
 score:0
-player:akk
-score:123
-player:akram
-score:110
 board:Board1
 board:Board2
 board:Board3
 board:Board4
-board:Board5
-board:Board6
-board:Board7
-board:Board8
