@@ -192,7 +192,7 @@ Board* createBoard(const string& boardName)
         }
     }while(elementChoice != 0);
     board->boardSave(false);
-    cout << "Board " << boardName << " created" << endl;
+    cout << "\tBoard " << boardName << " created" << endl;
     return board;
 }
 
@@ -281,7 +281,7 @@ bool gameCreate(int argc, char** argv)
                             game.setCurrentBoard(board);
                     }
                     game.gameSave(false);
-                    cout << "Game " << argumentName << " created" << endl;
+                    cout << "\tGame " << argumentName << " created" << endl;
                     return true;
                 }
             }

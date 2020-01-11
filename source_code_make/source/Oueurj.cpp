@@ -264,7 +264,7 @@ void Oueurj::move()
     clickedButton = int(clickedChar());
     switch (clickedButton)
     {
-        // Case move up 'a' || 'A'
+        // Case move up left 'a' || 'A'
         case 97:
         case 65:
         {
@@ -280,7 +280,7 @@ void Oueurj::move()
             break;
         }
 
-        // Case move up 'e' || 'E'
+        // Case move up right 'e' || 'E'
         case 101:
         case 69:
         {
@@ -312,7 +312,7 @@ void Oueurj::move()
             break;
         }
 
-        // Case move up 'w' || 'W'
+        // Case move down left 'w' || 'W'
         case 119:
         case 87:
         {
@@ -320,7 +320,7 @@ void Oueurj::move()
             break;
         }
 
-        // Case move up 'c' || 'C'
+        // Case move down right 'c' || 'C'
         case 99:
         case 67:
         {
