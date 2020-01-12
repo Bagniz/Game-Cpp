@@ -35,6 +35,7 @@ void Board::deleteSaveBoardFiles(string playerName){
     remove(fileName.c_str());
 }
 
+// Play the board
 int Board::boardPlay()
 {
     Oueurj* oueurj = nullptr;
@@ -43,6 +44,7 @@ int Board::boardPlay()
     vector<XStreumon*> xStreumon;
     vector<IStreumon*> iStreumon;
 
+    // Get all the moving elements in the board
     for(Element* element : movingElements)
     {
         if(element->getSymbole() == 'J')
@@ -56,6 +58,8 @@ int Board::boardPlay()
         if(element->getSymbole() == 'I')
             iStreumon.emplace_back(dynamic_cast<IStreumon*>(element));
     }
+
+    // Move every moving element
     do
     {
         this->displayBoard();
@@ -89,6 +93,7 @@ int Board::boardPlay()
     return this->boardState;
 }
 
+// Save the board to a board file
 void Board::boardSave(bool saveToNew)
 {
     // Open board file
@@ -137,6 +142,7 @@ void Board::boardSave(bool saveToNew)
     boardFile.close();
 }
 
+// Called to end a board session
 void Board::boardOver()
 {
     // Clear the terminal
@@ -145,6 +151,7 @@ void Board::boardOver()
     // Print messages depending on the game status
     switch (this->boardState)
     {
+        // Won the board
         case 1:
         {
             cout << "\tCongratulations you won the board" << endl;
@@ -152,6 +159,7 @@ void Board::boardOver()
             break;
         }
 
+        // Exit the board
         case -1:
         {
             char response;
@@ -168,6 +176,7 @@ void Board::boardOver()
             break;
         }
 
+        // Lost the board
         case -2:
         {
             cout << "\nYou lost!!!!" << endl;
@@ -180,6 +189,7 @@ void Board::boardOver()
     }
 }
 
+// Load a board from a board file
 Board *Board::boardLoad(const string& name)
 {
     Board* board = nullptr;
@@ -287,6 +297,7 @@ Board *Board::boardLoad(const string& name)
     return board;
 }
 
+// Add an element to the board
 bool Board::addElement(Element *element)
 {
     // Add the new element
@@ -296,6 +307,7 @@ bool Board::addElement(Element *element)
     return true;
 }
 
+// Remove an element from the board
 bool Board::removeElement(Element *element)
 {
     Element* elementToDelete = this->boardElements[element->getPosition()->getX()][element->getPosition()->getY()];
@@ -309,26 +321,30 @@ bool Board::removeElement(Element *element)
     return true;
 }
 
+// Move an element
 void Board::moveElement(Position* oldPosition, Position* newPosition)
 {
     Element* newPositionElement = this->getElement(newPosition);
     Element* oldPositionElement = this->getElement(oldPosition);
+
+    // Is the new position empty
     if(newPositionElement->getSymbole() == ' ')
     {
+        // Swap new and old positions
         oldPositionElement->setPosition(newPosition);
         this->addElement(oldPositionElement);
         newPositionElement->setPosition(oldPosition);
         this->addElement(newPositionElement);
     }
-    else
+    else // If not
     {
+        // Delete the content of the new position and move to it
         delete newPositionElement;
         oldPositionElement->setPosition(newPosition);
         this->addElement(oldPositionElement);
         this->addElement(new Element(oldPosition, this));
     }
 }
-
 
 void Board::setPlayerXPosition(int x){
     this->playerXPosition = x;
@@ -338,6 +354,7 @@ void Board::setPlayerYPosition(int y){
     this->playerYPosition = y;
 }
 
+// Display all the board
 void Board::displayBoard() const
 {
     // System command to clean terminal

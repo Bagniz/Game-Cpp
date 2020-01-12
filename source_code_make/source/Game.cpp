@@ -8,6 +8,7 @@ Game::Game(const string& gameName) : Game()
     this->gameName = gameName;
 }
 
+// Play the game
 void Game::gamePlay()
 {
     // Variables
@@ -51,7 +52,7 @@ void Game::deleteSaveGameFiles(string playerName){
     }
 }
 
-
+// End the game sessions
 void Game::gameOver()
 {
     // Clear the terminal
@@ -60,6 +61,7 @@ void Game::gameOver()
     // Print messages depending on the game status
     switch (this->gameState)
     {
+        // Won the game with new score
         case 2:
         {
             cout << "\tCongratulations you won the game with new high score" << endl;
@@ -68,6 +70,7 @@ void Game::gameOver()
             break;
         }
 
+        // Won the game
         case 1:
         {
             cout << "\tCongratulations you won the game" << endl;
@@ -75,6 +78,7 @@ void Game::gameOver()
             break;
         }
 
+        // Exit the game
         case -1:
         {
             char response;
@@ -91,6 +95,7 @@ void Game::gameOver()
             break;
         }
 
+        // Lost the game
         case -2:
         {
             cout << "\nYou lost!!!!" << endl;
@@ -103,6 +108,7 @@ void Game::gameOver()
     }
 }
 
+// Load a game from a game file
 Game *Game::gameLoad(const string& name)
 {
     Game* game = nullptr;
@@ -160,6 +166,7 @@ Game *Game::gameLoad(const string& name)
     return game;
 }
 
+// Save the game to a game file
 void Game::gameSave(bool saveBoards)
 {
     // Open the game file
@@ -212,6 +219,7 @@ void Game::gameSave(bool saveBoards)
     gameFile.close();
 }
 
+// Display all game info
 void Game::displayGame() const
 {
     // System command to clean terminal
@@ -246,6 +254,7 @@ void Game::displayGame() const
     }
 }
 
+// Add a board to the game
 bool Game::addBoard(Board* board)
 {
     // Check if the board does not already exists in the game
@@ -260,6 +269,7 @@ bool Game::addBoard(Board* board)
     return true;
 }
 
+// Delete a board from the game
 bool Game::removeBoard(const string& boardName)
 {
     // Remove the board if it exists
@@ -277,6 +287,7 @@ bool Game::removeBoard(const string& boardName)
     return false;
 }
 
+// Save a new top score in the game and only save top ten scores
 bool Game::saveNewTopScore(const Score& score)
 {
     // Insert the score if possible
@@ -290,6 +301,8 @@ bool Game::saveNewTopScore(const Score& score)
             return true;
         }
     }
+
+    // Is the number of top scores lower than 10
     if(this->playerTopTenScores.size() < 10){
         this->playerTopTenScores.emplace_back(score);
         return true;
@@ -312,6 +325,7 @@ Board *Game::getCurrentBoard() const
     return this->currentBoard;
 }
 
+// Got to the next board to play
 bool Game::goToNextBoard(const string& currentBoardName)
 {
     if(currentBoardName.empty())
@@ -359,7 +373,9 @@ vector<Board*> Game::getGameBoards(){
     return this->gameBoards;
 }
 
+// Display game info
 void Game::displayGameInfo(){
+    system("clear");
     cout << "Welcome to " << this->getGameName() << " game !!" << endl;
     if(!this->getPlayerTopTenScores().empty()){
         cout << "Here are the top ten player scores:" << endl;

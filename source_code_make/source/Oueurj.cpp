@@ -376,12 +376,12 @@ char Oueurj::clickedChar()
     FD_ZERO( &set );
     FD_SET( fileno( stdin ), &set );
     
-    //code added to set time out to the player's choice 
+    // Set time out to the player's choice 
     struct timeval timeout;
     timeout.tv_sec =1;
     timeout.tv_usec=0;
 
-    //its added here ---------------------------------------------vvvvvvv
+    // Pass the timeout as a paramater
     int res = select( fileno( stdin )+1, &set, nullptr, nullptr, &timeout);
     if( res > 0 )
     {
@@ -394,10 +394,7 @@ char Oueurj::clickedChar()
     {
         perror( "select error" );
     }
-    else
-    {
-        //printf( "Select timeout\n" );
-    }
+    
     tcsetattr( fileno( stdin ), TCSANOW, &oldSettings );
     return '\0';
 }

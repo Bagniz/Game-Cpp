@@ -13,8 +13,6 @@
 #include "header/IStreumon.h"
 #include "header/Game.h"
 
-using namespace std;
-
 // Check if an other object already exists in the position
 bool isPositionEmpty(Position* position, Board* board)
 {
@@ -112,12 +110,14 @@ Board* createBoard(const string& boardName)
                 cin >> yPosition;
             }
 
+            // Is the position we are adding into empty
             if(isPositionEmpty(new Position(xPosition, yPosition), board))
             {
-                if(elementChoice == 1)
+                if(elementChoice == 1) // Reumu
                     board->addElement(new Reumu(new Position(xPosition, yPosition), board));
-                else if(elementChoice == 2)
+                else if(elementChoice == 2) // Diam
                 {
+                    // Enter the position of the associated
                     int txPosition, tyPosition;
                     cout << "Please enter the position of teupor associated with this diam:" << endl;
                     cout << "X:";
@@ -138,7 +138,7 @@ Board* createBoard(const string& boardName)
                     board->addElement(new Diam(new Position(xPosition, yPosition), tempTeupor, board));
                     board->addElement(tempTeupor);
                 }
-                else if(elementChoice == 3)
+                else if(elementChoice == 3) // Geurchar
                 {
                     int teleportationType;
                     do
@@ -180,13 +180,13 @@ Board* createBoard(const string& boardName)
                         }
                     }while((teleportationType > 4) || (teleportationType < 1));
                 }
-                else if(elementChoice == 4)
+                else if(elementChoice == 4) // SStreumon
                     board->addElement(new SStreumon(new Position(xPosition, yPosition), board));
-                else if(elementChoice == 5)
+                else if(elementChoice == 5) // XStreumon
                     board->addElement(new XStreumon(new Position(xPosition, yPosition), board));
-                else if(elementChoice == 6)
+                else if(elementChoice == 6) // PStreumon
                     board->addElement(new PStreumon(new Position(xPosition, yPosition), board));
-                else if(elementChoice == 7)
+                else if(elementChoice == 7) // IStreumon
                     board->addElement(new IStreumon(new Position(xPosition, yPosition), board));
             }
         }
